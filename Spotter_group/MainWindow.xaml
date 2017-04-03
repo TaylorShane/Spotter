@@ -34,6 +34,7 @@
             <TextBox Name="lastNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
             <Label Margin="0,10,0,0">Birthdate</Label>
             <DatePicker Name="dob" Width="100" HorizontalAlignment="Left"></DatePicker>
+            <Label>Shane label</Label>
         </StackPanel>
     </Grid>
 </Window>
