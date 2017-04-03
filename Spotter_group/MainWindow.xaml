@@ -8,7 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-            <GradientStop Color="Pink" Offset="0"/>
+            <GradientStop Color="blue" Offset="0"/>
             <GradientStop Color="#666666" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
