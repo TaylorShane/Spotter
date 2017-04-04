@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:Spotter_group"
         mc:Ignorable="d"
         Title="MainWindow" Height="525
-        " Width="785">
+        " Width="785"
+        <!-- if we want the window to auto size to full screen 
+    add thiss here:  SizeToContent="WidthAndHeight"
+    We need to put this content into a grid system first for better layout control-->
+        >
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
             <GradientStop Color="gray" Offset="0"/>
