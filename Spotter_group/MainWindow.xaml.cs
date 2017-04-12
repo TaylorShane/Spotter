@@ -52,5 +52,12 @@ namespace Spotter_group
             grid2.Children.Clear();
             grid2.Children.Add(profile);
         }
+
+        private void MenuItemSpotter_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
     }
 }
