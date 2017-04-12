@@ -8,15 +8,22 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <StackPanel Margin="30" Width="auto">
-            <Label Foreground ="#FFE0E0E0">First Name</Label>
-            <TextBox Name="firstNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-            <Label Foreground ="#FFE0E0E0">First Name</Label>
-            <TextBox Name="first2NameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-            <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Last Name</Label>
-            <TextBox Name="lastNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-            <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Birthdate</Label>
-            <DatePicker Name="dob" Width="100" HorizontalAlignment="Left"></DatePicker>
-            <Label>Shane label</Label>
+            <StackPanel Orientation="Horizontal">
+                <Label Foreground ="#FFE0E0E0">First Name</Label>
+                <TextBox Name="tbFirstName" Width="100" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Last Name</Label>
+                <TextBox Name="tbLastName" Width="100" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Birthdate</Label>
+            <DatePicker Name="tbDOB" Width="100" HorizontalAlignment="Left"></DatePicker>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Foreground="#FFE0E0E0">Username</Label>
+                <TextBox x:Name="tbUserName" Width="100" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
