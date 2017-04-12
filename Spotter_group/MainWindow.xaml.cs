@@ -27,9 +27,7 @@ namespace Spotter_group
 
         private void MenuItem_Checked(object sender, RoutedEventArgs e)
         {
-            About about = new About();
-            Grid2.Children.Clear();
-            Grid2.Children.Add(about);
+           
         }
     }
 }
