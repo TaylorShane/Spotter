@@ -9,28 +9,28 @@
         WindowStyle="None">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
-            <GradientStop Color="gray" Offset="0"/>
+            <GradientStop Color="#000000" Offset="0"/>
             <GradientStop Color="#666666" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid Name="gridOutter">
+    <Grid>
         <Menu FontStyle="Normal" Height="20" VerticalAlignment="Top">
             <Menu.Background>
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Header="User">
-                <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Click="MenuItemSignIn_Click"/>
-                <MenuItem x:Name="MenuItemRegister" Header="Register" Click="MenuItemRegister_Click"/>
-                <MenuItem x:Name="MenuItemProfile" Header="Profile"/>
+            <MenuItem Header="User" Foreground="White">
+                <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Foreground="Black" Click="MenuItemSignIn_Click"/>
+                <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
+                <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black"/>
             </MenuItem>
-            <MenuItem Header="Calendar"/>
-            <MenuItem Header="Details">
-                <MenuItem Header="Workout"/>
-                <MenuItem Header="Nutrition"/>
+            <MenuItem Header="Calendar" Foreground="White"/>
+            <MenuItem Header="Details" Foreground="White">
+                <MenuItem Header="Workout" Foreground="White"/>
+                <MenuItem Header="Nutrition" Foreground="White"/>
             </MenuItem>
-            <MenuItem Header="Calendar"/>
-            <MenuItem Header="Logout"/>
+            <MenuItem Header="Calendar" Foreground="White"/>
+            <MenuItem Header="Logout" Foreground="White"/>
         </Menu>
         <UserControl Margin="70,50,70,50"
                      Background="#009999">
