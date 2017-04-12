@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Spotter_group
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserProfile.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserProfile : UserControl
     {
-        public MainWindow()
+        public UserProfile()
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Checked(object sender, RoutedEventArgs e)
-        {
-            About about = new About();
-            Grid2.Children.Clear();
-            Grid2.Children.Add(about);
         }
     }
 }

@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Spotter_group"
         mc:Ignorable="d"
-        Title="MainWindow" Height="525
-        " Width="785"
-        <!-- if we want the window to auto size to full screen 
+        Title="MainWindow" 
+        WindowState="Maximized"
+        WindowStyle="None">
+    <!-- if we want the window to auto size to full screen
     add thiss here:  SizeToContent="WidthAndHeight"
-    We need to put this content into a grid system first for better layout control-->
-        >
+    We need to put this content into a grid system first for better layout control -->
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
             <GradientStop Color="gray" Offset="0"/>
@@ -18,13 +18,17 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
+        <UserControl Margin="30,50,30,50"
+                     Background="Black" BorderBrush="#009999" BorderThickness="5">
+            
+        </UserControl>
         <Menu FontStyle="Normal" Height="20" VerticalAlignment="Top">
             <Menu.Background>
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
             <MenuItem Foreground="#FFE0E0E0" Header="User Profile" >
-                <MenuItem Foreground="#FFE0E0E0" Header="New User" />
+                <MenuItem Foreground="#FFE0E0E0" Name="New_User"  Header="New User" />
                 <MenuItem Foreground="#FFE0E0E0" Header="Existing User"/>
             </MenuItem>
             <MenuItem Foreground="#FFE0E0E0" Header="Workouts"/>
@@ -32,16 +36,7 @@
             <MenuItem Foreground="#FFE0E0E0" Header="Calendar"/>
         </Menu>
 
-        <StackPanel Margin="50" Width="auto">
-            <Label Foreground="#FFE0E0E0">First Name</Label>
-            <TextBox Name="firstNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-            <Label Foreground="#FFE0E0E0" Margin="0,10,0,0">Last Name</Label>
-            <TextBox Name="lastNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-            <Label Foreground="#FFE0E0E0" Margin="0,10,0,0">Birthdate</Label>
-            <DatePicker Name="dob" Width="100" HorizontalAlignment="Left"></DatePicker>
-            <Image x:Name="image" Height="204" Margin="0,0,30,0" Source="images/thundercat.png" HorizontalAlignment="Right" Width="132"/>
-        </StackPanel>
-        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Left" Height="429" VerticalAlignment="Top" Width="712" Margin="30,35,0,0"
-               Background="Black" Panel.ZIndex="-1" BorderBrush="#009999" BorderThickness="5"/>
+        
+        
     </Grid>
 </Window>
