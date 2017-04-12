@@ -26,8 +26,8 @@
             </MenuItem>
             <MenuItem Header="Calendar" Foreground="White"/>
             <MenuItem Header="Details" Foreground="White">
-                <MenuItem Header="Workout" Foreground="White"/>
-                <MenuItem Header="Nutrition" Foreground="White"/>
+                <MenuItem Header="Workout" Foreground="Black"/>
+                <MenuItem Header="Nutrition" Foreground="Black"/>
             </MenuItem>
             <MenuItem Header="Calendar" Foreground="White"/>
             <MenuItem Header="Logout" Foreground="White"/>
