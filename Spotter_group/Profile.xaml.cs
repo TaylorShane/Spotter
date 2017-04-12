@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Spotter_group
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Profile.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Profile : UserControl
     {
-        public MainWindow()
+        public Profile()
         {
             InitializeComponent();
-        }
-
-        private void btnReg_Click(object sender, RoutedEventArgs e)
-        {
-            Profile profile = new Profile();
-            grid2.Children.Clear();
-            grid2.Children.Add(profile);
         }
     }
 }

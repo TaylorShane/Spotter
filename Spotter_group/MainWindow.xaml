@@ -5,38 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Spotter_group"
         mc:Ignorable="d"
-        Title="MainWindow" 
-        WindowState="Maximized"
+        Title="MainWindow" WindowState="Maximized"
         WindowStyle="None">
-    <!-- if we want the window to auto size to full screen
-    add thiss here:  SizeToContent="WidthAndHeight"
-    We need to put this content into a grid system first for better layout control -->
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
             <GradientStop Color="gray" Offset="0"/>
             <GradientStop Color="#666666" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid>
-        <UserControl Margin="30,50,30,50"
-                     Background="Black" BorderBrush="#009999" BorderThickness="5">
-            
-        </UserControl>
+    <Grid Name="gridOutter">
         <Menu FontStyle="Normal" Height="20" VerticalAlignment="Top">
             <Menu.Background>
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Foreground="#FFE0E0E0" Header="User Profile" >
-                <MenuItem Foreground="#FFE0E0E0" Name="New_User"  Header="New User" />
-                <MenuItem Foreground="#FFE0E0E0" Header="Existing User"/>
+            <MenuItem Header="User Profile" >
+                <MenuItem Header="New User" />
+                <MenuItem Header="Existing User"/>
             </MenuItem>
-            <MenuItem Foreground="#FFE0E0E0" Header="Workouts"/>
-            <MenuItem Foreground="#FFE0E0E0" Header="Nutrition"/>
-            <MenuItem Foreground="#FFE0E0E0" Header="Calendar"/>
+            <MenuItem Header="Workouts"/>
+            <MenuItem Header="Nutrition"/>
+            <MenuItem Header="Calendar"/>
         </Menu>
+        <UserControl Margin="70,50,70,50"
+                     Background="#009999">
+            <Grid Name="grid2"
+                  Background="Black"
+                  Margin="5">
+                <Button x:Name="btnSignIn" Content="Sign In" HorizontalAlignment="Left" Margin="155,281,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnReg" Content="Register" HorizontalAlignment="Left" Margin="399,281,0,0" VerticalAlignment="Top" Width="75" Click="btnReg_Click"/>
 
-        
-        
+            </Grid>
+        </UserControl>
     </Grid>
 </Window>
