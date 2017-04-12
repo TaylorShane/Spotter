@@ -32,17 +32,9 @@
             <Grid Name="grid2"
                   Background="Black"
                   Margin="5">
-                <StackPanel Margin="30" Width="auto">
-                    <Label Foreground ="#FFE0E0E0">First Name</Label>
-                    <TextBox Name="firstNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-                    <Label Foreground ="#FFE0E0E0">First Name</Label>
-                    <TextBox Name="first2NameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-                    <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Last Name</Label>
-                    <TextBox Name="lastNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
-                    <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Birthdate</Label>
-                    <DatePicker Name="dob" Width="100" HorizontalAlignment="Left"></DatePicker>
-                    <Label>Shane label</Label>
-                </StackPanel>
+                <Button x:Name="btnSignIn" Content="Sign In" HorizontalAlignment="Left" Margin="155,281,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btnReg" Content="Register" HorizontalAlignment="Left" Margin="399,281,0,0" VerticalAlignment="Top" Width="75" Click="btnReg_Click"/>
+
             </Grid>
         </UserControl>
     </Grid>
