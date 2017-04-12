@@ -35,7 +35,7 @@
                   Width="580"
                   Background="Black">
                 <StackPanel Margin="30" Width="auto">
-                    <Label>First Name</Label>
+                    <Label Foreground ="#FFE0E0E0">First Name</Label>
                     <TextBox Name="firstNameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
                     <Label>First Name</Label>
                     <TextBox Name="first2NameTextBox" Width="100" HorizontalAlignment="Left"></TextBox>
