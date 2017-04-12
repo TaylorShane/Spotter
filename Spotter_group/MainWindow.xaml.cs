@@ -31,5 +31,19 @@ namespace Spotter_group
             grid2.Children.Clear();
             grid2.Children.Add(profile);
         }
+
+        private void MenuItemSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            SignIn signIn = new SignIn();
+            grid2.Children.Clear();
+            grid2.Children.Add(signIn);
+        }
+
+        private void MenuItemRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Profile profile = new Profile();
+            grid2.Children.Clear();
+            grid2.Children.Add(profile);
+        }
     }
 }

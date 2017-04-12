@@ -19,13 +19,18 @@
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Header="User Profile" >
-                <MenuItem Header="New User" />
-                <MenuItem Header="Existing User"/>
+            <MenuItem Header="User">
+                <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Click="MenuItemSignIn_Click"/>
+                <MenuItem x:Name="MenuItemRegister" Header="Register" Click="MenuItemRegister_Click"/>
+                <MenuItem x:Name="MenuItemProfile" Header="Profile"/>
             </MenuItem>
-            <MenuItem Header="Workouts"/>
-            <MenuItem Header="Nutrition"/>
             <MenuItem Header="Calendar"/>
+            <MenuItem Header="Details">
+                <MenuItem Header="Workout"/>
+                <MenuItem Header="Nutrition"/>
+            </MenuItem>
+            <MenuItem Header="Calendar"/>
+            <MenuItem Header="Logout"/>
         </Menu>
         <UserControl Margin="70,50,70,50"
                      Background="#009999">
