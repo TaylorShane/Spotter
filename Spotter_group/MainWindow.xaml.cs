@@ -41,6 +41,13 @@ namespace Spotter_group
 
         private void MenuItemRegister_Click(object sender, RoutedEventArgs e)
         {
+            Register register = new Register();
+            grid2.Children.Clear();
+            grid2.Children.Add(register);
+        }
+
+        private void MenuItemProfile_Click(object sender, RoutedEventArgs e)
+        {
             Profile profile = new Profile();
             grid2.Children.Clear();
             grid2.Children.Add(profile);

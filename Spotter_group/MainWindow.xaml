@@ -22,7 +22,7 @@
             <MenuItem Header="User" Foreground="White">
                 <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Foreground="Black" Click="MenuItemSignIn_Click"/>
                 <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
-                <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black"/>
+                <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black" Click="MenuItemProfile_Click"/>
             </MenuItem>
             <MenuItem Header="Calendar" Foreground="White"/>
             <MenuItem Header="Details" Foreground="White">
