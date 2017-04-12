@@ -19,6 +19,7 @@
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
+            <MenuItem Header="Spotter" x:Name="MenuItemSpotter" Foreground="White" Click="MenuItemSpotter_Click"></MenuItem>
             <MenuItem Header="User" Foreground="White">
                 <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Foreground="Black" Click="MenuItemSignIn_Click"/>
                 <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
@@ -37,9 +38,17 @@
             <Grid Name="grid2"
                   Background="Black"
                   Margin="5">
-                <Button x:Name="btnSignIn" Content="Sign In" HorizontalAlignment="Left" Margin="155,281,0,0" VerticalAlignment="Top" Width="75"/>
-                <Button x:Name="btnReg" Content="Register" HorizontalAlignment="Left" Margin="399,281,0,0" VerticalAlignment="Top" Width="75" Click="btnReg_Click"/>
-
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnSign_in" Grid.Row="1" Content="Sign In" Height="30" Width="75"/>
+                <Button x:Name="btnReg" Grid.Column="1" Grid.Row="1" Content="Register" Height="30" Width="75" Click="btnReg_Click"/>
+                <Image Name="imgMainWindowSplash"  Margin="30" Grid.ColumnSpan="2" Source="images/Graphics/blue boy lifter.png"></Image>
             </Grid>
         </UserControl>
     </Grid>
