@@ -48,7 +48,7 @@
                 </Grid.RowDefinitions>
                 <Button x:Name="btnSign_in" Grid.Row="1" Content="Sign In" Height="60" Width="125"/>
                 <Button x:Name="btnReg" Grid.Column="1" Grid.Row="1" Content="Register" Height="60" Width="125" Click="btnReg_Click"/>
-                <Image Name="imgMainWindowSplash"  Margin="30" Grid.ColumnSpan="2" Source="images/Graphics/blue boy lifter.png"></Image>
+                <Image Name="imgMainWindowSplash"  Margin="45" Grid.ColumnSpan="2" Source="images/Graphics/blue boy lifter.png"></Image>
             </Grid>
         </UserControl>
     </Grid>

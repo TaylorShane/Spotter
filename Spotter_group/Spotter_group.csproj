@@ -134,6 +134,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Documentation\CS317_Final_Project_Requirements.pdf" />
+    <None Include="Documentation\Proposal.pdf" />
+    <None Include="Documentation\SpotterMockUp_LandscapeView.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -172,6 +175,12 @@
     <Resource Include="images\Graphics\blue boy lifter.png" />
     <Resource Include="images\Graphics\blue girl lifter.png" />
     <Resource Include="images\Graphics\raw girl lifter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Documentation\DrawIO_Doc_link.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Documentation\Colors_Used.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
