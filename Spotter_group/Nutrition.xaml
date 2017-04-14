@@ -8,19 +8,30 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.ColumnSpan="3" Margin="0,0,0,0" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Menu Grid.ColumnSpan="4" Margin="0,0,0,0" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left">
             <MenuItem Header="Workout" Grid.ColumnSpan="3"></MenuItem>
             <MenuItem Header="Nutrition" Grid.ColumnSpan="3" IsChecked="True"></MenuItem>
-            
         </Menu>
-
+        <Label Grid.Column="4" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Right">Calories to Consume</Label>
+        <Label x:Name="lbl_CaloriesToConsume" Foreground="White" Grid.Column="4" VerticalAlignment="Bottom" HorizontalAlignment="Right">2000</Label>
+        <Label Foreground="White" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Proteins</Label>
+        <Label Foreground="White" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">Vegetables</Label>
+        <Label Foreground="White" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center">Fruits</Label>
+        <Label Foreground="White" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center">Alcohol</Label>
+        <Label Foreground="White" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center">Misc</Label>
+        <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" Margin="5, 10, 5, 10">
+            <ComboBoxItem>Chicken</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </UserControl>
