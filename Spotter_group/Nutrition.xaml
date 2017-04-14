@@ -30,8 +30,55 @@
         <Label Foreground="White" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center">Fruits</Label>
         <Label Foreground="White" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center">Alcohol</Label>
         <Label Foreground="White" Grid.Column="4" Grid.Row="1" VerticalAlignment="Center">Misc</Label>
-        <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" Margin="5, 10, 5, 10">
+        <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
             <ComboBoxItem>Chicken</ComboBoxItem>
+            <ComboBoxItem>Turkey</ComboBoxItem>
+            <ComboBoxItem>Pork</ComboBoxItem>
+            <ComboBoxItem>Meat</ComboBoxItem>
+            <ComboBoxItem>Fish</ComboBoxItem>
+            <ComboBoxItem>Eggs</ComboBoxItem>
+            <ComboBoxItem>Tofu</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="1" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Vegetables" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
+            <ComboBoxItem>Asparagus</ComboBoxItem>
+            <ComboBoxItem>Broccoli</ComboBoxItem>
+            <ComboBoxItem>Potato</ComboBoxItem>
+            <ComboBoxItem>Brussel Sprouts</ComboBoxItem>
+            <ComboBoxItem>Kale</ComboBoxItem>
+            <ComboBoxItem>Lettuce</ComboBoxItem>
+            <ComboBoxItem>Spinach</ComboBoxItem>
+            <ComboBoxItem>Beets</ComboBoxItem>
+            <ComboBoxItem>Carrotts</ComboBoxItem>
+            <ComboBoxItem>Califlower</ComboBoxItem>
+            <ComboBoxItem>Bell Pepper</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="2" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Fruits" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
+            <ComboBoxItem>Pinaple</ComboBoxItem>
+            <ComboBoxItem>Apple</ComboBoxItem>
+            <ComboBoxItem>Blueberry</ComboBoxItem>
+            <ComboBoxItem>Pear</ComboBoxItem>
+            <ComboBoxItem>Orange</ComboBoxItem>
+            <ComboBoxItem>Grapes</ComboBoxItem>
+            <ComboBoxItem>Grapefruit</ComboBoxItem>
+            <ComboBoxItem>Watermelon</ComboBoxItem>
+            <ComboBoxItem>Banana</ComboBoxItem>
+            <ComboBoxItem>Kiwi</ComboBoxItem>
+            <ComboBoxItem>Avocado</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="3" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Alcohol" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
+            <ComboBoxItem>Light Beer</ComboBoxItem>
+            <ComboBoxItem>Heavy Beer</ComboBoxItem>
+            <ComboBoxItem>Wine</ComboBoxItem>
+            <ComboBoxItem>Liquor</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="4" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Misc" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
+            <ComboBoxItem>Nuts</ComboBoxItem>
+            <ComboBoxItem>Bread</ComboBoxItem>
+            <ComboBoxItem>Whole Grain Cereal</ComboBoxItem>
+            <ComboBoxItem>Legumes</ComboBoxItem>
+            <ComboBoxItem>Beans</ComboBoxItem>
+            <ComboBoxItem>Oats</ComboBoxItem>
+            <ComboBoxItem>Rice</ComboBoxItem>
         </ComboBox>
     </Grid>
 </UserControl>
