@@ -69,21 +69,21 @@ namespace Spotter_group
 
         private void MenuItemWorkout_Click(object sender, RoutedEventArgs e)
         {
-            /*  I don't know why this isn't working
             Workout workout = new Workout();
             grid2.Children.Clear();
             grid2.Children.Add(workout);
-            */
         }
 
         private void MenuItemNutrition_Click(object sender, RoutedEventArgs e)
         {
-            /*  I don't know why this isn't working
             Nutrition nutrition = new Nutrition();
             grid2.Children.Clear();
             grid2.Children.Add(nutrition);
-            */
+        }
 
+        private void Details_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

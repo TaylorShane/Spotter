@@ -26,11 +26,10 @@
                 <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black" Click="MenuItemProfile_Click"/>
             </MenuItem>
             <MenuItem Header="Calendar" x:Name="MenuItemCalendar" Foreground="White" Click="MenuItemCalendar_Click"/>
-            <MenuItem Header="Details" Foreground="White">
+            <MenuItem Header="Details" x:Name="Details" Foreground="White" Click="Details_Click">
                 <MenuItem Header="Workout" x:Name="MenuItemWorkout" Foreground="Black" Click="MenuItemWorkout_Click"/>
                 <MenuItem Header="Nutrition" x:Name="MenuItemNutrition" Foreground="Black" Click="MenuItemNutrition_Click"/>
             </MenuItem>
-            <MenuItem Header="Calendar" Foreground="White"/>
             <MenuItem Header="Logout" Foreground="White"/>
         </Menu>
         <UserControl Margin="70,50,70,50"
