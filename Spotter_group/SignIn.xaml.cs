@@ -24,5 +24,11 @@ namespace Spotter_group
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SignIn signIn = new SignIn();
+            
+        }
     }
 }

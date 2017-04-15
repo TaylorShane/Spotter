@@ -7,6 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Label Foreground="Aqua">signin</Label>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <StackPanel Orientation="Vertical">
+                <Label Foreground ="#FFE0E0E0" Margin="10">Username:</Label>
+                <TextBox Grid.Column="0" Width="100" Height="20" Margin="1"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label Foreground ="#FFE0E0E0" Margin="10">Password: </Label>
+                <TextBox Grid.Column="0" Width="100" Height="20"></TextBox>
+            </StackPanel>
+            <Button Content="Submit!" Margin="30" Click="Button_Click"/>
+        </StackPanel>
+        <Image Grid.Column="1" Source="images/Icons/bench_press.png" />
     </Grid>
 </UserControl>
