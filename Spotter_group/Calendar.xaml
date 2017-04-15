@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
+    <Grid Height="299" Margin="0">
+        <Calendar Name="calendar" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                  Margin="20" SelectionMode="SingleRange" IsTodayHighlighted="True" 
+                  Background="#009999" BorderBrush="#666666" BorderThickness="5"
+                  Height="200" Width="200"/>
+
     </Grid>
 </UserControl>

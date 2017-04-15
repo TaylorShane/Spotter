@@ -1,0 +1,6 @@
+Colors Used
+
+Grey = #666666
+Teal = #009999
+Black = #000000
+White = #FFFFFF

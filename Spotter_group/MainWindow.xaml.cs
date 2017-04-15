@@ -59,5 +59,31 @@ namespace Spotter_group
             main.Show();
             this.Close();
         }
+
+        private void MenuItemCalendar_Click(object sender, RoutedEventArgs e)
+        {
+            Calendar calendar = new Calendar();
+            grid2.Children.Clear();
+            grid2.Children.Add(calendar);
+        }
+
+        private void MenuItemWorkout_Click(object sender, RoutedEventArgs e)
+        {
+            Workout workout = new Workout();
+            grid2.Children.Clear();
+            grid2.Children.Add(workout);
+        }
+
+        private void MenuItemNutrition_Click(object sender, RoutedEventArgs e)
+        {
+            Nutrition nutrition = new Nutrition();
+            grid2.Children.Clear();
+            grid2.Children.Add(nutrition);
+        }
+
+        private void Details_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

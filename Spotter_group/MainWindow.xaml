@@ -25,12 +25,11 @@
                 <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
                 <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black" Click="MenuItemProfile_Click"/>
             </MenuItem>
-            <MenuItem Header="Calendar" Foreground="White"/>
-            <MenuItem Header="Details" Foreground="White">
-                <MenuItem Header="Workout" Foreground="Black"/>
-                <MenuItem Header="Nutrition" Foreground="Black"/>
+            <MenuItem Header="Calendar" x:Name="MenuItemCalendar" Foreground="White" Click="MenuItemCalendar_Click"/>
+            <MenuItem Header="Details" x:Name="Details" Foreground="White" Click="Details_Click">
+                <MenuItem Header="Workout" x:Name="MenuItemWorkout" Foreground="Black" Click="MenuItemWorkout_Click"/>
+                <MenuItem Header="Nutrition" x:Name="MenuItemNutrition" Foreground="Black" Click="MenuItemNutrition_Click"/>
             </MenuItem>
-            <MenuItem Header="Calendar" Foreground="White"/>
             <MenuItem Header="Logout" Foreground="White"/>
         </Menu>
         <UserControl Margin="70,50,70,50"
@@ -48,7 +47,7 @@
                 </Grid.RowDefinitions>
                 <Button x:Name="btnSign_in" Grid.Row="1" Content="Sign In" Height="60" Width="125"/>
                 <Button x:Name="btnReg" Grid.Column="1" Grid.Row="1" Content="Register" Height="60" Width="125" Click="btnReg_Click"/>
-                <Image Name="imgMainWindowSplash"  Margin="30" Grid.ColumnSpan="2" Source="images/Graphics/blue boy lifter.png"></Image>
+                <Image Name="imgMainWindowSplash"  Margin="45" Grid.ColumnSpan="2" Source="images/Graphics/blue boy lifter.png"></Image>
             </Grid>
         </UserControl>
     </Grid>
