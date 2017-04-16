@@ -48,12 +48,12 @@
             <ComboBoxItem>Lettuce</ComboBoxItem>
             <ComboBoxItem>Spinach</ComboBoxItem>
             <ComboBoxItem>Beets</ComboBoxItem>
-            <ComboBoxItem>Carrotts</ComboBoxItem>
-            <ComboBoxItem>Califlower</ComboBoxItem>
+            <ComboBoxItem>Carrots</ComboBoxItem>
+            <ComboBoxItem>Cauliflower</ComboBoxItem>
             <ComboBoxItem>Bell Pepper</ComboBoxItem>
         </ComboBox>
         <ComboBox Grid.Column="2" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Fruits" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-            <ComboBoxItem>Pinaple</ComboBoxItem>
+            <ComboBoxItem>Pineapple</ComboBoxItem>
             <ComboBoxItem>Apple</ComboBoxItem>
             <ComboBoxItem>Blueberry</ComboBoxItem>
             <ComboBoxItem>Pear</ComboBoxItem>
