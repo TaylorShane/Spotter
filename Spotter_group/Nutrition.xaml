@@ -27,7 +27,7 @@
             <MenuItem Header="Nutrition" Name="menuNutrition" Grid.ColumnSpan="3" IsChecked="True" Click="menuNutrition_Click"></MenuItem>
         </Menu>
         -->
-        <StackPanel Margin="32,10,48,10" Grid.ColumnSpan="4">
+        <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="3">
             <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Calories to Consume</Label>
             <Label x:Name="lbl_CaloriesToConsume" Foreground="White" Grid.Column="4" HorizontalAlignment="Center" FontSize="30">2000</Label>
         </StackPanel>
