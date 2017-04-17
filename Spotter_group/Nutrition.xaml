@@ -25,9 +25,9 @@
             <MenuItem Header="Workout" Grid.ColumnSpan="3"></MenuItem>
             <MenuItem Header="Nutrition" Grid.ColumnSpan="3" IsChecked="True"></MenuItem>
         </Menu>
-        <StackPanel Grid.Column="4" Margin="10">
-            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Right">Calories to Consume</Label>
-            <Label x:Name="lbl_CaloriesToConsume" Foreground="White" Grid.Column="4" HorizontalAlignment="Right">2000</Label>
+        <StackPanel Grid.Column="1" Margin="10" Grid.ColumnSpan="3">
+            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Calories to Consume</Label>
+            <Label x:Name="lbl_CaloriesToConsume" Foreground="White" Grid.Column="4" HorizontalAlignment="Center" FontSize="30">2000</Label>
         </StackPanel>
         
         <Label Foreground="White" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Proteins</Label>
