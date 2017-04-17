@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <!-- Steve, you might want to insert content into stackpanels within the grid as I did on the Nutrition Page, Shane-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
@@ -16,10 +17,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
+        <!-- I'm not sure if we want to implement this.
         <Menu Grid.ColumnSpan="3" Margin="0,0,0,0" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left">
             <MenuItem Header="Workout" Grid.ColumnSpan="3" IsChecked="True"></MenuItem>
             <MenuItem Header="Nutrition" Grid.ColumnSpan="3"></MenuItem>
-
         </Menu>
+        -->
     </Grid>
 </UserControl>

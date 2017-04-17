@@ -24,5 +24,6 @@ namespace Spotter_group
         {
             InitializeComponent();
         }
+
     }
 }
