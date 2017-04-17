@@ -95,7 +95,7 @@
             <ComboBoxItem>Rice</ComboBoxItem>
             <ComboBoxItem>Other</ComboBoxItem>
         </ComboBox>
-        <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5" VerticalAlignment="Top">Enter Calories</Label>
+        <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
         <TextBox Grid.Column="4" Grid.Row="4" Height="20" Margin="5"></TextBox>
     </Grid>
 </UserControl>
