@@ -27,36 +27,47 @@ namespace Spotter_group
 
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
-            
-            string protein = cboBox_Proteins.Text;
-            int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
-            int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
-            int fruitsCalories = Convert.ToInt32(tboxFruitsCalories.Text);
-            int alcoholCalories = Convert.ToInt32(tboxAlcoholCalories.Text);
-            int miscCalories = Convert.ToInt32(tboxMiscCalories.Text);
-            int totalCalories = proteinCalories + veggieCalories + fruitsCalories + alcoholCalories + miscCalories;
-            txtBlock_CaloriesToConsume.Text = totalCalories.ToString();
-            string display = txtBlock_CaloriesToConsume.Text;
-
-
-            if (totalCalories < 1500){
-                txtBlock_CaloriesToConsume.Foreground = Brushes.Green;
-            }
-            else if (totalCalories >= 1800 && totalCalories < 2000)
+            try
             {
-                txtBlock_CaloriesToConsume.Foreground = Brushes.Yellow;
-            }
-            else if (totalCalories == 2000)
-            {
-                display = txtBlock_CaloriesToConsume.Text;
-                txtBlock_CaloriesToConsume.Foreground = Brushes.White;
-                txtBlock_CaloriesToConsume.Text = "Great! " + display+" calories";
-            }
-            else
-            {
-                txtBlock_CaloriesToConsume.Foreground = Brushes.Red; 
-            }
 
+                string protein = cboBox_Proteins.Text;
+                int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
+                int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
+                int fruitsCalories = Convert.ToInt32(tboxFruitsCalories.Text);
+                int alcoholCalories = Convert.ToInt32(tboxAlcoholCalories.Text);
+                int miscCalories = Convert.ToInt32(tboxMiscCalories.Text);
+                int totalCalories = proteinCalories + veggieCalories + fruitsCalories + alcoholCalories + miscCalories;
+                txtBlock_CaloriesToConsume.Text = totalCalories.ToString();
+                string display = txtBlock_CaloriesToConsume.Text;
+
+                var converter = new System.Windows.Media.BrushConverter();
+                var teal = (Brush)converter.ConvertFromString("#009999");
+
+                if (totalCalories < 1500)
+                {
+                    txtBlock_CaloriesToConsume.Foreground = Brushes.Green;
+                }
+                else if (totalCalories >= 1800 && totalCalories < 2000)
+                {
+                    txtBlock_CaloriesToConsume.Foreground = Brushes.Yellow;
+                }
+                else if (totalCalories == 2000)
+                {
+                    
+                    display = txtBlock_CaloriesToConsume.Text;
+                    
+                    txtBlock_CaloriesToConsume.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#009999")); ;
+                    txtBlock_CaloriesToConsume.Text = "Great! " + display + " calories";
+                }
+                else if(totalCalories > 2000)
+                {
+                    txtBlock_CaloriesToConsume.Foreground = Brushes.Red;
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Please enter a numeric value for each calorie count box");
+            }
 
         }
     }
