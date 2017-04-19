@@ -50,13 +50,14 @@ namespace Spotter_group
             {
                 display = txtBlock_CaloriesToConsume.Text;
                 txtBlock_CaloriesToConsume.Foreground = Brushes.White;
-                
                 txtBlock_CaloriesToConsume.Text = "Great! " + display+" calories";
             }
             else
             {
                 txtBlock_CaloriesToConsume.Foreground = Brushes.Red; 
             }
+
+
         }
     }
 }

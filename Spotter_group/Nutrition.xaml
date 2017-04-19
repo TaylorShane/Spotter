@@ -6,13 +6,13 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <!-- Not using at the moment 
+    <!-- Use this to bind to your user controls -->
     <UserControl.Resources>
         <XmlDataProvider Source="Data/Protein.xml"
                          XPath="protein_items"
                          x:Key="protein"/>
     </UserControl.Resources>
-    -->
+    
     <Grid Name="grid3">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />

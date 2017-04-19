@@ -3,3 +3,10 @@ Random bits of code
 Code for changing text color
 
 Label.Foreground = Brushes.Red;
+
+<!-- Use this to bind to your user controls -->
+    <UserControl.Resources>
+        <XmlDataProvider Source="Data/Protein.xml"
+                         XPath="protein_items"
+                         x:Key="protein"/>
+    </UserControl.Resources>
