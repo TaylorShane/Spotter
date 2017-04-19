@@ -38,10 +38,9 @@ namespace Spotter_group
 
 
             int totalCalories = proteinCalories + veggieCalories + fruitsCalories + alcoholCalories + miscCalories;
-
-
-            
             txtBlock_CaloriesToConsume.Text = totalCalories.ToString();
+            string display = txtBlock_CaloriesToConsume.Text;
+
 
             if (totalCalories < 1500){
                 txtBlock_CaloriesToConsume.Foreground = Brushes.Green;
@@ -52,8 +51,10 @@ namespace Spotter_group
             }
             else if (totalCalories == 2000)
             {
+                display = txtBlock_CaloriesToConsume.Text;
                 txtBlock_CaloriesToConsume.Foreground = Brushes.White;
-                txtBlock_CaloriesToConsume.Text = "Great 2000 calories!";
+                
+                txtBlock_CaloriesToConsume.Text = "Great! " + display+" calories";
             }
             else
             {

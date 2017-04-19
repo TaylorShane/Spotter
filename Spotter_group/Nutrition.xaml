@@ -124,6 +124,6 @@
             <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxMiscCalories" Grid.Column="4" Grid.Row="4" Height="20" Margin="5">0</TextBox>
         </StackPanel>
-        <Button Name="btnSaveMeal" Grid.Column="2" Grid.Row="3" Margin="15" Click="btnSaveMeal_Click">Save Meal</Button>
+        <Button Name="btnSaveMeal" Grid.Column="2" Grid.Row="3" Margin="15" Click="btnSaveMeal_Click">Calculate Calories</Button>
     </Grid>
 </UserControl>
