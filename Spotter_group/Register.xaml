@@ -58,5 +58,6 @@
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="200px" Width="200px"/>
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="200px" Width="200px"/>
         </StackPanel>
+        
     </Grid>
 </UserControl>
