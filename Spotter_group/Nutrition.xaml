@@ -5,14 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="300"
+             >
     <!-- Use this to bind to your user controls -->
     <UserControl.Resources>
-        <XmlDataProvider Source="Data/Protein.xml"
-                         XPath="protein_items"
-                         x:Key="protein"/>
+        <XmlDataProvider Source="Data/Food.xml"
+                         XPath="food_items"
+                         x:Key="food"/>
     </UserControl.Resources>
-    
+
     <Grid Name="gridNutrition">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -22,7 +23,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
@@ -35,7 +36,7 @@
         -->
         <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="5">
             <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Calories to Consume</Label>
-            <TextBlock x:Name="txtBlock_CaloriesToConsume" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" ToolTip="2000" Margin="-44,0,-45,0"/>
+            <TextBlock x:Name="txtBlock_CaloriesToConsume" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>
         </StackPanel>
 
         <Label Foreground="White" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Proteins</Label>
@@ -47,14 +48,7 @@
         <StackPanel Grid.Row="2" Grid.Column="0" Margin="10,0">
             <Label Foreground="White">Select a Protein</Label>
             <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-                <ComboBoxItem>Chicken</ComboBoxItem>
-                <ComboBoxItem>Turkey</ComboBoxItem>
-                <ComboBoxItem>Pork</ComboBoxItem>
-                <ComboBoxItem>Meat</ComboBoxItem>
-                <ComboBoxItem>Fish</ComboBoxItem>
-                <ComboBoxItem>Eggs</ComboBoxItem>
-                <ComboBoxItem>Tofu</ComboBoxItem>
-                <ComboBoxItem>Other</ComboBoxItem>
+                
             </ComboBox>
             <Label Foreground="White" Grid.Column="0" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5">0</TextBox>

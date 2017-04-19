@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<food_items>
+  <food name="Chicken" calories="142" type="protein"/>
+  <food name="Turkey" calories="153" type="protein"/>
+  <food name="Pork" calories="268" type="protein"/>
+  <food name="Meat" calories="240" type="protein"/>
+  <food name="Fish" calories="145" type="protein"/>
+  <food name="Eggs" calories="240" type="protein"/>
+  <food name="Tofu" calories="70" type="protein"/>
+  <food name="Other" calories="" type="protein"/>
+
+  <food name="Asparagus" calories="" type="veggie"/>
+  <food name="Broccoli" calories="" type="veggie"/>
+  <food name="Potato" calories="" type="veggie"/>
+  <food name="Brussel Sprouts" calories="" type="veggie"/>
+  <food name="Kale" calories="" type="veggie"/>
+  <food name="Lettuce" calories="" type="veggie"/>
+  <food name="Spinach" calories="" type="veggie"/>
+  <food name="Beets" calories="" type="veggie"/>
+  <food name="Carrots" calories="" type="veggie"/>
+  <food name="Cauliflower" calories="" type="veggie"/>
+  <food name="Bell Pepper" calories="" type="veggie"/>
+  <food name="Other" calories="" type="veggie"/>
+  
+  <food name="Pineapple" calories="" type="fruits"/>
+  <food name="Apple" calories="" type="fruits"/>
+  <food name="Blueberry" calories="" type="fruits"/>
+  <food name="Pear" calories="" type="fruits"/>
+  <food name="Orange" calories="" type="fruits"/>
+  <food name="Grapes" calories="" type="fruits"/>
+  <food name="Grapefruit" calories="" type="fruits"/>
+  <food name="Watermelon" calories="" type="fruits"/>
+  <food name="Banana" calories="" type="fruits"/>
+  <food name="Kiwi" calories="" type="fruits"/>
+  <food name="Avocado" calories="" type="fruits"/>
+  <food name="Other" calories="" type="fruits"/>
+  
+  <food name="Beer" calories="" type="alcohol"/>
+  <food name="Wine" calories="" type="alcohol"/>
+  <food name="Liquor" calories="" type="alcohol"/>
+  <food name="Other" calories="" type="alcohol"/>
+  
+  <food name="Nuts" calories="" type="misc"/>
+  <food name="Bread" calories="" type="misc"/>
+  <food name="Whole Grain Cereal" calories="" type="misc"/>
+  <food name="Legumes" calories="" type="misc"/>
+  <food name="Beans" calories="" type="misc"/>
+  <food name="Oats" calories="" type="misc"/>
+  <food name="Rice" calories="" type="misc"/>
+  <food name="Other" calories="" type="misc"/>  
+</food_items>
