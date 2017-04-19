@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <protein_items>
-  <food name="" calories=""/>
-  <food name="" calories=""/>
+  <food name="Chicken" calories="142"/>
+  <food name="Turkey" calories="153"/>
+  <food name="Pork" calories="268"/>
+  <food name="Meat" calories="240"/>
+  <food name="Fish" calories="145"/>
+  <food name="Eggs" calories="240"/>
+  <food name="Tofu" calories="70"/>
 </protein_items>
