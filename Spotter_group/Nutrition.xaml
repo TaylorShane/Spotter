@@ -13,7 +13,7 @@
                          x:Key="protein"/>
     </UserControl.Resources>
     
-    <Grid Name="grid3">
+    <Grid Name="gridNutrition">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />

@@ -6,7 +6,26 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+    <!-- Use this to bind to your user controls -->
+    <UserControl.Resources>
+        <XmlDataProvider Source="Data/workouts.xml"
+                         XPath="protein_items"
+                         x:Key="protein"/>
+    </UserControl.Resources>
+    <Grid Name="gridAdmin">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
             
     </Grid>
 </UserControl>

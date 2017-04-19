@@ -212,7 +212,9 @@
   <ItemGroup>
     <Resource Include="Documentation\XML Update Delete Insert Code.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Data\Exercises.xml" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Protein.xml" />
   </ItemGroup>
