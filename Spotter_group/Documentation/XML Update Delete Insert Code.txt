@@ -1,0 +1,93 @@
+XML Update Delete Insert Code
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Xml.Linq;
+
+namespace _20170417_XML_UpdDellns
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        int Id = 0;
+
+        string path = @"C:\Users\xbox_000\Google Drive\NEIU\2017 Spring\CS317 Event Driven Prog\Visual Basic\20170417_XML_UpdDellns\20170417_XML_UpdDellns\Data\StudentData.xml";
+
+        private void btmAdd_Click(object sender, RoutedEventArgs e)
+        {
+            string name = txtName.Text;
+            string lastName = txtLastName.Text;
+            string grade = txtGrade.Text;
+
+            try
+            {
+                XDocument xmlDocument = XDocument.Load(path);
+
+                xmlDocument.Element("Students").Add(//AddFirst()
+                    new XElement("Student", new XAttribute("Id", Id),
+                    new XElement("Name", name),
+                    new XElement("LastName", lastName),
+                    new XElement("Grade", grade))
+                );
+
+                xmlDocument.Save(path);
+                Id++;
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show("XML file does not exist");
+            }
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            
+            XDocument xmlDocument = XDocument.Load(path);
+
+            xmlDocument.Element("Students")
+                .Elements("Student")
+                .Where(x => x.Attribute("Id").Value == txtId.Text).FirstOrDefault()
+                .SetElementValue("Grade", txtUpdateGrade.Text);
+
+            xmlDocument.Save(path);
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            XDocument xmlDocument = XDocument.Load(path);
+
+            xmlDocument.Root.Elements()
+                .Where(x => x.Attribute("Id").Value == txtId.Text)
+                .Remove();
+
+            xmlDocument.Save(path);
+
+        }
+
+        private void btnDeleteAll_Click(object sender, RoutedEventArgs e)
+        {
+            XDocument xmlDocument = XDocument.Load(path);
+            xmlDocument.Root.Elements().Remove();
+            xmlDocument.Save(path);
+        }
+    }
+}
