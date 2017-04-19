@@ -30,7 +30,14 @@ namespace Spotter_group
             
             string protein = cboBox_Proteins.Text;
             int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
-            int totalCalories = proteinCalories + 0;
+            int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
+            int fruitsCalories = Convert.ToInt32(tboxFruitsCalories.Text);
+            int alcoholCalories = Convert.ToInt32(tboxAlcoholCalories.Text);
+            int miscCalories = Convert.ToInt32(tboxMiscCalories.Text);
+
+
+            int totalCalories = proteinCalories + veggieCalories + fruitsCalories + alcoholCalories + miscCalories;
+
 
             // What is wrong here?
             lbl_CaloriesToConsume.Text = totalCalories.ToString();
@@ -50,7 +57,6 @@ namespace Spotter_group
             {
                 lbl_CaloriesToConsume.Foreground = Brushes.Red;
             }
-
         }
     }
 }

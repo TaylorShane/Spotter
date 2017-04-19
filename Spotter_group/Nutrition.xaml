@@ -35,7 +35,7 @@
         -->
         <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="3">
             <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Calories to Consume</Label>
-            <Label x:Name="lbl_CaloriesToConsume" Foreground="White" Grid.Column="4" HorizontalAlignment="Center" FontSize="30" ToolTip="2000"></Label>
+            <TextBlock x:Name="lbl_CaloriesToConsume" Foreground="White" HorizontalAlignment="Center" FontSize="30" ToolTip="2000" Width="100" Height="41"/>
         </StackPanel>
 
         <Label Foreground="White" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Proteins</Label>
@@ -124,6 +124,6 @@
             <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxMiscCalories" Grid.Column="4" Grid.Row="4" Height="20" Margin="5"></TextBox>
         </StackPanel>
-        <Button Name="btnSaveMeal" Grid.Column="1" Grid.Row="4" Grid.RowSpan="3" Click="btnSaveMeal_Click"></Button>
+        <Button Name="btnSaveMeal" Grid.Column="2" Grid.Row="3" Margin="15" Click="btnSaveMeal_Click">Save Meal</Button>
     </Grid>
 </UserControl>
