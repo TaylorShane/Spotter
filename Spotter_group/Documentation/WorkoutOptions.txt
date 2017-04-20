@@ -5,9 +5,9 @@
                                 1 set, 10 reps, no weight, only bar
                 Back and Shoulders
                         Machine Lateral Pull-down
-                                1 set, 10 reps, 10 lbs
+                                1 set, 10 reps, 20% 1 rep max
                         Shoulder Press
-                                1 set 10 reps, 5 lbs
+                                1 set 10 reps, 20$ 1 rep max
                 Legs
                         Bodyweight Squats
                                 1 set, 10 reps, no weight
@@ -15,10 +15,10 @@
                                 1 set, 6 reps, bodyweight
                 Arms
                         Tricep Extensions
-                                1 set, 10 sets, 5 lbs
+                                1 set, 10 sets, 20% 1 rep max
                 Core
                         Ab crunch machine
-                                1 set, 10 reps, 10 lbs
+                                1 set, 10 reps, 20% 1 rep max
                         Plank
                                 1 set, 30 seconds
 								
@@ -29,118 +29,158 @@
                                 1 set, 10 reps, no weight, only bar
                 Back and Shoulders
                         Machine Lateral Pull-down
-                                1 set, 10 reps, 10 lbs
+                                1 set, 10 reps, 30% 1 rep max
                         Shoulder Press
-                                1 set 10 reps, 5 lbs
+                                1 set 10 reps, 30% 1 rep max
                 Legs
                         Bodyweight Squats
-                                1 set, 10 reps, no weight
+                                1 set, 10 reps, with bar
                         Single Leg Calf Raise
                                 1 set, 6 reps, bodyweight
                 Arms
                         Tricep Extensions
-                                1 set, 10 sets, 5 lbs
+                                1 set, 10 sets, 30% 1 rep max
                 Core
                         Ab crunch on ball
                                 1 set, 10 reps, no weight
                         Plank
-                                1 set, 30 seconds
+                                1 set, 60 seconds
 
 
 Gain muscle
         Version 1
                 Chest
-						Barbell
-
+						Barbell Bench Press
+								2 sets, 6 reps, 80% 1 rep max
+						Dumbbell Flye
+								2 sets, 6 reps, 80% 1 rep max
                 Back and Shoulders
-
-
-                
+						Barbell Bent-over row
+								2 sets, 8 reps, 80% 1 rep max
+						Seated Reverse Flye
+								2 sets, 8 reps, 80% 1 rep max
                 Legs
-
-
+						Alternating Dumbbell Lunge
+								1 set, 20 reps each legs, no weight
+						Barbell Squats
+								2 sets, 6 reps, 40% 1 rep max
                 Arms
-
+						Bicep Curls
+								1 set, 8 reps, 60% 1 rep max
+						Tricep Extensions
+								1 set, 8 reps, 60% 1 rep max 
+				Core
+						Crunch Twist
+								1 set, 10 reps								
+						V-Up
+								1 set, 10 reps
 
         Version 2
-Chest
-
-
+                Chest
+						Incline Barbell Bench Press
+								2 set, 6 reps, 80% 1 rep max
+						Dumbbell Flye
+								2 set, 6 reps, 80% 1 rep max
                 Back and Shoulders
-
-
-                
+						Machine Lateral Pull-down
+								2 set, 8 reps, 80% 1 rep max
+						Shoulder Press
+								2 set, 8 reps, 80% 1 rep max
+						Kettlebell high pull
+								1 set, 10 reps, 60% 1 rep max
                 Legs
-
-
+						Deadlift
+								1 set, 20 reps each legs, 40% 1 rep max
+						Barbell Squats
+								2 sets, 6 reps, 40% 1 rep max
                 Arms
+						Tricep Dips
+								2 sets, 12 reps, no weights
+				Core
+						Crunch Twist
+								1 set, 10 reps								
+						V-Up
+								1 set, 10 reps
 
 
 
-
-Increase cardiovascular 
+Increase Cardiovascular Endurance
         Version 1
-Chest
-
-
-                Back and Shoulders
-
-
-                
-                Legs
-
-
-                Arms
-
-
+				Whole Body
+						Jumping Jacks
+								2 sets, 60 seconds
+						Speed Walking
+								2 miles
+						Stairs
+								15 minutes
+						Cyling
+								10 minutes
 
 
         Version 2
-Chest
-
-
-                Back and Shoulders
-
-
-                
-                Legs
-
-
-                Arms
-
-
-
-
+				Whole Body
+						Jumping Jacks
+								3 sets, 60 seconds
+						Jogging
+								3 miles
+						Stairs
+								20 minutes
+						Cycling
+								15 minutes
 Tone up
         Version 1
-Chest
-
+				Chest
+						Chest Press
+								2 sets, 8 reps, 40% 1 rep max
+						Incline Chest Press
+								1 set, 8 reps, 40% 1 rep max
+						Dumbbel Flye
+								2 sets, 8 reps, 40% 1 rep max
 
                 Back and Shoulders
-
-
+						Cable Shrug
+								2 sets, 8 reps, 40% 1 rep max
+						Dumbbell Lateral Raise
+								2 sets, 8 reps, 40% 1 rep max
+						One-arm Row
+								2 sets, 8 reps, 40% 1 rep max
                 
                 Legs
-
+						Back Squat
+								1 set, 15 reps, only bar
+						Alternating Lunge Jumps
+								2 sets, 15 reps each side
 
                 Arms
-
-
-
-
-
-
+						Dumbbell Reverse Curl
+								1 set, 15 reps, 40% 1 rep max
 
 
         Version 2
-Chest
-
+				Chest
+						Barbell Chest Press
+								2 sets, 8 reps, 50% 1 rep max
+						Decline Chest Press
+								1 set, 8 reps, 50% 1 rep max
+						Dumbbel Flye
+								2 sets, 8 reps, 50% 1 rep max
 
                 Back and Shoulders
-
-
+						Cable Shrug
+								2 sets, 8 reps, 50% 1 rep max
+						Cable Straight arm pull-down
+								2 sets, 8 reps, 50% 1 rep max
+						Seated Reverse Fly
+								2 sets, 8 reps, 50% 1 rep max
                 
                 Legs
-
+						Front Squat
+								1 set, 15 reps, only bar
+						Alternating Lunge Jumps
+								2 sets, 15 reps each side
 
                 Arms
+						Dumbbell Reverse Curl
+								1 set, 15 reps, 40% 1 rep max
+						Hammer Curl
+								1 set, 10 reps, 40% 1 rep max
