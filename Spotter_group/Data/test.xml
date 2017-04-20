@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+<breakfast_menu>
+  <food name="Waffles" price="$5.95" description="Belgian waffles with real maple syrup" calories="650"/>
+  <food name="Eggs" price="$3.95" description="Two eggs any style with toast and seitan bacon" calories="500"/>
+</breakfast_menu>
+-->
+<breakfast_menu>
+  <food>
+    <name>Waffles</name>
+    <price>$5.95</price>
+    <description>Belgian waffles with real maple syrup</description>
+    <calories>650</calories>
+  </food>
+  <food>
+    <name>Eggs</name>
+    <price>$3.95</price>
+    <description>Two eggs any style with toast and seitan bacon</description>
+    <calories>650</calories>
+  </food>
+  <food>
+    <name>Vegan Steak and Eggs</name>
+    <price>$15.95</price>
+    <description>Seitan stake and gracy with Two eggs any style, toast, and seitan sausage</description>
+    <calories>950</calories>
+  </food>
+</breakfast_menu>

@@ -47,8 +47,11 @@
 
         <StackPanel Grid.Row="2" Grid.Column="0" Margin="10,0">
             <Label Foreground="White">Select a Protein</Label>
-            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
+            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" 
+                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
+                      ItemsSource="{Binding Source={StaticResource food}, XPath=*}" DisplayMemberPath="name">
                 
+               
             </ComboBox>
             <Label Foreground="White" Grid.Column="0" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -56,18 +59,7 @@
         <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,0">
             <Label Foreground="White">Select a Vegetable</Label>
             <ComboBox Grid.Column="1" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Vegetables" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-                <ComboBoxItem>Asparagus</ComboBoxItem>
-                <ComboBoxItem>Broccoli</ComboBoxItem>
-                <ComboBoxItem>Potato</ComboBoxItem>
-                <ComboBoxItem>Brussel Sprouts</ComboBoxItem>
-                <ComboBoxItem>Kale</ComboBoxItem>
-                <ComboBoxItem>Lettuce</ComboBoxItem>
-                <ComboBoxItem>Spinach</ComboBoxItem>
-                <ComboBoxItem>Beets</ComboBoxItem>
-                <ComboBoxItem>Carrots</ComboBoxItem>
-                <ComboBoxItem>Cauliflower</ComboBoxItem>
-                <ComboBoxItem>Bell Pepper</ComboBoxItem>
-                <ComboBoxItem>Other</ComboBoxItem>
+                
             </ComboBox>
             <Label Foreground="White" Grid.Column="1" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxVeggieCalories" Grid.Column="1" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -75,18 +67,7 @@
         <StackPanel Grid.Row="2" Grid.Column="2" Margin="10,0">
             <Label Foreground="White">Select a Fruit</Label>
             <ComboBox Grid.Column="2" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Fruits" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-                <ComboBoxItem>Pineapple</ComboBoxItem>
-                <ComboBoxItem>Apple</ComboBoxItem>
-                <ComboBoxItem>Blueberry</ComboBoxItem>
-                <ComboBoxItem>Pear</ComboBoxItem>
-                <ComboBoxItem>Orange</ComboBoxItem>
-                <ComboBoxItem>Grapes</ComboBoxItem>
-                <ComboBoxItem>Grapefruit</ComboBoxItem>
-                <ComboBoxItem>Watermelon</ComboBoxItem>
-                <ComboBoxItem>Banana</ComboBoxItem>
-                <ComboBoxItem>Kiwi</ComboBoxItem>
-                <ComboBoxItem>Avocado</ComboBoxItem>
-                <ComboBoxItem>Other</ComboBoxItem>
+                
             </ComboBox>
             <Label Foreground="White" Grid.Column="2" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxFruitsCalories" Grid.Column="2" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -94,11 +75,7 @@
         <StackPanel Grid.Row="2" Grid.Column="3" Margin="10,0">
             <Label Foreground="White">Select an Alcohol</Label>
             <ComboBox Grid.Column="3" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Alcohol" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-                <ComboBoxItem>Light Beer</ComboBoxItem>
-                <ComboBoxItem>Heavy Beer</ComboBoxItem>
-                <ComboBoxItem>Wine</ComboBoxItem>
-                <ComboBoxItem>Liquor</ComboBoxItem>
-                <ComboBoxItem>Other</ComboBoxItem>
+                
             </ComboBox>
             <Label Foreground="White" Grid.Column="3" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxAlcoholCalories" Grid.Column="3" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -106,14 +83,7 @@
         <StackPanel Grid.Row="2" Grid.Column="4" Margin="10,0">
             <Label Foreground="White">Select other</Label>
             <ComboBox Grid.Column="4" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Misc" Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top">
-                <ComboBoxItem>Nuts</ComboBoxItem>
-                <ComboBoxItem>Bread</ComboBoxItem>
-                <ComboBoxItem>Whole Grain Cereal</ComboBoxItem>
-                <ComboBoxItem>Legumes</ComboBoxItem>
-                <ComboBoxItem>Beans</ComboBoxItem>
-                <ComboBoxItem>Oats</ComboBoxItem>
-                <ComboBoxItem>Rice</ComboBoxItem>
-                <ComboBoxItem>Other</ComboBoxItem>
+                
             </ComboBox>
             <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxMiscCalories" Grid.Column="4" Grid.Row="4" Height="20" Margin="5">0</TextBox>

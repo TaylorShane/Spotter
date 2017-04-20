@@ -25,6 +25,9 @@ namespace Spotter_group
             InitializeComponent();
         }
 
+       
+
+
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
             try
