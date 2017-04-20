@@ -1,79 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Exercises>
-  <workout id="0">
-    <name>Walk</name>
-    <details>1 mile</details>
-    <type>cardio</type>
+  <workout id="lWv1">
+    <muscle>Chest</muscle>
+    <name>Barbell Bench Press</name>
+    <details>1 set, 10 reps no weight, only bar</details>
   </workout>
-  <workout id="1">
-    <name>Jog</name>
-    <details>1 mile</details>
-    <type>cardio</type>
+  <workout id="lWv1">
+    <muscle>Back and Shoulders</muscle>
+    <name>Machine Lateral Pulldown</name>
+    <details>1 set, 10 reps, 10lbs </details>
   </workout>
-  <workout id="2">
-    <name>Run</name>
-    <details>1 mile</details>
-    <type>cardio</type>
+   <workout id="lWv1">
+    <muscle>Back and Shoulders</muscle>
+    <name>Shoulder Press</name>
+    <details>1 set, 10 reps, 5lbs</details>
   </workout>
-  <workout id="3">
-    <name>Hike</name>
-    <details>1 mile</details>
-    <type>cardio</type>
+   <workout id="lWv1">
+    <muscle>Legs</muscle>
+    <name>BodyWeight Squats</name>
+    <details>1 set, 10 reps, 10lbs </details>
   </workout>
-  <workout id="4">
-    <name>Swim</name>
-    <details>1/4 mile</details>
-    <type>cardio</type>
+  <workout id="lWv1">
+    <muscle>Legs</muscle>
+    <name>Single Leg Calf Raise</name>
+    <details>1 set, 10 reps, 10lbs </details>
   </workout>
-  <workout id="5">
-    <name>cycle</name>
-    <details>20 minutes</details>
-    <type>Cardio</type>
+  <workout id="lWv1">
+    <muscle>Arms</muscle>
+    <name>Tricept Extensions</name>
+    <details>1 set, 10 reps, 5lbs </details>
   </workout>
-  <workout id="6">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="lWv1">
+    <muscle>Core</muscle>
+    <name>Ab Crunch Machine</name>
+    <details>1 set, 10 reps, 10lbs </details>
   </workout>
-  <workout id="7">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="lWv1">
+    <muscle>Core</muscle>
+    <name>Plank</name>
+    <details>1 set, 30 seconds </details>
   </workout>
-  <workout id="8">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="lWv2">
+    <muscle>Chest</muscle>
+    <name>Barbell Bench Press</name>
+    <details>1 set, 10 reps, no weight, only bar </details>
   </workout>
-  <workout id="9">
-    <name></name>
-    <details></details>
-    <type></type>
+    <workout id="lWv2">
+    <muscle>Back and Shoulders</muscle>
+    <name>Machine Lateral Pulldown</name>
+    <details>1 set, 10 reps, 10lbs </details>
   </workout>
-  <workout id="10">
-    <name></name>
-    <details></details>
-    <type></type>
+     <workout id="lWv2">
+    <muscle>Back and Shoulders</muscle>
+    <name>Shoulder Press</name>
+    <details>1 set, 10 reps, 5lbs </details>
   </workout>
-  <workout id="11">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="lWv2">
+    <muscle>Legs</muscle>
+    <name>Bodyweight Squats</name>
+    <details>1 set, 10 reps, no weight</details>
   </workout>
-  <workout id="12">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="lWv2">
+    <muscle>Legs</muscle>
+    <name>Single Leg Calf Raise</name>
+    <details>1 set, 6 reps, bodyweight</details>
   </workout>
-  <workout id="14">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="lWv2">
+    <muscle>Arms</muscle>
+    <name>Tricep Extensions</name>
+    <details>1 set, 10 sets, 5lbs</details>
   </workout>
-  <workout id="15">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="lWv2">
+    <muscle>Core</muscle>
+    <name>Ab Crunch on Ball</name>
+    <details>1 set, 10 reps, no weight</details>
+  </workout>
+    <workout id="lWv2">
+    <muscle>Core</muscle>
+    <name>Plank</name>
+    <details>1 set, 30 seconds</details>
   </workout>
   <workout id="16">
     <name></name>

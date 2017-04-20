@@ -23,5 +23,10 @@
             <MenuItem Header="Nutrition" Grid.ColumnSpan="3"></MenuItem>
         </Menu>
         -->
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Label>Label 1</Label>
+            <TextBlock>Nutrition 2</TextBlock>
+        </StackPanel>
     </Grid>
 </UserControl>
