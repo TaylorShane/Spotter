@@ -2,7 +2,9 @@ Random bits of code
 
 Code for changing text color
 
+// change color of text programatically
 Label.Foreground = Brushes.Red;
+
 
 <!-- Use this to bind to your user controls -->
     <UserControl.Resources>

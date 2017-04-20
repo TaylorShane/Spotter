@@ -1,51 +1,267 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <food_items>
-  <food name="Chicken" calories="142" type="protein"/>
-  <food name="Turkey" calories="153" type="protein"/>
-  <food name="Pork" calories="268" type="protein"/>
-  <food name="Meat" calories="240" type="protein"/>
-  <food name="Fish" calories="145" type="protein"/>
-  <food name="Eggs" calories="240" type="protein"/>
-  <food name="Tofu" calories="70" type="protein"/>
-  <food name="Other" calories="" type="protein"/>
+  <food>
+    <protein>
+      <name>Chicken</name>
+      <calories>142</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Turkey</name>
+      <calories>153</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Pork</name>
+      <calories>268</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Meat</name>
+      <calories>240</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Fish</name>
+      <calories>145</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Eggs</name>
+      <calories>240</calories>
+    </protein>
+  </food>
+  <food>
+    <protein>
+      <name>Tofu</name>
+      <calories>70</calories>
+    </protein>
+  </food>
+  
+  <food>
+    <veggie>
+      <name>Asparagus</name>
+      <calories></calories>
+    </veggie>
+  </food>
 
-  <food name="Asparagus" calories="" type="veggie"/>
-  <food name="Broccoli" calories="" type="veggie"/>
-  <food name="Potato" calories="" type="veggie"/>
-  <food name="Brussel Sprouts" calories="" type="veggie"/>
-  <food name="Kale" calories="" type="veggie"/>
-  <food name="Lettuce" calories="" type="veggie"/>
-  <food name="Spinach" calories="" type="veggie"/>
-  <food name="Beets" calories="" type="veggie"/>
-  <food name="Carrots" calories="" type="veggie"/>
-  <food name="Cauliflower" calories="" type="veggie"/>
-  <food name="Bell Pepper" calories="" type="veggie"/>
-  <food name="Other" calories="" type="veggie"/>
-  
-  <food name="Pineapple" calories="" type="fruits"/>
-  <food name="Apple" calories="" type="fruits"/>
-  <food name="Blueberry" calories="" type="fruits"/>
-  <food name="Pear" calories="" type="fruits"/>
-  <food name="Orange" calories="" type="fruits"/>
-  <food name="Grapes" calories="" type="fruits"/>
-  <food name="Grapefruit" calories="" type="fruits"/>
-  <food name="Watermelon" calories="" type="fruits"/>
-  <food name="Banana" calories="" type="fruits"/>
-  <food name="Kiwi" calories="" type="fruits"/>
-  <food name="Avocado" calories="" type="fruits"/>
-  <food name="Other" calories="" type="fruits"/>
-  
-  <food name="Beer" calories="" type="alcohol"/>
-  <food name="Wine" calories="" type="alcohol"/>
-  <food name="Liquor" calories="" type="alcohol"/>
-  <food name="Other" calories="" type="alcohol"/>
-  
-  <food name="Nuts" calories="" type="misc"/>
-  <food name="Bread" calories="" type="misc"/>
-  <food name="Whole Grain Cereal" calories="" type="misc"/>
-  <food name="Legumes" calories="" type="misc"/>
-  <food name="Beans" calories="" type="misc"/>
-  <food name="Oats" calories="" type="misc"/>
-  <food name="Rice" calories="" type="misc"/>
-  <food name="Other" calories="" type="misc"/>  
+  <food>
+    <veggie>
+      <name>Broccoli</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Potato</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Brussel Sprouts</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Kale</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Beets</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Lettuce</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Spinach</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Carrots</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Cauliflower</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Bell Pepper</name>
+      <calories></calories>
+    </veggie>
+  </food>
+  <food>
+    <veggie>
+      <name>Other</name>
+      <calories></calories>
+    </veggie>
+  </food>
+
+  <food>
+    <fruit>
+      <name>Pineapple</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Apple</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Blueberry</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Pear</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Orange</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Grapes</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Grapefruit</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Watermelon</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Banana</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Kiwi</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Banana</name>
+      <calories></calories>
+    </fruit>
+  </food>
+  <food>
+    <fruit>
+      <name>Other</name>
+      <calories></calories>
+    </fruit>
+  </food>
+
+  <food>
+    <alcohol>
+      <name>Beer</name>
+      <calories></calories>
+    </alcohol>
+  </food>
+  <food>
+    <alcohol>
+      <name>Wine</name>
+      <calories></calories>
+    </alcohol>
+  </food>
+  <food>
+    <alcohol>
+      <name>Liquor</name>
+      <calories></calories>
+    </alcohol>
+  </food>
+  <food>
+    <alcohol>
+      <name>Other</name>
+      <calories></calories>
+    </alcohol>
+  </food>
+
+
+  <food>
+    <misc>
+      <name>Nuts</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Bread</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Whole Grain Cereal</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Legumes</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Beans</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Oats</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Rice</name>
+      <calories></calories>
+    </misc>
+  </food>
+  <food>
+    <misc>
+      <name>Other</name>
+      <calories></calories>
+    </misc>
+  </food> 
 </food_items>
