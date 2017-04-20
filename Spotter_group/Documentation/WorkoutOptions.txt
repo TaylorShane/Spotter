@@ -86,6 +86,8 @@ Gain muscle
 								2 set, 8 reps, 80% 1 rep max
 						Shoulder Press
 								2 set, 8 reps, 80% 1 rep max
+						Kettlebell high pull
+								1 set, 10 reps, 60% 1 rep max
                 Legs
 						Deadlift
 								1 set, 20 reps each legs, 40% 1 rep max
@@ -138,33 +140,57 @@ Increase cardiovascular
 Tone up
         Version 1
 				Chest
-
+						Chest Press
+								2 sets, 8 reps, 40% 1 rep max
+						Incline Chest Press
+								1 set, 8 reps, 40% 1 rep max
+						Dumbbel Flye
+								2 sets, 8 reps, 40% 1 rep max
 
                 Back and Shoulders
-
-
+						Cable Shrug
+								2 sets, 8 reps, 40% 1 rep max
+						Dumbbell Lateral Raise
+								2 sets, 8 reps, 40% 1 rep max
+						One-arm Row
+								2 sets, 8 reps, 40% 1 rep max
                 
                 Legs
-
+						Back Squat
+								1 set, 15 reps, only bar
+						Alternating Lunge Jumps
+								2 sets, 15 reps each side
 
                 Arms
-
-
-
-
-
-
+						Dumbbell Reverse Curl
+								1 set, 15 reps, 40% 1 rep max
 
 
         Version 2
 				Chest
-
+						Barbell Chest Press
+								2 sets, 8 reps, 50% 1 rep max
+						Decline Chest Press
+								1 set, 8 reps, 50% 1 rep max
+						Dumbbel Flye
+								2 sets, 8 reps, 50% 1 rep max
 
                 Back and Shoulders
-
-
+						Cable Shrug
+								2 sets, 8 reps, 50% 1 rep max
+						Cable Straight arm pull-down
+								2 sets, 8 reps, 50% 1 rep max
+						Seated Reverse Fly
+								2 sets, 8 reps, 50% 1 rep max
                 
                 Legs
-
+						Front Squat
+								1 set, 15 reps, only bar
+						Alternating Lunge Jumps
+								2 sets, 15 reps each side
 
                 Arms
+						Dumbbell Reverse Curl
+								1 set, 15 reps, 40% 1 rep max
+						Hammer Curl
+								1 set, 10 reps, 40% 1 rep max
