@@ -14,10 +14,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="0">
@@ -50,14 +51,42 @@
             <DatePicker Name="tbStartDate" Width="100" HorizontalAlignment="Left"></DatePicker>
 
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2">
-            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center">Character Transformation</Label>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="4">
+            <Label Foreground="#FFE0E0E0" FontSize="20px" HorizontalAlignment="Center" VerticalAlignment="Center">Character Transformation</Label>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
-            <Label Foreground="#FFE0E0E0" HorizontalContentAlignment="Center">Fat to Fit</Label>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="200px" Width="200px"/>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="200px" Width="200px"/>
+        <StackPanel Grid.Column="0" Grid.Row="3" >
+            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Tone Up</Label>
+            <CheckBox x:Name="cbToneUp" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
         </StackPanel>
-        
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="150px" Width="150px"/>
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="150px" Width="150px"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" >
+            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Gain Muscle</Label>
+            <CheckBox x:Name="cbGainMuslce" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\snarfsnarf.png" Height="150px" Width="150px"/>
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\thundercat.png" Height="150px" Width="150px"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="3" >
+            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Lose Weight</Label>
+            <CheckBox x:Name="cbLoseWeight" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="4">
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Stimpy.png" Height="125px" Width="125px"/>
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\ren.png" Height="125px" Width="125px"/>
+        </StackPanel>
+        <!--<Border BorderBrush="#009999" BorderThickness="4" Grid.Column="3" Grid.Row="3" Margin="10px">-->
+        <StackPanel Grid.Column="3" Grid.Row="3" >
+            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Cardio</Label>
+            <CheckBox x:Name="cbCardio" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="4" Orientation="Horizontal">
+                <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Wile_E_Coyote.png" Height="125px" Width="125px"/>
+                <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Faster-Road-Runner.gif" Height="125px" Width="125px"/>
+        </StackPanel>
+        <!--</Border>-->
     </Grid>
 </UserControl>

@@ -227,6 +227,21 @@
   <ItemGroup>
     <Resource Include="Documentation\WorkoutOptions.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Characters\Stimpy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Characters\ren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Characters\snarfsnarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Characters\Faster-Road-Runner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Characters\Wile_E_Coyote.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
