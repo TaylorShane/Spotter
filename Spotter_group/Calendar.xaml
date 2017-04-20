@@ -6,11 +6,19 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Height="299" Margin="0">
-        <Calendar Name="calendar" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                  Margin="20" SelectionMode="SingleRange" IsTodayHighlighted="True" 
+    <Grid Margin="0" Name="gridCalendar">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Calendar Name="calendar" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                  Margin="6,24,-38,32" SelectionMode="SingleRange" IsTodayHighlighted="True" 
                   Background="#009999" BorderBrush="#666666" BorderThickness="5"
-                  Height="200" Width="200"/>
-
+                  />
     </Grid>
 </UserControl>
