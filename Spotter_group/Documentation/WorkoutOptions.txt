@@ -104,39 +104,29 @@ Gain muscle
 
 
 
-Increase cardiovascular 
+Increase Cardiovascular Endurance
         Version 1
-				Chest
-
-
-                Back and Shoulders
-
-
-                
-                Legs
-
-
-                Arms
-
-
+				Whole Body
+						Jumping Jacks
+								2 sets, 60 seconds
+						Speed Walking
+								2 miles
+						Stairs
+								15 minutes
+						Cyling
+								10 minutes
 
 
         Version 2
-				Chest
-
-
-                Back and Shoulders
-
-
-                
-                Legs
-
-
-                Arms
-
-
-
-
+				Whole Body
+						Jumping Jacks
+								3 sets, 60 seconds
+						Jogging
+								3 miles
+						Stairs
+								20 minutes
+						Cycling
+								15 minutes
 Tone up
         Version 1
 				Chest
