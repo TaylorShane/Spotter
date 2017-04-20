@@ -49,10 +49,11 @@
             <Label Foreground="White">Select a Protein</Label>
             <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Proteins" 
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
-                      ItemsSource="{Binding Source={StaticResource food}, XPath=food/protein}" DisplayMemberPath="name">
+                      ItemsSource="{Binding Source={StaticResource food}, XPath=food/protein}" DisplayMemberPath="name" DropDownClosed="cboBox_Proteins_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="0" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
-            <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5">0</TextBox>
+            <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5"
+                     Text="{Binding Source={StaticResource food}, XPath=food/protein}" ></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,0">
             <Label Foreground="White">Select a Vegetable</Label>
