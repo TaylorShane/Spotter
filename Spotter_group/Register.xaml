@@ -6,24 +6,58 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <StackPanel Margin="30" Width="auto">
-            <StackPanel Orientation="Horizontal">
-                <Label Foreground ="#FFE0E0E0">First Name</Label>
-                <TextBox Name="tbFirstName" Width="100" HorizontalAlignment="Left"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Last Name</Label>
-                <TextBox Name="tbLastName" Width="100" HorizontalAlignment="Left"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Foreground ="#FFE0E0E0" Margin="0,10,0,0">Birthdate</Label>
-            <DatePicker Name="tbDOB" Width="100" HorizontalAlignment="Left"></DatePicker>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Foreground="#FFE0E0E0">Username</Label>
-                <TextBox x:Name="tbUserName" Width="100" HorizontalAlignment="Left"></TextBox>
-            </StackPanel>
+    <Grid Name="gridRegister">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <Label Foreground ="#FFE0E0E0">First Name</Label>
+            <TextBox x:Name="tbFirstName" Width="200px"></TextBox>
+            <Label Foreground ="#FFE0E0E0">Last Name</Label>
+            <TextBox Name="tbLastName" Width="200px"></TextBox>
         </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Label Foreground ="#FFE0E0E0">Birthdate</Label>
+            <DatePicker Name="tbDOB" Width="100"></DatePicker>
+            <Label Foreground="#FFE0E0E0">Username</Label>
+            <TextBox x:Name="tbUserName" Width="100"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="0">
+            <Label Foreground="#FFE0E0E0">Gender</Label>
+            <RadioButton Foreground="#FFE0E0E0">Female</RadioButton>
+            <RadioButton Foreground="#FFE0E0E0">Male</RadioButton>
+            <Label Foreground="#FFE0E0E0">Current Weight</Label>
+            <TextBox x:Name="tbCurrentWeight" Width="200px"></TextBox>
+            <Label Foreground="#FFE0E0E0">Current Height</Label>
+            <TextBox x:Name="tbCurrentHeight" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="1">
+            <Label Foreground="#FFE0E0E0">Password</Label>
+            <TextBox x:Name="tbPassword" Width="200px"></TextBox>
+            <Label Foreground="#FFE0E0E0">Confirm Password</Label>
+            <TextBox x:Name="tbConfirmPassword" Width="200px"></TextBox>
+            <Label Foreground="#FFE0E0E0">Start Date</Label>
+            <DatePicker Name="tbStartDate" Width="100" HorizontalAlignment="Left"></DatePicker>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2">
+            <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center">Character Transformation</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
+            <Label Foreground="#FFE0E0E0" HorizontalContentAlignment="Center">Fat to Fit</Label>
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="200px" Width="200px"/>
+            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="200px" Width="200px"/>
+        </StackPanel>
+        
     </Grid>
 </UserControl>
