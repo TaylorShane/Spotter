@@ -2,142 +2,142 @@
 <Exercises>
   <workout id="0">
     <name>Walk</name>
-    <duration>1 mile</duration>
+    <details>1 mile</details>
     <type>cardio</type>
   </workout>
   <workout id="1">
     <name>Jog</name>
-    <duration>1 mile</duration>
+    <details>1 mile</details>
     <type>cardio</type>
   </workout>
   <workout id="2">
     <name>Run</name>
-    <duration>1 mile</duration>
+    <details>1 mile</details>
     <type>cardio</type>
   </workout>
   <workout id="3">
     <name>Hike</name>
-    <duration>1 mile</duration>
+    <details>1 mile</details>
     <type>cardio</type>
   </workout>
   <workout id="4">
     <name>Swim</name>
-    <duration>1/4 mile</duration>
+    <details>1/4 mile</details>
     <type>cardio</type>
   </workout>
   <workout id="5">
     <name>cycle</name>
-    <duration>20 minutes</duration>
+    <details>20 minutes</details>
     <type>Cardio</type>
   </workout>
-  <workout id="">
+  <workout id="6">
     <name></name>
-    <duration></duration>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="7">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="8">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="9">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="10">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="11">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="12">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="14">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="15">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="16">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="17">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="18">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="19">
+    <name></name>
+    <details></details>
+    <type></type>
+  </workout>
+  <workout id="20">
+    <name></name>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   <workout id="">
     <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
-    <type></type>
-  </workout>
-  <workout id="">
-    <name></name>
-    <duration></duration>
+    <details></details>
     <type></type>
   </workout>
   
