@@ -73,5 +73,10 @@ namespace Spotter_group
             }
 
         }
+
+        private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
+        {
+            tboxProteinCalories.Text = cboBox_Proteins.SelectedIndex.ToString();
+        }
     }
 }
