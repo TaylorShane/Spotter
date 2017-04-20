@@ -26,9 +26,9 @@
     <type>cardio</type>
   </workout>
   <workout id="5">
-    <name></name>
-    <duration></duration>
-    <type></type>
+    <name>cycle</name>
+    <duration>20 minutes</duration>
+    <type>Cardio</type>
   </workout>
   <workout id="">
     <name></name>
