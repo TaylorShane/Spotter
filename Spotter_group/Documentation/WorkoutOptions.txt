@@ -5,9 +5,9 @@
                                 1 set, 10 reps, no weight, only bar
                 Back and Shoulders
                         Machine Lateral Pull-down
-                                1 set, 10 reps, 40% 1 rep max
+                                1 set, 10 reps, 20% 1 rep max
                         Shoulder Press
-                                1 set 10 reps, 40$ 1 rep max
+                                1 set 10 reps, 20$ 1 rep max
                 Legs
                         Bodyweight Squats
                                 1 set, 10 reps, no weight
@@ -15,10 +15,10 @@
                                 1 set, 6 reps, bodyweight
                 Arms
                         Tricep Extensions
-                                1 set, 10 sets, 40% 1 rep max
+                                1 set, 10 sets, 20% 1 rep max
                 Core
                         Ab crunch machine
-                                1 set, 10 reps, 40% 1 rep max
+                                1 set, 10 reps, 20% 1 rep max
                         Plank
                                 1 set, 30 seconds
 								
@@ -29,9 +29,9 @@
                                 1 set, 10 reps, no weight, only bar
                 Back and Shoulders
                         Machine Lateral Pull-down
-                                1 set, 10 reps, 50% 1 rep max
+                                1 set, 10 reps, 30% 1 rep max
                         Shoulder Press
-                                1 set 10 reps, 50% 1 rep max
+                                1 set 10 reps, 30% 1 rep max
                 Legs
                         Bodyweight Squats
                                 1 set, 10 reps, with bar
@@ -39,7 +39,7 @@
                                 1 set, 6 reps, bodyweight
                 Arms
                         Tricep Extensions
-                                1 set, 10 sets, 50% 1 rep max
+                                1 set, 10 sets, 30% 1 rep max
                 Core
                         Ab crunch on ball
                                 1 set, 10 reps, no weight
@@ -120,7 +120,7 @@ Increase cardiovascular
 
 
         Version 2
-Chest
+				Chest
 
 
                 Back and Shoulders
@@ -137,7 +137,7 @@ Chest
 
 Tone up
         Version 1
-Chest
+				Chest
 
 
                 Back and Shoulders
@@ -157,7 +157,7 @@ Chest
 
 
         Version 2
-Chest
+				Chest
 
 
                 Back and Shoulders
