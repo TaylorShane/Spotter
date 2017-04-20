@@ -80,70 +80,140 @@
     <name>Plank</name>
     <details>1 set, 30 seconds</details>
   </workout>
-  <workout id="16">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="iCeV1">
+    <muscle>Whole Body</muscle>
+    <name>Jumping Jacks</name>
+    <details>2 sets, 60 seconds</details>
   </workout>
-  <workout id="17">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="iCeV1">
+    <muscle>Whole Body</muscle>
+    <name>Speed Walking</name>
+    <details>2 miles</details>
   </workout>
-  <workout id="18">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="iCeV1">
+    <muscle>Whole Body</muscle>
+    <name>Stairs</name>
+    <details>15 minutes</details>
   </workout>
-  <workout id="19">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="iCeV1">
+    <muscle>Whole Body</muscle>
+    <name>Cycling</name>
+    <details>10 minutes</details>
   </workout>
-  <workout id="20">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="iCeV2">
+    <muscle>Whole Body</muscle>
+    <name>Jumping Jacks</name>
+    <details>3 sets, 60 seconds</details>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="iCeV2">
+    <muscle>Whole Body</muscle>
+    <name>Speed Walking</name>
+    <details>3 miles</details>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+   <workout id="iCeV2">
+    <muscle>Whole Body</muscle>
+    <name>Stairs</name>
+    <details>20 minutes</details>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="iCeV2">
+    <muscle>Whole Body</muscle>
+    <name>Cycling</name>
+    <details>15 minutes</details>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="tUv1">
+    <name>Chest</name>
+    <details>Chest Press</details>
+    <type>2 sets, 8 reps, 40% 1 rep</type>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="tUv1">
+    <name>Chest</name>
+    <details>Incline Chest Press</details>
+    <type>1 sets, 8 reps, 40% 1 rep</type>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="tUv1">
+    <name>Chest</name>
+    <details>Dumbell Flye</details>
+    <type>2 sets, 8 reps, 40% 1 rep</type>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="tUv1">
+    <name>Back and Shoulders</name>
+    <details>Cable Shrug</details>
+    <type>2 sets, 8 reps, 40% 1 rep</type>
   </workout>
-  <workout id="">
-    <name></name>
-    <details></details>
-    <type></type>
+  <workout id="tUv1">
+    <name>Back and Shoulders</name>
+    <details>Dumbell Lateral Raise</details>
+    <type>2 sets, 8 reps, 40% 1 rep</type>
+  </workout>
+  <workout id="tUv1">
+    <name>Back and Shoulders</name>
+    <details>One-Arm Row</details>
+    <type>2 sets, 8 reps, 40% 1 rep</type>
+  </workout>
+  <workout id="tUv1">
+    <name>Legs</name>
+    <details>Back Squat</details>
+    <type>1 sets, 15 reps, only bar</type>
+  </workout>
+  <workout id="tUv1">
+    <name>Legs</name>
+    <details>Alternating Leg Jumps</details>
+    <type>2 sets, 15 reps each side</type>
+  </workout>
+   <workout id="tUv1">
+    <name>Arms</name>
+    <details>Dumbell Reverse Curl</details>
+    <type>2 sets, 15 reps each side</type>
+  </workout>
+   <workout id="tUv2">
+    <name>Chest</name>
+    <details>Chest Press</details>
+    <type>2 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Chest</name>
+    <details>Incline Chest Press</details>
+    <type>1 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv1">
+    <name>Chest</name>
+    <details>Dumbell Flye</details>
+    <type>2 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Back and Shoulders</name>
+    <details>Cable Shrug</details>
+    <type>2 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Back and Shoulders</name>
+    <details>Cable Stright Down Pull-Dowl</details>
+    <type>2 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Back and Shoulders</name>
+    <details>Seated Reverse Flye</details>
+    <type>2 sets, 8 reps, 50% 1 rep</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Legs</name>
+    <details>Front Squat</details>
+    <type>1 sets, 15 reps, only bar</type>
+  </workout>
+  <workout id="tUv2">
+    <name>Legs</name>
+    <details>Alternating Leg Jumps</details>
+    <type>2 sets, 15 reps each side</type>
+  </workout>
+   <workout id="tUv2">
+    <name>Arms</name>
+    <details>Dumbell Reverse Curl</details>
+    <type>1 set, 15reps. 40% 1 rep</type>
+  </workout>
+   <workout id="tUv1">
+    <name>Arms</name>
+    <details>Hammer Cuel</details>
+    <type>1 set, 15reps. 40% 1 rep</type>
   </workout>
   
 </Exercises>
