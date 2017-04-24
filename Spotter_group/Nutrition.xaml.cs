@@ -31,6 +31,7 @@ namespace Spotter_group
 
         // List<string> Food = new List<string>();
 
+        
 
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
@@ -89,12 +90,21 @@ namespace Spotter_group
             tboxProteinCalories.Text = foodCalories.ToString();
             */
 
+            // Xdocument method
             XDocument xmlDocument = XDocument.Load(path);
             var foodcal = xmlDocument.Element("food_items")
                 .Elements("food")
                 .Elements("protein")
                 .Where(x => x.Attribute("Id").Value == cboBox_Proteins.SelectedItem.ToString());
             tboxProteinCalories.Text = foodcal.ToString();
+
+            // List method
+            XDocument xmlDoc = XDocument.Load(path);
+            var Foodlist = xmlDoc.Root.Elements("Id")
+                                       .Select(element => element.Value)
+                                       .ToList();
+
+          
         }
     }
 }

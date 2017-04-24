@@ -27,7 +27,7 @@ namespace Spotter_group
 
         private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
-            txtBlockDateSeleted.Text = calendar.SelectedDate.ToString();
+            txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("dd/MM/yyyy");
         }
     }
 }
