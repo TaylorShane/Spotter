@@ -29,15 +29,11 @@ namespace Spotter_group
 
         string path = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
 
-        // List<string> Food = new List<string>();
-
-        
-
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
+                
                 string protein = cboBox_Proteins.Text;
                 int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
                 int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
@@ -76,62 +72,27 @@ namespace Spotter_group
             {
                 MessageBox.Show("Please enter a numeric value for each calorie count box");
             }
-
+            
         }
-
+        
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {
-            /*  this doesn't work 
-            XDocument xmlDocument = XDocument.Load(path);
-            string foodItem = cboBox_Proteins.SelectedItem.ToString();
-            var foodCalories = xmlDocument.Descendants("calories")
-                .Where(item => item.Attribute("Id").Value.Equals("foodItem"));
-            tboxProteinCalories.Text = foodCalories.ToString();
-            */
+            
+            string refItem = cboBox_Proteins.Text;
+            //MessageBox.Show(refItem);
 
-            // Xdocument method
-            string refItem = cboBox_Proteins.SelectedItem.ToString();
-            XDocument xmlDocument = XDocument.Load(path);
-            /*
-            IEnumerable<string> foodcal = from Food in xmlDocument.Descendants("food_items")
-                .Elements("food")
-                .Elements("protein")
-                .Where(x => x.Attribute("Id").Value == refItem)
-                select Food.Element("calories").Value;
-            */
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(path).Descendants("food")
+                                        where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
 
-            string caloriesFound = (from c in xmlDocument.Descendants("calories")
-                                    where (string)c.Attribute("Id") == refItem
-                                    select c.Element("calories").Value).ToString();
+            foreach (string c in CaloriesResult)
+            {
+                ResultsList.Items.Add(c);
+                MessageBox.Show(c);
+            }
 
-            tboxProteinCalories.Text = caloriesFound;
-
-            //foodcal.ToString();
-
-            // List method
-            /*
-            IEnumerable<String> calories = from xmlDoc in XDocument.Load(path).Descendants("Book")
-                                        where (double)xmlDoc.Element("Price") > xmlDoc
-                                        select xmlDoc.Element("Title").Value;
-
-            IEnumerable<String> Price = from Books in XDocument.Load(path).Descendants("Book")
-                                        where (double)Books.Element("Price") > BookPrice
-                                        select Books.Element("Title").Value;
-
-            XDocument xmlDoc = XDocument.Load(path);
-            List<string> Foodlist = new List<string> { }; 
-            Foodlist = xmlDoc.Root.Elements("Id")
-                                       .Select(element => element.Value)
-                                       .ToList();
-            foreach (string c in Foodlist)
-                MessageBox.Show(c);     
-                */
-        }
-
-        public class Foodlist
-        {
-            public string name { get; set; }
-            public string calories { get; set; }
+            ResultsList.Items.RemoveAt(0);
+            tboxProteinCalories.Text = CaloriesResult.ToString();
         }
     }
 }
