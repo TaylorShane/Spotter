@@ -17,7 +17,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Calendar Name="calendar"  
+            <Calendar Name="calendar" 
                   Margin="6,24,-38,32" SelectionMode="SingleRange" IsTodayHighlighted="True" 
                   Background="#009999" BorderBrush="#666666" BorderThickness="5" SelectedDatesChanged="calendar_SelectedDatesChanged"
                   />

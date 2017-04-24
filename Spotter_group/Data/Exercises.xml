@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Exercises>
   <workout id="lWv1">
+    <day> 1 </day> <!-- We need to give the workouts a day for the calendar to populate -->
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps no weight, only bar</details>
