@@ -7,15 +7,18 @@
     <details>1 set, 10 reps no weight, only bar</details>
   </workout>
   <workout id="lWv1">
+    <day> 1 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 10lbs </details>
   </workout>
    <workout id="lWv1">
+    <day> 3 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 5lbs</details>
   </workout>
+   <day> 3 </day>
    <workout id="lWv1">
     <muscle>Legs</muscle>
     <name>BodyWeight Squats</name>
@@ -23,10 +26,12 @@
   </workout>
   <workout id="lWv1">
     <muscle>Legs</muscle>
+    <day> 5 </day>
     <name>Single Leg Calf Raise</name>
     <details>1 set, 10 reps, 10lbs </details>
   </workout>
   <workout id="lWv1">
+    <day> 5 </day>
     <muscle>Arms</muscle>
     <name>Tricept Extensions</name>
     <details>1 set, 10 reps, 5lbs </details>
@@ -42,6 +47,7 @@
     <details>1 set, 30 seconds </details>
   </workout>
   <workout id="lWv2">
+    <day> 8 </day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps, no weight, only bar </details>

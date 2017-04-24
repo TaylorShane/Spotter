@@ -81,7 +81,6 @@ namespace Spotter_group
 
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {
-
             /*  this doesn't work 
             XDocument xmlDocument = XDocument.Load(path);
             string foodItem = cboBox_Proteins.SelectedItem.ToString();
@@ -91,20 +90,48 @@ namespace Spotter_group
             */
 
             // Xdocument method
+            string refItem = cboBox_Proteins.SelectedItem.ToString();
             XDocument xmlDocument = XDocument.Load(path);
-            var foodcal = xmlDocument.Element("food_items")
+            /*
+            IEnumerable<string> foodcal = from Food in xmlDocument.Descendants("food_items")
                 .Elements("food")
                 .Elements("protein")
-                .Where(x => x.Attribute("Id").Value == cboBox_Proteins.SelectedItem.ToString());
-            tboxProteinCalories.Text = foodcal.ToString();
+                .Where(x => x.Attribute("Id").Value == refItem)
+                select Food.Element("calories").Value;
+            */
+
+            string caloriesFound = (from c in xmlDocument.Descendants("calories")
+                                    where (string)c.Attribute("Id") == refItem
+                                    select c.Element("calories").Value).ToString();
+
+            tboxProteinCalories.Text = caloriesFound;
+
+            //foodcal.ToString();
 
             // List method
+            /*
+            IEnumerable<String> calories = from xmlDoc in XDocument.Load(path).Descendants("Book")
+                                        where (double)xmlDoc.Element("Price") > xmlDoc
+                                        select xmlDoc.Element("Title").Value;
+
+            IEnumerable<String> Price = from Books in XDocument.Load(path).Descendants("Book")
+                                        where (double)Books.Element("Price") > BookPrice
+                                        select Books.Element("Title").Value;
+
             XDocument xmlDoc = XDocument.Load(path);
-            var Foodlist = xmlDoc.Root.Elements("Id")
+            List<string> Foodlist = new List<string> { }; 
+            Foodlist = xmlDoc.Root.Elements("Id")
                                        .Select(element => element.Value)
                                        .ToList();
+            foreach (string c in Foodlist)
+                MessageBox.Show(c);     
+                */
+        }
 
-          
+        public class Foodlist
+        {
+            public string name { get; set; }
+            public string calories { get; set; }
         }
     }
 }
