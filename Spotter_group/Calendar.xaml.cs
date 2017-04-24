@@ -24,5 +24,10 @@ namespace Spotter_group
         {
             InitializeComponent();
         }
+
+        private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            txtBlockDateSeleted.Text = calendar.SelectedDate.ToString();
+        }
     }
 }
