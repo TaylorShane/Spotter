@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <food_items>
   <food>
-    <protein>
+    <protein Id="Chicken">
       <name>Chicken</name>
       <calories>142</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="Turkey">
       <name>Turkey</name>
       <calories>153</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="Pork">
       <name>Pork</name>
       <calories>268</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="Meat">
       <name>Meat</name>
       <calories>240</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="Fish">
       <name>Fish</name>
       <calories>145</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="Eggs">
       <name>Eggs</name>
       <calories>240</calories>
     </protein>
   </food>
   <food>
-    <protein>
+    <protein Id="">
       <name>Tofu</name>
       <calories>70</calories>
     </protein>

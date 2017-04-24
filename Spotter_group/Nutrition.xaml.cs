@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
+
 
 namespace Spotter_group
 {
@@ -25,7 +27,9 @@ namespace Spotter_group
             InitializeComponent();
         }
 
-       
+        string path = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
+
+        // List<string> Food = new List<string>();
 
 
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
@@ -76,7 +80,21 @@ namespace Spotter_group
 
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {
-            tboxProteinCalories.Text = cboBox_Proteins.SelectedIndex.ToString();
+
+            /*  this doesn't work 
+            XDocument xmlDocument = XDocument.Load(path);
+            string foodItem = cboBox_Proteins.SelectedItem.ToString();
+            var foodCalories = xmlDocument.Descendants("calories")
+                .Where(item => item.Attribute("Id").Value.Equals("foodItem"));
+            tboxProteinCalories.Text = foodCalories.ToString();
+            */
+
+            XDocument xmlDocument = XDocument.Load(path);
+            var foodcal = xmlDocument.Element("food_items")
+                .Elements("food")
+                .Elements("protein")
+                .Where(x => x.Attribute("Id").Value == cboBox_Proteins.SelectedItem.ToString());
+            tboxProteinCalories.Text = foodcal.ToString();
         }
     }
 }

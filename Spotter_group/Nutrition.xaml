@@ -53,7 +53,7 @@
             </ComboBox>
             <Label Foreground="White" Grid.Column="0" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5"
-                     Text="{Binding Source={StaticResource food}, XPath=food/protein}" ></TextBox>
+                     ></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,0">
             <Label Foreground="White">Select a Vegetable</Label>
