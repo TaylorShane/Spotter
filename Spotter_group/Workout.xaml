@@ -17,16 +17,15 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <!-- I'm not sure if we want to implement this.
-        <Menu Grid.ColumnSpan="3" Margin="0,0,0,0" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <MenuItem Header="Workout" Grid.ColumnSpan="3" IsChecked="True"></MenuItem>
-            <MenuItem Header="Nutrition" Grid.ColumnSpan="3"></MenuItem>
-        </Menu>
-        -->
-
-        <StackPanel Grid.Column="0" Grid.Row="1">
-            <Label>Label 1</Label>
-            <TextBlock>Nutrition 2</TextBlock>
+       
+        <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="3">
+            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Workout Intensity</Label>
+            <!--<TextBlock x:Name="txtBlock_CaloriesToConsume" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>-->
         </StackPanel>
+
+        
+            <Label Foreground="Wheat" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">Label 1</Label>
+            <Label Foreground="Wheat" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">Label 2</Label>
+        
     </Grid>
 </UserControl>

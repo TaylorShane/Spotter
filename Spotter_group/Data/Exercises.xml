@@ -10,48 +10,52 @@
     <day> 2 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
-    <details>1 set, 10 reps, 10lbs </details>
+    <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
    <workout id="lWv1">
      <day> 3 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
-    <details>1 set, 10 reps, 5lbs</details>
+    <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
    <workout id="lWv1">
      <day> 4 </day>
     <muscle>Legs</muscle>
     <name>BodyWeight Squats</name>
-    <details>1 set, 10 reps, 10lbs </details>
+    <details>1 set, 10 reps, no weight </details>
   </workout>
   <workout id="lWv1">
     <day> 5 </day>
     <muscle>Legs</muscle>
     <name>Single Leg Calf Raise</name>
-    <details>1 set, 10 reps, 10lbs </details>
+    <details>1 set, 6 reps, bodyweight </details>
   </workout>
   <workout id="lWv1">
     <day> 6 </day>
     <muscle>Arms</muscle>
     <name>Tricept Extensions</name>
-    <details>1 set, 10 reps, 5lbs </details>
+    <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
   <workout id="lWv1">
+    <day> 7 </day>
     <muscle>Core</muscle>
     <name>Ab Crunch Machine</name>
-    <details>1 set, 10 reps, 10lbs </details>
+    <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
   <workout id="lWv1">
+    <day> 8 </day>
     <muscle>Core</muscle>
     <name>Plank</name>
     <details>1 set, 30 seconds </details>
   </workout>
   <workout id="lWv2">
+    <day> 9 </day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps, no weight, only bar </details>
   </workout>
     <workout id="lWv2">
+     <day> 10 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 10lbs </details>
