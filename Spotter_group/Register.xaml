@@ -6,84 +6,124 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Name="gridRegister">
+    <Grid Name="gridRegister" Margin="0,15,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="1" Grid.Row="0">
-            <Label Foreground ="#FFE0E0E0">First Name</Label>
-            <TextBox x:Name="tbFirstName" Width="200px"></TextBox>
-            <Label Foreground ="#FFE0E0E0">Last Name</Label>
-            <TextBox Name="tbLastName" Width="200px"></TextBox>
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" >
+            <Label Foreground ="#FFE0E0E0" FontSize="20">First Name</Label>
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <Label Foreground ="#FFE0E0E0">Birthdate</Label>
-            <DatePicker Name="tbDOB" Width="100"></DatePicker>
-            <Label Foreground="#FFE0E0E0">Username</Label>
-            <TextBox x:Name="tbUserName" Width="100"></TextBox>
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox x:Name="tbFirstName" Width="200px" VerticalAlignment="Center" HorizontalAlignment="Center" ></TextBox>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="0">
-            <Label Foreground="#FFE0E0E0">Gender</Label>
-            <RadioButton Foreground="#FFE0E0E0">Female</RadioButton>
-            <RadioButton Foreground="#FFE0E0E0">Male</RadioButton>
-            <Label Foreground="#FFE0E0E0">Current Weight</Label>
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground ="#FFE0E0E0" FontSize="20">Last Name</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox Name="tbLastName" Width="200px" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground ="#FFE0E0E0" FontSize="20">Birthdate</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <DatePicker Name="tbDOB" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"></DatePicker>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Username</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox x:Name="tbUserName" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Current Weight</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBox x:Name="tbCurrentWeight" Width="200px"></TextBox>
-            <Label Foreground="#FFE0E0E0">Current Height</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Current Height</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBox x:Name="tbCurrentHeight" Width="200px"></TextBox>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Grid.Column="2" Grid.Row="1">
-            <Label Foreground="#FFE0E0E0">Password</Label>
-            <TextBox x:Name="tbPassword" Width="200px"></TextBox>
-            <Label Foreground="#FFE0E0E0">Confirm Password</Label>
-            <TextBox x:Name="tbConfirmPassword" Width="200px"></TextBox>
-            <Label Foreground="#FFE0E0E0">Start Date</Label>
+        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Gender</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="2">
+            <RadioButton Foreground="#FFE0E0E0" FontSize="20">Female</RadioButton>
+            <RadioButton Foreground="#FFE0E0E0" FontSize="20">Male</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Start Date</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
             <DatePicker Name="tbStartDate" Width="100" HorizontalAlignment="Left"></DatePicker>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Password</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox x:Name="tbPassword" Width="200px" ToolTip="Must be at least 8 characters"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="#FFE0E0E0" FontSize="20">Confirm Password</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox x:Name="tbConfirmPassword" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4" Margin="0,15">
+            <Label Foreground="#FFE0E0E0" FontSize="40px" HorizontalAlignment="Center" VerticalAlignment="Center">Character Transformation</Label>
+        </StackPanel>
 
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="4">
-            <Label Foreground="#FFE0E0E0" FontSize="20px" HorizontalAlignment="Center" VerticalAlignment="Center">Character Transformation</Label>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="3" >
+        <StackPanel Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Tone Up</Label>
             <CheckBox x:Name="cbToneUp" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="150px" Width="150px"/>
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="150px" Width="150px"/>
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="3" >
+        <StackPanel Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Gain Muscle</Label>
             <CheckBox x:Name="cbGainMuslce" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
+        <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\snarfsnarf.png" Height="150px" Width="150px"/>
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\thundercat.png" Height="150px" Width="150px"/>
         </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="3" >
+        <StackPanel Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Lose Weight</Label>
             <CheckBox x:Name="cbLoseWeight" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.Row="4">
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Stimpy.png" Height="125px" Width="125px"/>
             <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\ren.png" Height="125px" Width="125px"/>
         </StackPanel>
         <!--<Border BorderBrush="#009999" BorderThickness="4" Grid.Column="3" Grid.Row="3" Margin="10px">-->
-        <StackPanel Grid.Column="3" Grid.Row="3" >
+        <StackPanel Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom">Cardio</Label>
             <CheckBox x:Name="cbCardio" HorizontalAlignment="Center" VerticalAlignment="Bottom"></CheckBox>
         </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="4" Orientation="Horizontal">
+        <StackPanel Grid.Column="2" Grid.Row="10" Orientation="Horizontal" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Wile_E_Coyote.png" Height="125px" Width="125px"/>
                 <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Faster-Road-Runner.gif" Height="125px" Width="125px"/>
         </StackPanel>
