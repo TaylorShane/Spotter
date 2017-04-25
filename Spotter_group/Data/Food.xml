@@ -1,121 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <food_items>
-  <food>
-    <protein Id="Chicken">
-      <name>Chicken</name>
+  <protein>
+      <name Id="Chicken">Chicken</name>
       <calories>142</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="Turkey">
-      <name>Turkey</name>
+  </protein>
+  <protein>
+      <name Id="Turkey">Turkey</name>
       <calories>153</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="Pork">
-      <name>Pork</name>
+  </protein>
+  <protein>
+      <name Id="Pork">Pork</name>
       <calories>268</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="Meat">
-      <name>Meat</name>
+  </protein>
+  <protein>
+      <name Id="Meat">Meat</name>
       <calories>240</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="Fish">
-      <name>Fish</name>
+  </protein>
+  <protein>
+      <name Id="Fish">Fish</name>
       <calories>145</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="Eggs">
-      <name>Eggs</name>
+  </protein>
+  <protein>
+      <name Id="Eggs">Eggs</name>
       <calories>240</calories>
-    </protein>
-  </food>
-  <food>
-    <protein Id="">
-      <name>Tofu</name>
+  </protein>
+  <protein>
+      <name Id="Tofu">Tofu</name>
       <calories>70</calories>
-    </protein>
-  </food>
-  
-  <food>
-    <veggie>
-      <name>Asparagus</name>
+  </protein>
+  <veggie>
+      <name Id="Asparagus">Asparagus</name>
       <calories></calories>
-    </veggie>
-  </food>
-
-  <food>
-    <veggie>
-      <name>Broccoli</name>
+  </veggie>
+  <veggie>
+    <name Id="Broccoli">Broccoli</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Potato</name>
+  </veggie>
+  <veggie>
+    <name Id="Potato">Potato</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Brussel Sprouts</name>
+  </veggie>
+  <veggie>
+    <name Id="Brussel Sprouts">Brussel Sprouts</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Kale</name>
+  </veggie>
+  <veggie>
+    <name Id="Kale">Kale</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Beets</name>
+  </veggie>
+  <veggie>
+    <name Id="Beets">Beets</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Lettuce</name>
+  </veggie>
+  <veggie>
+    <name Id="Lettuce">Lettuce</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Spinach</name>
+  </veggie>
+  <veggie>
+    <name Id="Spinach">Spinach</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Carrots</name>
+  </veggie>
+  <veggie>
+    <name Id="Carrots">Carrots</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Cauliflower</name>
+  </veggie>
+  <veggie>
+    <name Id="Cauliflower">Cauliflower</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Bell Pepper</name>
+  </veggie>
+  <veggie>
+    <name Id="Bell Pepper">Bell Pepper</name>
       <calories></calories>
-    </veggie>
-  </food>
-  <food>
-    <veggie>
-      <name>Other</name>
+  </veggie>
+  <veggie>
+    <name Id="Other">Other</name>
       <calories></calories>
-    </veggie>
-  </food>
+  </veggie>
 
   <food>
     <fruit>

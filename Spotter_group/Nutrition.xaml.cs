@@ -29,15 +29,11 @@ namespace Spotter_group
 
         string path = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
 
-        // List<string> Food = new List<string>();
-
-        
-
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
+                
                 string protein = cboBox_Proteins.Text;
                 int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
                 int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
@@ -76,35 +72,20 @@ namespace Spotter_group
             {
                 MessageBox.Show("Please enter a numeric value for each calorie count box");
             }
-
+            
         }
-
+        
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {
+            
+            string refItem = cboBox_Proteins.Text;
+            //MessageBox.Show(refItem);
 
-            /*  this doesn't work 
-            XDocument xmlDocument = XDocument.Load(path);
-            string foodItem = cboBox_Proteins.SelectedItem.ToString();
-            var foodCalories = xmlDocument.Descendants("calories")
-                .Where(item => item.Attribute("Id").Value.Equals("foodItem"));
-            tboxProteinCalories.Text = foodCalories.ToString();
-            */
-
-            // Xdocument method
-            XDocument xmlDocument = XDocument.Load(path);
-            var foodcal = xmlDocument.Element("food_items")
-                .Elements("food")
-                .Elements("protein")
-                .Where(x => x.Attribute("Id").Value == cboBox_Proteins.SelectedItem.ToString());
-            tboxProteinCalories.Text = foodcal.ToString();
-
-            // List method
-            XDocument xmlDoc = XDocument.Load(path);
-            var Foodlist = xmlDoc.Root.Elements("Id")
-                                       .Select(element => element.Value)
-                                       .ToList();
-
-          
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(path).Descendants("protein")
+                                        where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
+            
+            tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
         }
     }
 }
