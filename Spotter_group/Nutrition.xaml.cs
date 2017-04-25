@@ -27,8 +27,8 @@ namespace Spotter_group
             InitializeComponent();
         }
 
-        string path = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
-
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
+        // PATH LOCATION
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -81,7 +81,7 @@ namespace Spotter_group
             string refItem = cboBox_Proteins.Text;
             MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(path).Descendants("protein")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("protein")
                                         where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
             

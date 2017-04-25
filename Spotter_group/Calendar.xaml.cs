@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Spotter_group
 {
@@ -23,13 +24,35 @@ namespace Spotter_group
         public Calendar()
         {
             InitializeComponent();
+            populateStartDate();
         }
+
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/SampleUsers.xml";
+        // PATH LOCATION
+
+        public void populateStartDate()
+        {
+            txtBlockTest.Text = startdate.ToString("dd/MM/yyyy");
+
+            DateTime StartDate;
+            string user = "Shane";
+            IEnumerable<string> startDateResult = from Users in XDocument.Load(shanePath).Descendants("Users")
+                                                 where (string)Users.Element("name") == user
+                                                 select Users.Element("startDate").Value;
+
+            txtBlockTest.Text = startDateResult.FirstOrDefault().ToString();
+        }
+
+        public DateTime startdate = new DateTime(2017, 04, 01);
+
+        // txtBlockTest.Text = 
 
         private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("dd/MM/yyyy");
 
-            
         }
+
+        // public DateTime startdate = new DateTime(2017, 04, 01);
     }
 }

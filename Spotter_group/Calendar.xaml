@@ -25,7 +25,7 @@
                   SelectedDatesChanged="calendar_SelectedDatesChanged" 
                   />
         </StackPanel>
-        <TextBlock Name="txtBlockTest" Grid.Row="1" Grid.Column="0" Foreground="White" Text="">Test</TextBlock>
+        <TextBlock Name="txtBlockTest" Grid.Row="1" Grid.Column="0" Foreground="White">Test</TextBlock>
         <TextBlock Name="txtBlockDateSeleted" Grid.Row="1" Grid.Column="1" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
         <TextBlock Name="txtBlockWorkout" Grid.Row="1" Grid.Column="2" Foreground="White">Workout</TextBlock>
         <TextBlock Name="txtBlockMenu" Grid.Row="1" Grid.Column="3" Foreground="White">Menu</TextBlock>
