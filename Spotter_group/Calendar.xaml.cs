@@ -32,6 +32,11 @@ namespace Spotter_group
 
         public void populateStartDate()
         {
+            /* how to convert from string to DateTime
+            // string date = "01/08/2008";
+            // DateTime dt = Convert.ToDateTime(date);
+            */
+
             txtBlockTest.Text = startdate.ToString("dd/MM/yyyy");
 
             DateTime StartDate;
