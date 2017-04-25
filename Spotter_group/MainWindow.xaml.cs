@@ -85,8 +85,5 @@ namespace Spotter_group
         {
             
         }
-
-        public DateTime startdate = new DateTime(2017, 04, 01);
-
     }
 }
