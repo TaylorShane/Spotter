@@ -1,5 +1,11 @@
 ﻿Lose weight
         Version 1
+
+		 workouts 2 a week, days inbetween, add the odd day
+
+
+		day 1
+
 				Chest
                         Barbell Bench Press
                                 1 set, 10 reps, no weight, only bar
@@ -13,6 +19,10 @@
                                 1 set, 10 reps, no weight
                         Single Leg Calf Raise
                                 1 set, 6 reps, bodyweight
+
+
+			day 3
+
                 Arms
                         Tricep Extensions
                                 1 set, 10 sets, 20% 1 rep max
@@ -24,6 +34,8 @@
 								
 
         Version 2
+
+
 				Chest
                         Barbell Bench Press
                                 1 set, 10 reps, no weight, only bar
