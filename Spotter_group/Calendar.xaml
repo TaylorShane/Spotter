@@ -9,22 +9,25 @@
     <Grid Margin="0" Name="gridCalendar">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Calendar Name="calendar" 
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Calendar Name="calendar" Height="Auto" Width="Auto"
                   Margin="6,24,-38,32" SelectionMode="SingleRange" IsTodayHighlighted="True" 
-                  Background="#009999" BorderBrush="#666666" BorderThickness="5" SelectedDatesChanged="calendar_SelectedDatesChanged"
+                  Background="#009999" BorderBrush="#666666" BorderThickness="5" 
+                  SelectedDatesChanged="calendar_SelectedDatesChanged" 
                   />
-            
-            <TextBlock Name="txtBlockDateSeleted" Foreground="White" ToolTip="Selecte a Date"></TextBlock>
-            <TextBlock Name="txtBlockWorkout" Foreground="White"></TextBlock>
-            <TextBlock Name="txtBlockMenu" Foreground="White"></TextBlock>
         </StackPanel>
+        <TextBlock Name="txtBlockTest" Grid.Row="1" Grid.Column="0" Foreground="White" Text="">Test</TextBlock>
+        <TextBlock Name="txtBlockDateSeleted" Grid.Row="1" Grid.Column="1" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
+        <TextBlock Name="txtBlockWorkout" Grid.Row="1" Grid.Column="2" Foreground="White">Workout</TextBlock>
+        <TextBlock Name="txtBlockMenu" Grid.Row="1" Grid.Column="3" Foreground="White">Menu</TextBlock>
     </Grid>
 </UserControl>
