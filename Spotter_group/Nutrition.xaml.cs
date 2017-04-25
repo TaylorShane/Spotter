@@ -79,7 +79,7 @@ namespace Spotter_group
         {
             
             string refItem = cboBox_Proteins.Text;
-            MessageBox.Show(refItem);
+            // MessageBox.Show(refItem);
 
             IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("protein")
                                         where (string)food_items.Element("name") == refItem
