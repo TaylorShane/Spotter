@@ -21,29 +21,29 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-       
+
         <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="3">
             <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Working Out</Label>
             <!--<TextBlock x:Name="txtBlock_CaloriesToConsume" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>-->
         </StackPanel>
-
-         <!-- icon image tag a rooski-->
-        <Image Grid.Column="0" Grid.Row="1" Source="images/Icons/arm_curl.png"/>
-        <Image Grid.Column="0" Grid.Row="2" Source="images/Icons/cycle.png"/>
-        <Image Grid.Column="0" Grid.Row="3" Source="images/Icons/jumprope.png"/>
-        <Image Grid.Column="0" Grid.Row="4" Source="images/Icons/running.png"/>
+        
+        <!-- icon image tag a rooski-->
+        <Image Grid.Column="0" Grid.Row="1" Source="images/Icons/jumprope.png" Height="50" Width="50"/>
+        <Image Grid.Column="0" Grid.Row="2" Source="images/Icons/cycle.png" Height="50" Width="50"/>
+        <Image Grid.Column="0" Grid.Row="3" Source="images/Icons/jumprope.png" Height="50" Width="50"/>
+        <Image Grid.Column="0" Grid.Row="4" Source="images/Icons/running.png" Height="50" Width="50"/>
 
         <!-- text block descript a doodoos-->
-        <TextBlock Grid.Column="1" Grid.Row="1" Name="workout_description_1"></TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="2" Name="workout_description_2"></TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="3" Name="workout_description_3"></TextBlock>
-        <TextBlock Grid.Column="1" Grid.Row="4" Name="workout_description_4"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="1" Name="workout_description_1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2" Name="workout_description_2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="3" Name="workout_description_3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="4" Name="workout_description_4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         
         <!--exact workout instructions sumption-->
-        <TextBlock Grid.Column="2" Grid.Row="1" Name="workout_instructions_1"></TextBlock>
-        <TextBlock Grid.Column="2" Grid.Row="2" Name="workout_instructions_2"></TextBlock>
-        <TextBlock Grid.Column="2" Grid.Row="3" Name="workout_instructions_3"></TextBlock>
-        <TextBlock Grid.Column="2" Grid.Row="4" Name="workout_instructions_4"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="1" Name="workout_instructions_1" Foreground="Wheat" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="2" Name="workout_instructions_2" Foreground="Wheat" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="3" Name="workout_instructions_3" Foreground="Wheat" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="4" Name="workout_instructions_4" Foreground="Wheat" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                    
         <!--check box a dox-->
         <CheckBox Grid.Column="4" Grid.Row="1" Name="check_box_1" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
@@ -51,6 +51,7 @@
         <CheckBox Grid.Column="4" Grid.Row="3" Name="check_box_3" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
         <CheckBox Grid.Column="4" Grid.Row="4" Name="check_box_4" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
     
+        <!-- -->
     
     </Grid>
 </UserControl>

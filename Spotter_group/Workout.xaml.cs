@@ -23,6 +23,12 @@ namespace Spotter_group
         public Workout()
         {
             InitializeComponent();
+            setWorkoutInformation();
+        }
+
+        public void setWorkoutInformation()
+        {
+            workout_description_1.Text = "HI!";
         }
     }
 }
