@@ -81,18 +81,11 @@ namespace Spotter_group
             string refItem = cboBox_Proteins.Text;
             //MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(path).Descendants("food")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(path).Descendants("protein")
                                         where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
-
-            foreach (string c in CaloriesResult)
-            {
-                ResultsList.Items.Add(c);
-                MessageBox.Show(c);
-            }
-
-            ResultsList.Items.RemoveAt(0);
-            tboxProteinCalories.Text = CaloriesResult.ToString();
+            
+            tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
         }
     }
 }
