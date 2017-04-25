@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User ID="0">
+    <FirstName>Jason</FirstName>
+    <LastName>Merrill</LastName>
+    <Username>jasonlmerrill</Username>
+    <CurrentWeight>155</CurrentWeight>
+    <CurrentHeight>5'8"</CurrentHeight>
+    <Password>testpass</Password>
+  </User>
+  <User ID="0">
+    <FirstName>ffdasdf</FirstName>
+    <LastName>sdfsdf</LastName>
+    <Username>fdsaf</Username>
+    <CurrentWeight>234</CurrentWeight>
+    <CurrentHeight>2342</CurrentHeight>
+    <Password>sdhsd</Password>
+  </User>
+  <User ID="1">
+    <FirstName>ffdasdf</FirstName>
+    <LastName>sdfsdf</LastName>
+    <Username>fdsaf</Username>
+    <CurrentWeight>234</CurrentWeight>
+    <CurrentHeight>2342</CurrentHeight>
+    <Password>sdhsd</Password>
+  </User>
+</Users>

@@ -45,7 +45,7 @@
             <Label Foreground ="#FFE0E0E0" FontSize="20">Birthdate</Label>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <DatePicker Name="tbDOB" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center"></DatePicker>
+            <DatePicker Name="tbDOB" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" CalendarClosed="tbDOB_CalendarClosed"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" FontSize="20">Username</Label>
@@ -70,8 +70,8 @@
             <Label Foreground="#FFE0E0E0" FontSize="20">Gender</Label>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="2">
-            <RadioButton Foreground="#FFE0E0E0" FontSize="20">Female</RadioButton>
-            <RadioButton Foreground="#FFE0E0E0" FontSize="20">Male</RadioButton>
+            <RadioButton x:Name="cbFemale" Foreground="#FFE0E0E0" FontSize="20" Checked="cbFemale_Checked">Female</RadioButton>
+            <RadioButton x:Name="cbMale" Foreground="#FFE0E0E0" FontSize="20" Checked="cbMale_Checked">Male</RadioButton>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" FontSize="20">Start Date</Label>
@@ -132,7 +132,7 @@
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Cardiiovascular health is an important part or anyone's health.  Choose <Italic><Bold>Cardio</Bold></Italic> to improve yours!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="3" Grid.Row="11">
-            <Button x:Name="btnRegister" Width="100px">Register</Button>
+            <Button x:Name="btnRegister" Width="100px" Click="btnRegister_Click">Register</Button>
         </StackPanel>
     </Grid>
 </UserControl>
