@@ -8,7 +8,20 @@ Label.Foreground = Brushes.Red;
 
 <!-- Use this to bind to your user controls -->
     <UserControl.Resources>
-        <XmlDataProvider Source="Data/Protein.xml"
-                         XPath="protein_items"
-                         x:Key="protein"/>
+        <XmlDataProvider Source="Data/Food.xml"
+                         XPath="food_items"
+                         x:Key="food"/>
     </UserControl.Resources>
+
+	/* how to convert from string to DateTime
+	*
+	* string date = "01/08/2008";
+	* DateTime dt = Convert.ToDateTime(date);
+	*
+	*/
+
+	/* how to convert from DateTime to string
+	*
+	* txtBlockTest.Text = startdate.ToString("dd/MM/yyyy");
+	*
+	*/
