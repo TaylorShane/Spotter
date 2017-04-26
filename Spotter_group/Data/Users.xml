@@ -3,25 +3,13 @@
   <User ID="0">
     <FirstName>Jason</FirstName>
     <LastName>Merrill</LastName>
+    <BirthDate>16/08/1983</BirthDate>
     <Username>jasonlmerrill</Username>
+    <StartDate>16/08/1983</StartDate>
+    <Gender>Male</Gender>
     <CurrentWeight>155</CurrentWeight>
     <CurrentHeight>5'8"</CurrentHeight>
-    <Password>testpass</Password>
-  </User>
-  <User ID="0">
-    <FirstName>ffdasdf</FirstName>
-    <LastName>sdfsdf</LastName>
-    <Username>fdsaf</Username>
-    <CurrentWeight>234</CurrentWeight>
-    <CurrentHeight>2342</CurrentHeight>
-    <Password>sdhsd</Password>
-  </User>
-  <User ID="1">
-    <FirstName>ffdasdf</FirstName>
-    <LastName>sdfsdf</LastName>
-    <Username>fdsaf</Username>
-    <CurrentWeight>234</CurrentWeight>
-    <CurrentHeight>2342</CurrentHeight>
-    <Password>sdhsd</Password>
+    <Password>password</Password>
+    <Workout>Cardio</Workout>
   </User>
 </Users>

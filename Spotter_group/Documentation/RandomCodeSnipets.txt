@@ -25,3 +25,4 @@ Label.Foreground = Brushes.Red;
 	* txtBlockTest.Text = startdate.ToString("dd/MM/yyyy");
 	*
 	*/
+	 //xmlDocument.Root.LastNode() to find last ID number

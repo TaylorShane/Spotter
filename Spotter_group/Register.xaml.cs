@@ -24,9 +24,14 @@ namespace Spotter_group
 
     public partial class Register : UserControl
     {
-
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+
         int ID = 0;
+        string gender = "";
+        string workout = "";
+        string dateOfBirth = "";
+        string startDate = "";
+        int nextID = 0;
         //PATH LOCATION
 
         public Register()
@@ -36,6 +41,7 @@ namespace Spotter_group
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
+
             string firstName = tbFirstName.Text;
             string lastName = tbLastName.Text;
             string userName = tbUserName.Text;
@@ -46,15 +52,20 @@ namespace Spotter_group
             try
             {
                 XDocument xmlDocument = XDocument.Load(jasonPath);
-
+                //nextId = xmlDocument.Root.LastNode()
+                int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
                 xmlDocument.Element("Users").Add(
-                    new XElement("User", new XAttribute("ID", ID),
+                    new XElement("User", new XAttribute("ID", nextId + 1),
                     new XElement("FirstName", firstName),
                     new XElement("LastName", lastName),
+                    new XElement("BirthDate", dateOfBirth),
                     new XElement("Username", userName),
+                    new XElement("StartDate", startDate),
+                    new XElement("Gender", gender),
                     new XElement("CurrentWeight", currentWeight),
                     new XElement("CurrentHeight", currentHeight),
-                    new XElement("Password", password)
+                    new XElement("Password", password),
+                    new XElement("Workout", workout)
                     ));
                 xmlDocument.Save(jasonPath);
 
@@ -68,18 +79,42 @@ namespace Spotter_group
 
         private void cbFemale_Checked(object sender, RoutedEventArgs e)
         {
-
+            gender = cbFemale.Content.ToString();
         }
 
         private void cbMale_Checked(object sender, RoutedEventArgs e)
         {
-
+            gender = cbMale.Content.ToString();
         }
         
         private void tbDOB_CalendarClosed(object sender, RoutedEventArgs e)
         {
+           dateOfBirth = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
         }
 
+        private void cbToneUp_Checked(object sender, RoutedEventArgs e)
+        {
+            workout = lblToneUP.Text;
+        }
 
+        private void cbGainMuslce_Checked(object sender, RoutedEventArgs e)
+        {
+            workout = lblGain.Text;
+        }
+
+        private void cbLoseWeight_Checked(object sender, RoutedEventArgs e)
+        {
+            workout = lblLoseWeight.Text;
+        }
+
+        private void cbCardio_Checked(object sender, RoutedEventArgs e)
+        {
+            workout = lblCardio.Text;
+        }
+
+        private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)
+        {
+            startDate = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
+        }
     }
 }
