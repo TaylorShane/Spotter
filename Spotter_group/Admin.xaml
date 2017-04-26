@@ -23,9 +23,25 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-            
+        <Label Foreground="White" Grid.ColumnSpan="2">Add Food Type</Label>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Label Foreground="White" FontSize="20">Name:</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBox Name="txBoxWorkoutName" Width="200px" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0" >
+            <Label Foreground="White" FontSize="20">Food Type: </Label>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" >
+            <RadioButton x:Name="radioProtein" Foreground="#FFE0E0E0" FontSize="20" >Protein</RadioButton>
+            <RadioButton x:Name="radioVeggie" Foreground="#FFE0E0E0" FontSize="20" >Vegetable</RadioButton>
+            <RadioButton x:Name="radioFruit" Foreground="#FFE0E0E0" FontSize="20" >Fruit</RadioButton>
+            <RadioButton x:Name="radioAlcohol" Foreground="#FFE0E0E0" FontSize="20" >Alcohol</RadioButton>
+            <RadioButton x:Name="radioOther" Foreground="#FFE0E0E0" FontSize="20" >Other</RadioButton>
+        </StackPanel>
     </Grid>
 </UserControl>
