@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<users>
+	<profile id="Steve">
+		<name>Steve</name>
+		<password>abced123</password>
+	</profile>
+</users>

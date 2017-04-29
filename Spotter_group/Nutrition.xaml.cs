@@ -69,8 +69,8 @@ namespace Spotter_group
                 }
             }
             catch (Exception er)
-            {
-                MessageBox.Show("Please enter a numeric value for each calorie count box");
+            { // vs17 kept giving me crap for not displaying the er.tostring sorry 
+                MessageBox.Show("Please enter a numeric value for each calorie count box" + er.ToString());
             }
             
         }

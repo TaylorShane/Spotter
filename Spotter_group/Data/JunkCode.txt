@@ -1,0 +1,105 @@
+﻿
+        
+        
+        
+        
+        ItemsSource="{Binding Source={StaticResource work}, XPath=workout }" 
+                      DisplayMemberPath="muscle" DropDownClosed="workout_cboBox_1_DropDownClosed"
+        
+        
+        -->
+        
+        
+        
+        <!--
+        <ComboBox SelectedValuePath="@GUID" 
+            SelectedValue="{Binding XPath=/EssenceList/Essence[1]/LinkedEssences/LinkType[3]/LinkedEssence[1]/@GUID}" 
+            ItemTemplate="{StaticResource rolelistTemplate}" 
+        ItemsSource="{Binding XPath=/EssenceList/Essence[@Type]}" 
+        IsSynchronizedWithCurrentItem="True" />
+
+
+
+
+        
+         <TextBlock>
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat="{}{0}: {1}">
+                                    <Binding Path="version"/>
+                                    <Binding Path="muscle"/>
+
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+        <ComboBox>
+  <ComboBox.ItemTemplate>
+    <DataTemplate>
+      <TextBlock>
+        <TextBlock.Text>
+          <MultiBinding StringFormat="{}{0}: {1}">
+            <Binding Path=workout"/>
+            <Binding Path="mus"/>
+          </MultiBinding>
+        </TextBlock.Text>
+      </TextBlock>
+    </DataTemplate>
+  </ComboBox.ItemTemplate>
+</ComboBox>    
+        
+        
+        
+        <Label Foreground="White"></Label>
+            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_LoseWeight" 
+                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
+                      ItemsSource="{Binding Source={StaticResource work}, XPath=workout }" 
+                      DisplayMemberPath="muscle">
+            </ComboBox>
+        
+        
+        -->
+		<!--check box a dox
+        <CheckBox Grid.Column="4" Grid.Row="1" Name="check_box_1" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Column="4" Grid.Row="2" Name="check_box_2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Column="4" Grid.Row="3" Name="check_box_3" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+        <CheckBox Grid.Column="4" Grid.Row="4" Name="check_box_4" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+            -->
+<!-- 
+        
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label Foreground="White"></Label>
+            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_LoseWeight" 
+                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
+                      ItemsSource="{Binding Source={StaticResource work}, XPath=workout }" 
+                      DisplayMemberPath="muscle" DropDownClosed="cboBox_LoseWeight_DropDownClosed">
+            </ComboBox>
+            <TextBlock Margin="20" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" Name="workout_description_1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo libero, ullamcorper commodo varius sit amet, convallis vitae risus.
+            </TextBlock>           
+        </StackPanel>
+        
+        -->
+
+
+		 //this little guy right here takes the chosen drop down text,
+        //querys my xml file against the chosen muscle, displays the workout
+        //and instructions
+
+        /*  private void workout_cboBox_1_DropDownClosed(object sender, EventArgs e)
+          {
+              MessageBox.Show(workout_cboBox_1.Text);
+
+              string user_workout = workout_cboBox_1.Text;
+
+              MessageBox.Show(user_workout);
+
+              IEnumerable<string> workoutNames = from exercise in XDocument.Load(stevePath).Descendants("")
+
+
+        Element("name") == user_workout
+                                           select exercise.Element("machine").Value;
+
+            MessageBox.Show(workouts.FirstOrDefault());
+
+            chest_machine.Text = workouts.FirstOrDefault().ToString();
+
+          }*/

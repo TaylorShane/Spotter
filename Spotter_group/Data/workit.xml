@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<!--hey guys, if youre reading this you have no choice but to start running. 
+
+
+jk but seriously I have lost my mind trying to figure out this don here query format, i'm having trouble
+
+doing it like this to i have something done
+-->
+
+
+
+<exercise>
+	<muscle id="arms">
+		<name>Arms - Universal</name>
+		<machine>Bicep Curls</machine>
+		<details>1 set, 6 reps, 80% 1 rep</details>
+	</muscle>
+	<muscle id="arms">
+		<name>Arms - Universal</name>
+		<machine>Tricep Extension</machine>
+		<details>1 set, 8 reps, 80% 1 rep</details>
+	</muscle>
+	<muscle id="arms">
+		<name>Arms - Universal</name>
+		<machine>Tricep Dips</machine>
+		<details>1 set, 12 reps, no weight</details>
+	</muscle>
+	
+	<muscle id="back">
+		<name>Back and Shoulders - Universal</name>
+		<machine>Shoulder Press</machine>
+		<details>2 sets, 8 reps leg, 80% 1 rep</details>
+	</muscle>
+	<muscle id="back">
+		<name>Back and Shoulders - Universal</name>
+		<machine>Machine Lateral Pulldown</machine>
+		<details>2 sets, 8 reps leg, 80% 1 rep</details>
+	</muscle>
+	<muscle id="back">
+		<name>Back and Shoulders - Universal</name>
+		<machine>Kettelbell High Pull</machine>
+		<details>2 sets, 6 reps leg, 80% 1 rep</details>
+	</muscle>
+	
+	
+	<muscle id="chest">
+		<name>Chest - Cardio</name>
+		<machine>Dumbell Flye</machine>
+		<details>2 sets, 6 reps, 80% 1 rep</details>
+	</muscle>
+
+	<muscle id="chest">
+		<name>Chest - Lose Weight 1</name>
+		<machine>Barbell Bench Press</machine>
+		<details>1 set, 10 reps no weight, only bar</details>
+	</muscle>
+	<muscle id="chest">
+		<name>Chest - Lose Weight 2</name>
+		<machine>Chest Press</machine>
+		<details>2 sets, 6 reps, 80% 1 rep</details>
+	</muscle>
+	<muscle id="chest">
+		<name>Chest - Lose Weight 3</name>
+		<machine>Incline Bench Press</machine>
+		<details>2 sets, 8 reps, 40% 1 rep</details>
+	</muscle>
+	
+	<muscle id="core">
+		<name>Core - Cardio</name>
+		<machine>V Up</machine>
+		<details>2 sets, 12 reps</details>
+	</muscle>
+	
+	<muscle id="core">
+		<name>Core - Cardio</name>
+		<machine>Crunch Twist</machine>
+		<details>1 set, 12 reps</details>
+	</muscle>
+	<muscle id="core">
+		<name>Core - Universal </name>
+		<machine>Plank</machine>
+		<details>2 sets, 12 reps</details>
+	</muscle>
+	<muscle id="core">
+		<name>Core - Universal </name>
+		<machine>Incline Barbell Benchpress</machine>
+		<details>2 sets, 6 reps, 80% 1 rep</details>
+	</muscle>
+	<muscle id="legs">
+		<name>Legs - Universal</name>
+		<machine>Deadlift</machine>
+		<details>1 set, 20 reps leg, 40% 1 rep</details>
+	</muscle>
+	<muscle id="legs">
+		<name>Legs - Universal</name>
+		<machine>Barbell Squats</machine>
+		<details>1 set, 6 reps, 60% 1 rep</details>
+	</muscle>
+	<muscle id="legs">
+		<name>Legs - Universal</name>
+		<machine>Alternating Dumbell Lunge</machine>
+		<details>1 set, 20 reps leg, no weight</details>
+	</muscle>
+	<muscle id="body">
+		<name>Whole Body - 1</name>
+		<machine>Stairs!</machine>
+		<details>20 minutes</details>
+	</muscle>
+	<muscle id="core">
+		<name>Whole Body - 2</name>
+		<machine>Run!</machine>
+		<details>30 minutes</details>
+	</muscle>
+	<muscle id="core">
+		<name>Whole Body - 3</name>
+		<machine>Cycling</machine>
+		<details>30 minutes</details>
+	</muscle>
+	<muscle id="core">
+		<name>Whole Body - 4</name>
+		<machine>Jogging</machine>
+		<details>30 minutes</details>
+	</muscle>
+	<muscle id="core">
+		<name>Whole Body - 5</name>
+		<machine>Speed Walking</machine>
+		<details>30 minutes</details>
+	</muscle>
+	<muscle id="core">
+		<name>Whole Body - 2</name>
+		<machine>Jumping Jacks</machine>
+		<details>30 minutes</details>
+	</muscle>
+</exercise>
+
+

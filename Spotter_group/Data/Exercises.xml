@@ -1,66 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+
+
+
 <Exercises>
   <workout id="lWv1">
-    <day> 1 </day> <!-- We need to give the workouts a day for the calendar to populate -->
+    <day> 2 </day>  
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps no weight, only bar</details>
   </workout>
   <workout id="lWv1">
-    <day> 2 </day>
+    <day> 5 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
    <workout id="lWv1">
-     <day> 3 </day>
+     <day> 8 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
    <workout id="lWv1">
-     <day> 4 </day>
+     <day> 10 </day>
     <muscle>Legs</muscle>
     <name>BodyWeight Squats</name>
     <details>1 set, 10 reps, no weight </details>
   </workout>
   <workout id="lWv1">
-    <day> 5 </day>
+    <day> 13 </day>
     <muscle>Legs</muscle>
     <name>Single Leg Calf Raise</name>
     <details>1 set, 6 reps, bodyweight </details>
   </workout>
   <workout id="lWv1">
-    <day> 6 </day>
+    <day> 16 </day>
     <muscle>Arms</muscle>
     <name>Tricept Extensions</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
   <workout id="lWv1">
-    <day> 7 </day>
+    <day> 18 </day>
     <muscle>Core</muscle>
     <name>Ab Crunch Machine</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
   </workout>
   <workout id="lWv1">
-    <day> 8 </day>
+    <day> 21 </day>
     <muscle>Core</muscle>
     <name>Plank</name>
     <details>1 set, 30 seconds </details>
   </workout>
   <workout id="lWv2">
-    <day> 9 </day>
+    <day> 24 </day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps, no weight, only bar </details>
   </workout>
     <workout id="lWv2">
-     <day> 10 </day>
+     <day> 27 </day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 30% 1 rep </details>
   </workout>
      <workout id="lWv2">
+		 <day>29</day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 30% 1 rep </details>
@@ -328,4 +335,3 @@
   </workout>
   
 </Exercises>
-

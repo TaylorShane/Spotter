@@ -48,6 +48,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -158,6 +161,7 @@
     <None Include="Documentation\CS317_Final_Project_Requirements.pdf" />
     <None Include="Documentation\Proposal.pdf" />
     <None Include="Documentation\SpotterMockUp_LandscapeView.pdf" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -247,6 +251,33 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Users.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Gifs\jump-rope.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Gifs\bench-press.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Gifs\tone-up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Gifs\cardio-run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\workit.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\JunkCode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Gifs\arms.gif" />
+    <Resource Include="images\Gifs\buff.gif" />
+    <Resource Include="images\Gifs\cardio.gif" />
+    <Resource Include="images\Gifs\strength.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Signin.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

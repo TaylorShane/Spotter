@@ -7,21 +7,45 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <StackPanel Orientation="Vertical">
-                <Label Foreground ="#FFE0E0E0" Margin="10">Username:</Label>
-                <TextBox Grid.Column="0" Width="100" Height="20" Margin="1"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Foreground ="#FFE0E0E0" Margin="10">Password: </Label>
-                <TextBox Grid.Column="0" Width="100" Height="20"></TextBox>
-            </StackPanel>
-            <Button Content="Submit!" Margin="30" Click="Button_Click"/>
-        </StackPanel>
-        <Image Grid.Column="1" Source="images/Icons/bench_press.png" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="2" Grid.Column="0" Foreground="White">Username:
+        </Label>
+
+        <Label Grid.Row="3" Grid.Column="0" Foreground="White">Password:
+        </Label>
+
+
+
+        <TextBox Grid.Column="0" Grid.Row="2" Name="user_name"
+                 Height="20" Width="80" VerticalAlignment="Center"
+                 HorizontalAlignment="Center">
+            
+        </TextBox>
+
+        <TextBox Grid.Column="0" Grid.Row="3" Name="pass_word" Height="20"
+                 Width="80"
+                  VerticalAlignment="Center" HorizontalAlignment="Center">
+            
+        </TextBox>
+
+
+
     </Grid>
+    
+    
+    
+    
 </UserControl>
