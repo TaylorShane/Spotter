@@ -8,9 +8,9 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <!-- Use this to bind to your user controls -->
     <UserControl.Resources>
-        <XmlDataProvider Source="Data/workouts.xml"
-                         XPath="protein_items"
-                         x:Key="protein"/>
+        <XmlDataProvider Source="Data/Food.xml"
+                         XPath="food_items"
+                         x:Key="food"/>
     </UserControl.Resources>
     <Grid Name="gridAdmin">
         <Grid.ColumnDefinitions>
@@ -25,23 +25,41 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Label Foreground="White" Grid.ColumnSpan="2">Add Food Type</Label>
-        <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center">
+        <Label Margin="20" Foreground="#009999" Grid.ColumnSpan="3" Grid.Column="1" FontSize="30">Add Food Type</Label>
+        
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Food Type:</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <ComboBox IsReadOnly="True" x:Name="cboBoxFoodType"  Width="200px"
+                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
+                      DisplayMemberPath="name" DropDownClosed="cboBox_Proteins_DropDownClosed">
+                <ComboBoxItem>Protein</ComboBoxItem>
+                <ComboBoxItem>Vegetable</ComboBoxItem>
+                <ComboBoxItem>Fruit</ComboBoxItem>
+                <ComboBoxItem>Alcohol</ComboBoxItem>
+                <ComboBoxItem>Other</ComboBoxItem>
+            </ComboBox>
+            
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
             <Label Foreground="White" FontSize="20">Name:</Label>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBox Name="txBoxWorkoutName" Width="200px" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txBoxFoodName" Width="200px" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Label Foreground="White" FontSize="20">Food Type: </Label>
+        <StackPanel Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Calories:</Label>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="1" >
-            <RadioButton x:Name="radioProtein" Foreground="#FFE0E0E0" FontSize="20">Protein</RadioButton>
-            <RadioButton x:Name="radioVeggie" Foreground="#FFE0E0E0" FontSize="20">Vegetable</RadioButton>
-            <RadioButton x:Name="radioFruit" Foreground="#FFE0E0E0" FontSize="20">Fruit</RadioButton>
-            <RadioButton x:Name="radioAlcohol" Foreground="#FFE0E0E0" FontSize="20">Alcohol</RadioButton>
-            <RadioButton x:Name="radioOther" Foreground="#FFE0E0E0" FontSize="20">Other</RadioButton>
+        <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Button Name="btnAddFood">Submit</Button>
         </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBoxNewFoodCalories" Width="200px"></TextBox>
+        </StackPanel>
+
+        
     </Grid>
 </UserControl>
