@@ -24,5 +24,56 @@ namespace Spotter_group
         {
             InitializeComponent();
         }
+
+        private void lblName_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbName.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void lblDOB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbDOB.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        private void lblUsername_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbUsername.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void lblWeight_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbWeight.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void lblStartDate_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbStartDate.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void lblPassword_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbPassword.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void lblWorkout_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            cbWorkouts.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            tbGoals.Visibility = System.Windows.Visibility.Visible;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -83,13 +83,13 @@
             <Label Foreground="#FFE0E0E0" FontSize="20">Password</Label>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBox x:Name="tbPassword" Width="200px" ToolTip="Must be at least 8 characters"></TextBox>
+            <PasswordBox x:Name="tbPassword" Width="200px" ToolTip="Must be at least 8 characters"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" FontSize="20">Confirm Password</Label>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <TextBox x:Name="tbConfirmPassword" Width="200px"></TextBox>
+            <PasswordBox x:Name="tbConfirmPassword" Width="200px"/>
         </StackPanel>
         <StackPanel Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4" Margin="0,15">
             <Label Foreground="#FFE0E0E0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Character Transformation</Label>

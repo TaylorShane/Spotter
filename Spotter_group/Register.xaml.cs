@@ -32,6 +32,7 @@ namespace Spotter_group
         string dateOfBirth = "";
         string startDate = "";
         int nextID = 0;
+
         //PATH LOCATION
 
         public Register()
@@ -47,7 +48,7 @@ namespace Spotter_group
             string userName = tbUserName.Text;
             string currentWeight = tbCurrentWeight.Text;
             string currentHeight = tbCurrentHeight.Text;
-            string password = tbPassword.Text;
+            string password = tbPassword.Password;
 
             try
             {

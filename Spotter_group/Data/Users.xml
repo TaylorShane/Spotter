@@ -12,4 +12,16 @@
     <Password>password</Password>
     <Workout>Cardio</Workout>
   </User>
+  <User ID="1">
+    <FirstName>Jason</FirstName>
+    <LastName>Merrill</LastName>
+    <BirthDate>07/04/2017</BirthDate>
+    <Username>jasonlmerrill</Username>
+    <StartDate>07/04/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>155</CurrentWeight>
+    <CurrentHeight>5'8"</CurrentHeight>
+    <Password>asdf</Password>
+    <Workout>Gain Muscle</Workout>
+  </User>
 </Users>

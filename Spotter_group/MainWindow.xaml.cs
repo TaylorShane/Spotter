@@ -88,6 +88,11 @@ namespace Spotter_group
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void MenuItemAdmin_Click(object sender, RoutedEventArgs e)
+        {
             Admin admin = new Admin();
             grid2.Children.Clear();
             grid2.Children.Add(admin);
