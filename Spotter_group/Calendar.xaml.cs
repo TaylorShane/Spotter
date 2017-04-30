@@ -26,8 +26,8 @@ namespace Spotter_group
             InitializeComponent();
             populateStartDate();
         }
-
-        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/SampleUsers.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
+        //string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/SampleUsers.xml";
         // PATH LOCATION
 
         public void populateStartDate()
@@ -41,7 +41,7 @@ namespace Spotter_group
 
             DateTime StartDate;
             string user = "Shane";
-            IEnumerable<string> startDateResult = from Users in XDocument.Load(shanePath).Descendants("Users")
+            IEnumerable<string> startDateResult = from Users in XDocument.Load(jasonPath).Descendants("Users")
                                                  where (string)Users.Element("name") == user
                                                  select Users.Element("startDate").Value;
 
