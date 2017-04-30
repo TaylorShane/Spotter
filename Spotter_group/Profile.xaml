@@ -6,6 +6,14 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <XmlDataProvider Source="Data/Users.xml"
+                         XPath="Users"
+                         x:Key="user"/>
+    </UserControl.Resources>
+    
+    
+    
     <Grid x:Name="gridProfile" Margin="10,15,10,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -28,12 +36,14 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-
+        <TextBox Name="testbox"></TextBox>
+        
         <Label Grid.Row="0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#009999" Grid.ColumnSpan="4">Profile</Label>
         
         <TextBlock Grid.Column="0" Grid.Row="1" Foreground ="#FFE0E0E0">Name:</TextBlock>
-        <Label x:Name="lblName" Grid.Column="1" Grid.Row="1" Foreground="#FFE0E0E0" ToolTip="Double click to edit" MouseDoubleClick="lblName_MouseDoubleClick">stuff to click</Label>
-        <TextBox Visibility="Hidden" x:Name="tbName" Grid.Column="2" Grid.Row="1"></TextBox>
+        <Label x:Name="lblName" Grid.Column="1" Grid.Row="1" Foreground="#FFE0E0E0" ToolTip="Double click to edit" MouseDoubleClick="lblName_MouseDoubleClick"
+               Content="{Binding ElementName=tbName, Path=Text}"/>
+        <TextBox  x:Name="tbName" Grid.Column="2" Grid.Row="1"></TextBox>
         
         
         <TextBlock Grid.Column="0" Grid.Row="2" Foreground="#FFE0E0E0">Birthdate:</TextBlock>

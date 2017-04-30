@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Spotter_group
 {
@@ -20,6 +21,9 @@ namespace Spotter_group
     /// </summary>
     public partial class Profile : UserControl
     {
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+
+
         public Profile()
         {
             InitializeComponent();
@@ -73,6 +77,14 @@ namespace Spotter_group
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            XDocument xmlDocument = XDocument.Load(jasonPath);
+            xmlDocument.Element("Users")
+                                .Elements("User")
+                                .Where(x => x.Attribute("ID").Value == testbox.Text).FirstOrDefault()
+                                .SetElementValue("FirstName", lblName.Content);
+            xmlDocument.Save(jasonPath);
+
+            
 
         }
     }
