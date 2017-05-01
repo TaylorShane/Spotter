@@ -97,5 +97,12 @@ namespace Spotter_group
             grid2.Children.Clear();
             grid2.Children.Add(admin);
         }
+
+        private void MenuItemUpdateUser_Click(object sender, RoutedEventArgs e)
+        {
+            UpdateUser updateUser = new UpdateUser();
+            grid2.Children.Clear();
+            grid2.Children.Add(updateUser);
+        }
     }
 }

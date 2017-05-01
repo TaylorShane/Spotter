@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="Spotter_group.UpdateUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Spotter_group"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <!-- Use this to bind to your user controls -->
+    <UserControl.Resources>
+        <XmlDataProvider Source="Data/Users.xml"
+                         XPath="Users"
+                         x:Key="User"/>
+    </UserControl.Resources>
+    <Grid Name="GridUpdateUser">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+       <!-- Column 1 Labels -->
+        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Select Username</Label>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">First name: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Last Name: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Birth Date</Label>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Workout</Label>
+        </StackPanel>
+
+        <!-- Column 2 Controls -->
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <ComboBox Name="cboBoxUsername" IsReadOnly="True" Margin="5, 10, 5, 10" Height="25" 
+                      VerticalAlignment="Top" Foreground="Black" Width="200px"
+                      ItemsSource="{Binding Source={StaticResource User}, XPath=User}" 
+                      DisplayMemberPath="Username"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox2" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox3" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox4" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox5" Width="200px"></TextBox>
+        </StackPanel>
+
+        <!-- Column 3 Labels -->
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Workout Start Date: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Gender: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Current Weight: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Password: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Button Name="btnUpdateUser" Height="40" Width="80">Update</Button>
+        </StackPanel>
+
+
+        <!-- Column 4 controls -->
+        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox6" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox7" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox8" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBox9" Width="200px"></TextBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

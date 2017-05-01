@@ -25,6 +25,7 @@
                 <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
                 <MenuItem x:Name="MenuItemProfile" Header="Profile" Foreground="Black" Click="MenuItemProfile_Click"/>
                 <MenuItem x:Name="MenuItemAdmin" Header="Admin" Foreground="Black" Click="MenuItemAdmin_Click" />
+                <MenuItem x:Name="MenuItemUpdateUser" Header="Update User" Foreground="Black" Click="MenuItemUpdateUser_Click" />
             </MenuItem>
             <MenuItem Header="Calendar" x:Name="MenuItemCalendar" Foreground="White" Click="MenuItemCalendar_Click"/>
             <MenuItem Header="Details" x:Name="Details" Foreground="White" Click="Details_Click">
