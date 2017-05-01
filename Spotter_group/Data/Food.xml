@@ -1,227 +1,165 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <food_items>
+  <fruit>Fruit<name Id="Jack Fruit">Jack Fruit</name><calories>88</calories></fruit>
+  <protein>Protein<name Id="Human Meat">Human Meat</name><calories>5000</calories></protein>
   <protein>
-      <name Id="Chicken">Chicken</name>
-      <calories>142</calories>
+    <name Id="Chicken">Chicken</name>
+    <calories>142</calories>
   </protein>
   <protein>
-      <name Id="Turkey">Turkey</name>
-      <calories>153</calories>
+    <name Id="Turkey">Turkey</name>
+    <calories>153</calories>
   </protein>
   <protein>
-      <name Id="Pork">Pork</name>
-      <calories>268</calories>
+    <name Id="Pork">Pork</name>
+    <calories>268</calories>
   </protein>
   <protein>
-      <name Id="Meat">Meat</name>
-      <calories>240</calories>
+    <name Id="Meat">Meat</name>
+    <calories>240</calories>
   </protein>
   <protein>
-      <name Id="Fish">Fish</name>
-      <calories>145</calories>
+    <name Id="Fish">Fish</name>
+    <calories>145</calories>
   </protein>
   <protein>
-      <name Id="Eggs">Eggs</name>
-      <calories>240</calories>
+    <name Id="Eggs">Eggs</name>
+    <calories>240</calories>
   </protein>
   <protein>
-      <name Id="Tofu">Tofu</name>
-      <calories>70</calories>
+    <name Id="Tofu">Tofu</name>
+    <calories>70</calories>
   </protein>
   <veggie>
-      <name Id="Asparagus">Asparagus</name>
-      <calories></calories>
+    <name Id="Asparagus">Asparagus</name>
+    <calories>72</calories>
   </veggie>
   <veggie>
     <name Id="Broccoli">Broccoli</name>
-      <calories></calories>
+    <calories>31</calories>
   </veggie>
   <veggie>
     <name Id="Potato">Potato</name>
-      <calories></calories>
+    <calories>225</calories>
   </veggie>
   <veggie>
     <name Id="Brussel Sprouts">Brussel Sprouts</name>
-      <calories></calories>
+    <calories>38</calories>
   </veggie>
   <veggie>
     <name Id="Kale">Kale</name>
-      <calories></calories>
+    <calories>33</calories>
   </veggie>
   <veggie>
     <name Id="Beets">Beets</name>
-      <calories></calories>
+    <calories>58</calories>
   </veggie>
   <veggie>
     <name Id="Lettuce">Lettuce</name>
-      <calories></calories>
+    <calories>8</calories>
   </veggie>
   <veggie>
     <name Id="Spinach">Spinach</name>
-      <calories></calories>
+    <calories>7</calories>
   </veggie>
   <veggie>
     <name Id="Carrots">Carrots</name>
-      <calories></calories>
+    <calories>50</calories>
   </veggie>
   <veggie>
     <name Id="Cauliflower">Cauliflower</name>
-      <calories></calories>
+    <calories>25</calories>
   </veggie>
   <veggie>
     <name Id="Bell Pepper">Bell Pepper</name>
-      <calories></calories>
+    <calories>39</calories>
   </veggie>
-  <veggie>
-    <name Id="Other">Other</name>
-      <calories></calories>
-  </veggie>
-
-  <food>
-    <fruit>
-      <name>Pineapple</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Apple</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Blueberry</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Pear</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Orange</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Grapes</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Grapefruit</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Watermelon</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Banana</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Kiwi</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Banana</name>
-      <calories></calories>
-    </fruit>
-  </food>
-  <food>
-    <fruit>
-      <name>Other</name>
-      <calories></calories>
-    </fruit>
-  </food>
-
-  <food>
-    <alcohol>
-      <name>Beer</name>
-      <calories></calories>
-    </alcohol>
-  </food>
-  <food>
-    <alcohol>
-      <name>Wine</name>
-      <calories></calories>
-    </alcohol>
-  </food>
-  <food>
-    <alcohol>
-      <name>Liquor</name>
-      <calories></calories>
-    </alcohol>
-  </food>
-  <food>
-    <alcohol>
-      <name>Other</name>
-      <calories></calories>
-    </alcohol>
-  </food>
-
-
-  <food>
-    <misc>
-      <name>Nuts</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Bread</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Whole Grain Cereal</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Legumes</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Beans</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Oats</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Rice</name>
-      <calories></calories>
-    </misc>
-  </food>
-  <food>
-    <misc>
-      <name>Other</name>
-      <calories></calories>
-    </misc>
-  </food> 
+  <fruit>
+    <name Id="Pineapple">Pineapple</name>
+    <calories>74</calories>
+  </fruit>
+  <fruit>
+    <name Id="Apple">Apple</name>
+    <calories>57</calories>
+  </fruit>
+  <fruit>
+    <name Id="Blueberry">Blueberry</name>
+    <calories>83</calories>
+  </fruit>
+  <fruit>
+    <name Id="Pear">Pear</name>
+    <calories>96</calories>
+  </fruit>
+  <fruit>
+    <name Id="Orange">Orange</name>
+    <calories>112</calories>
+  </fruit>
+  <fruit>
+    <name Id="Grapes">Grapes</name>
+    <calories>104</calories>
+  </fruit>
+  <fruit>
+    <name Id="Grapefruit">Grapefruit</name>
+    <calories>74</calories>
+  </fruit>
+  <fruit>
+    <name Id="Watermelon">Watermelon</name>
+    <calories>46</calories>
+  </fruit>
+  <fruit>
+    <name Id="Banana">Banana</name>
+    <calories>134</calories>
+  </fruit>
+  <fruit>
+    <name Id="Kiwi">Kiwi</name>
+    <calories>108</calories>
+  </fruit>
+  <alcohol>
+    <name Id="Light Beer">Light Beer</name>
+    <calories>100</calories>
+  </alcohol>
+  <alcohol>
+    <name Id="Regular Beer">Regular Beer</name>
+    <calories>155</calories>
+  </alcohol>
+  <alcohol>
+    <name Id="Heavy Beer">Heavy Beer</name>
+    <calories>225</calories>
+  </alcohol>
+  <alcohol>
+    <name Id="White Wine">White Wine</name>
+    <calories>120</calories>
+  </alcohol>
+  <alcohol>
+    <name Id="Red Wine">Red Wine</name>
+    <calories>125</calories>
+  </alcohol>
+  <alcohol>
+    <name Id="Liquor">Liquor</name>
+    <calories>75</calories>
+  </alcohol>
+  <other>
+    <name Id="Nuts">Nuts (.25 cup)</name>
+    <calories>160</calories>
+  </other>
+  <other>
+    <name Id="Bread">Bread (2 slices)</name>
+    <calories>148</calories>
+  </other>
+  <other>
+    <name Id="Whole Grain Cereal">Whole Grain Cereal</name>
+    <calories>113</calories>
+  </other>
+  <other>
+    <name Id="Black Beans">Black Beans (100 grams)</name>
+    <calories>341</calories>
+  </other>
+  <other>
+    <name Id="Oats">Oats</name>
+    <calories>150</calories>
+  </other>
+  <other>
+    <name Id="Rice">Rice</name>
+    <calories>204</calories>
+  </other>
 </food_items>

@@ -53,7 +53,7 @@
                       DisplayMemberPath="name" DropDownClosed="cboBox_Proteins_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="0" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
-            <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5"></TextBox>            
+            <TextBox Name="tboxProteinCalories" Grid.Column="0" Grid.Row="4" Height="20" Margin="5">0</TextBox>            
         </StackPanel>
         
         <StackPanel Grid.Row="2" Grid.Column="1" Margin="10,0">
@@ -61,7 +61,7 @@
             <ComboBox Grid.Column="1" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Vegetables" 
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top"
                       ItemsSource="{Binding Source={StaticResource food}, XPath=veggie}" 
-                      DisplayMemberPath="name">
+                      DisplayMemberPath="name" DropDownClosed="cboBox_Vegetables_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="1" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxVeggieCalories" Grid.Column="1" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -71,8 +71,8 @@
             <Label Foreground="White">Select a Fruit</Label>
             <ComboBox Grid.Column="2" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Fruits" 
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top"
-                      ItemsSource="{Binding Source={StaticResource food}, XPath=food/fruit}" 
-                      DisplayMemberPath="name">
+                      ItemsSource="{Binding Source={StaticResource food}, XPath=fruit}" 
+                      DisplayMemberPath="name" DropDownClosed="cboBox_Fruits_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="2" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxFruitsCalories" Grid.Column="2" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -82,8 +82,8 @@
             <Label Foreground="White">Select an Alcohol</Label>
             <ComboBox Grid.Column="3" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Alcohol" 
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" 
-                      ItemsSource="{Binding Source={StaticResource food}, XPath=food/alcohol}" 
-                      DisplayMemberPath="name">
+                      ItemsSource="{Binding Source={StaticResource food}, XPath=alcohol}" 
+                      DisplayMemberPath="name" DropDownClosed="cboBox_Alcohol_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="3" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxAlcoholCalories" Grid.Column="3" Grid.Row="4" Height="20" Margin="5">0</TextBox>
@@ -93,13 +93,13 @@
             <Label Foreground="White">Select other</Label>
             <ComboBox Grid.Column="4" Grid.Row="2" IsReadOnly="True" x:Name="cboBox_Misc" 
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" 
-                      ItemsSource="{Binding Source={StaticResource food}, XPath=food/misc}" 
-                      DisplayMemberPath="name">
+                      ItemsSource="{Binding Source={StaticResource food}, XPath=other}" 
+                      DisplayMemberPath="name" DropDownClosed="cboBox_Misc_DropDownClosed">
             </ComboBox>
             <Label Foreground="White" Grid.Column="4" Grid.Row="3" Height="30" Margin="5">Enter Calories</Label>
             <TextBox Name="tboxMiscCalories" Grid.Column="4" Grid.Row="4" Height="20" Margin="5">0</TextBox>
         </StackPanel>
         
-        <Button Name="btnSaveMeal" Grid.Column="2" Grid.Row="3" Margin="15" Click="btnSaveMeal_Click">Calculate Calories</Button>
+        <Button Name="btnSaveMeal" Grid.Column="2" Grid.Row="3" Margin="15" Click="btnSaveMeal_Click">Calculate Meal Calories</Button>
     </Grid>
 </UserControl>

@@ -33,9 +33,9 @@
             <Label Foreground="White" FontSize="20">Food Type:</Label>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <ComboBox IsReadOnly="True" x:Name="cboBoxFoodType"  Width="200px"
+            <ComboBox IsReadOnly="False" x:Name="cboBoxFoodType"  Width="200px"
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
-                      DisplayMemberPath="name" DropDownClosed="cboBox_Proteins_DropDownClosed">
+                      DropDownClosed="cboBox_Proteins_DropDownClosed">
                 <ComboBoxItem>Protein</ComboBoxItem>
                 <ComboBoxItem>Vegetable</ComboBoxItem>
                 <ComboBoxItem>Fruit</ComboBoxItem>
@@ -51,10 +51,10 @@
             <TextBox Name="txBoxFoodName" Width="200px" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Calories:</Label>
+            <Label Foreground="White" FontSize="20">Calories per serving:</Label>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <Button Name="btnAddFood">Submit</Button>
+            <Button Name="btnAddFood" Height="37" Width="76" Click="btnAddFood_Click">Add Food</Button>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
             <TextBox Name="txtBoxNewFoodCalories" Width="200px"></TextBox>

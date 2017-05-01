@@ -87,5 +87,53 @@ namespace Spotter_group
             
             tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
         }
+
+        private void cboBox_Vegetables_DropDownClosed(object sender, EventArgs e)
+        {
+            string refItem = cboBox_Vegetables.Text;
+            // MessageBox.Show(refItem);
+
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("veggie")
+                                                 where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
+
+            tboxVeggieCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+        }
+
+        private void cboBox_Fruits_DropDownClosed(object sender, EventArgs e)
+        {
+            string refItem = cboBox_Fruits.Text;
+            // MessageBox.Show(refItem);
+
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("fruit")
+                                                 where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
+
+            tboxFruitsCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+        }
+
+        private void cboBox_Alcohol_DropDownClosed(object sender, EventArgs e)
+        {
+            string refItem = cboBox_Alcohol.Text;
+            // MessageBox.Show(refItem);
+
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("alcohol")
+                                                 where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
+
+            tboxAlcoholCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+        }
+
+        private void cboBox_Misc_DropDownClosed(object sender, EventArgs e)
+        {
+            string refItem = cboBox_Misc.Text;
+            // MessageBox.Show(refItem);
+
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("other")
+                                                 where (string)food_items.Element("name") == refItem
+                                                 select food_items.Element("calories").Value;
+
+            tboxMiscCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+        }
     }
 }
