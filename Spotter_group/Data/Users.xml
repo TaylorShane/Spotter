@@ -29,9 +29,9 @@
   <User ID="2">
     <FirstName>Shane</FirstName>
     <LastName>Taylor</LastName>
-    <BirthDate>29/10/1974</BirthDate>
+    <BirthDate>10/29/1974</BirthDate>
     <Username>MasterOfTheUniverse</Username>
-    <StartDate>29/10/1974</StartDate>
+    <StartDate>10/10/1992</StartDate>
     <Gender>Male</Gender>
     <CurrentWeight>167</CurrentWeight>
     <CurrentHeight>Is this in inches alone? Inches AND feet?  Maybe we should use a tool tip?</CurrentHeight>
@@ -50,6 +50,19 @@
     <CurrentHeight>19 FEETS</CurrentHeight>
     <Password>123456789</Password>
     <Workout>Gain Muscle</Workout>
+    <Admin>No</Admin>
+  </User>
+  <User ID="4">
+    <FirstName>Tony</FirstName>
+    <LastName>Danza</LastName>
+    <BirthDate>01/01/1958</BirthDate>
+    <Username>ToneBone</Username>
+    <StartDate>01/01/1958</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>225</CurrentWeight>
+    <CurrentHeight>5' 2"</CurrentHeight>
+    <Password>123456</Password>
+    <Workout>Lose Weight</Workout>
     <Admin>No</Admin>
   </User>
 </Users>

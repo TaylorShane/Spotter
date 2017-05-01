@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
-using System.Xml.XPath;
 
 namespace Spotter_group
 {
@@ -91,7 +90,7 @@ namespace Spotter_group
                 IEnumerable<string> UserBirthDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == refItem
                                                     select Users.Element("BirthDate").Value;
-
+                
                 txtBoxBirthDate.Text = UserBirthDate.FirstOrDefault().ToString();
 
                 // Workout
@@ -106,7 +105,16 @@ namespace Spotter_group
                                                            where (string)Users.Element("Username") == refItem
                                                            select Users.Element("StartDate").Value;
 
-                txtBoxWorkoutStartDate.Text = UserWorkoutStartDate.FirstOrDefault().ToString();
+
+                string workoutstartdate = UserWorkoutStartDate.FirstOrDefault().ToString();
+                DateTime dt = Convert.ToDateTime(workoutstartdate);
+                txtBoxWorkoutStartDate.SelectedDate = DateTime.Parse(workoutstartdate); 
+                //txtBoxWorkoutStartDate.Text = UserWorkoutStartDate.FirstOrDefault().ToString();
+
+                	/* how to convert from string to DateTime
+	                *
+	                * string date = "01/08/2008";
+	                * DateTime dt = Convert.ToDateTime(date); */
 
                 // Gender
                 IEnumerable<string> UserGender = from Users in XDocument.Load(shanePath).Descendants("User")

@@ -18,10 +18,10 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -95,10 +95,13 @@
 
         <!-- Column 4 controls -->
         <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxWorkoutStartDate" Width="200px"></TextBox>
+            <DatePicker Name="txtBoxWorkoutStartDate" Width="200px"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxGender" Width="200px"></TextBox>
+            <ComboBox Name="txtBoxGender" Width="200px">
+                <ComboBoxItem>Male</ComboBoxItem>
+                <ComboBoxItem>Female</ComboBoxItem>
+            </ComboBox>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
             <TextBox Name="txtBoxCurrentWeight" Width="200px"></TextBox>
