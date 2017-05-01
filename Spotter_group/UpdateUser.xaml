@@ -28,6 +28,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Label Margin="20" Foreground="#009999" Grid.ColumnSpan="2" Grid.Column="1" FontSize="30">Update User</Label>
         
        <!-- Column 1 Labels -->
         <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
