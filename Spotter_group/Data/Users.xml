@@ -52,4 +52,17 @@
     <Workout>Gain Muscle</Workout>
     <Admin>No</Admin>
   </User>
+  <User ID="4">
+    <FirstName>gdsfgd</FirstName>
+    <LastName>sdfgsdfg</LastName>
+    <BirthDate>18/05/2017</BirthDate>
+    <Username>sdgsdfg</Username>
+    <StartDate>03/06/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>123</CurrentWeight>
+    <CurrentHeight>123</CurrentHeight>
+    <Password>gfd</Password>
+    <Workout>Gain Muscle</Workout>
+    <Admin>No</Admin>
+  </User>
 </Users>

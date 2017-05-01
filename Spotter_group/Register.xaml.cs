@@ -54,7 +54,7 @@ namespace Spotter_group
 
             try
             {
-                XDocument xmlDocument = XDocument.Load(shanePath);
+                XDocument xmlDocument = XDocument.Load(jasonPath);
                 //nextId = xmlDocument.Root.LastNode()
                 int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
                 xmlDocument.Element("Users").Add(
@@ -71,7 +71,7 @@ namespace Spotter_group
                     new XElement("Workout", workout),
                     new XElement("Admin", admin)
                     ));
-                xmlDocument.Save(shanePath);
+                xmlDocument.Save(jasonPath);
 
                 ID++;
                 MessageBox.Show("User successfully added to database.");
@@ -82,6 +82,25 @@ namespace Spotter_group
             {
                 MessageBox.Show("XML file could not be loaded.");
             }
+
+
+            tbFirstName.Text = "";
+            tbLastName.Text = "";
+            tbDOB.SelectedDate = null;
+            tbStartDate.SelectedDate = null;
+            tbUserName.Text = "";
+            tbCurrentWeight.Text = "";
+            tbCurrentHeight.Text = "";
+            cbFemale.IsChecked = false;
+            cbMale.IsChecked = false;
+            tbPassword.Password = "";
+            tbConfirmPassword.Password = "";
+            cbToneUp.IsChecked = false;
+            cbGainMuslce.IsChecked = false;
+            cbLoseWeight.IsChecked = false;
+            cbCardio.IsChecked = false;
+
+
         }
 
         private void cbFemale_Checked(object sender, RoutedEventArgs e)
@@ -121,7 +140,7 @@ namespace Spotter_group
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)
         {
-            startDate = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
+            startDate = tbStartDate.SelectedDate.Value.ToString("dd/MM/yyyy");
         }
     }
 }
