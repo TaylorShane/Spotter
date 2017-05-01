@@ -27,6 +27,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Label Margin="20" Foreground="#009999" Grid.ColumnSpan="2" Grid.Column="1" FontSize="30">Update User</Label>
         
@@ -52,19 +54,19 @@
             <ComboBox Name="cboBoxUsername" IsReadOnly="True" Margin="5, 10, 5, 10" Height="25" 
                       VerticalAlignment="Top" Foreground="Black" Width="200px"
                       ItemsSource="{Binding Source={StaticResource User}, XPath=User}" 
-                      DisplayMemberPath="Username"></ComboBox>
+                      DisplayMemberPath="Username" DropDownClosed="cboBoxUsername_DropDownClosed"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox2" Width="200px"></TextBox>
+            <TextBox Name="txtBoxFirstName" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox3" Width="200px"></TextBox>
+            <TextBox Name="txtBoxLastName" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox4" Width="200px"></TextBox>
+            <TextBox Name="txtBoxBirthDate" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox5" Width="200px"></TextBox>
+            <TextBox Name="txtBoxWorkout" Width="200px"></TextBox>
         </StackPanel>
 
         <!-- Column 3 Labels -->
@@ -78,25 +80,40 @@
             <Label Foreground="White" FontSize="20">Current Weight: </Label>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Password: </Label>
+            <Label Foreground="White" FontSize="20">Height: </Label>
         </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Button Name="btnUpdateUser" Height="40" Width="80">Update</Button>
+        <StackPanel Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Password:</Label>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Label Foreground="White" FontSize="20">Admin: </Label>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+            <Button Name="btnUpdateUser" Height="40" Width="80" Click="btnUpdateUser_Click">Update</Button>
         </StackPanel>
 
 
         <!-- Column 4 controls -->
         <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox6" Width="200px"></TextBox>
+            <TextBox Name="txtBoxWorkoutStartDate" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox7" Width="200px"></TextBox>
+            <TextBox Name="txtBoxGender" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox8" Width="200px"></TextBox>
+            <TextBox Name="txtBoxCurrentWeight" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBox9" Width="200px"></TextBox>
+            <TextBox Name="txtBoxHeight" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <TextBox Name="txtBoxPassword" Width="200px"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+            <ComboBox Name="cboBoxAdmin" Width="200px">
+                <ComboBoxItem>Yes</ComboBoxItem>
+                <ComboBoxItem>No</ComboBoxItem>
+            </ComboBox>
         </StackPanel>
     </Grid>
 </UserControl>

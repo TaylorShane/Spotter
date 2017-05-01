@@ -100,8 +100,8 @@
             <CheckBox x:Name="cbToneUp" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbToneUp_Checked"></CheckBox>
         </StackPanel>
         <DockPanel  Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Ursula.png" Height="150px" Width="150px"/>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\littlemermaid.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\Ursula.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\littlemermaid.png" Height="150px" Width="150px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to become leaner with more muscle definition?  Then this workout routine is for you!  Our <Italic><Bold>Tone UP</Bold></Italic> will help you loose weight and add a little muscle, too!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -109,8 +109,8 @@
             <CheckBox x:Name="cbGainMuslce" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbGainMuslce_Checked"></CheckBox>
         </StackPanel>
         <DockPanel Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\snarfsnarf.png" Height="150px" Width="150px"/>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\thundercat.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\snarfsnarf.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\thundercat.png" Height="150px" Width="150px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to bulk up?  Become bigger and stronger??  Our <Italic><Bold>Gain Muscle</Bold></Italic> routine will incorporate heavier weights with fewer reps.  This tried and true technique will get your body beach ready!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -118,8 +118,8 @@
             <CheckBox x:Name="cbLoseWeight" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbLoseWeight_Checked"></CheckBox>
         </StackPanel>
         <DockPanel Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Stimpy.png" Height="125px" Width="150px"/>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\ren.png" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\Stimpy.png" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\ren.png" Height="125px" Width="150px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Use our <Italic><Bold>Lose Weight</Bold></Italic> routine to shed any unwanted pounds!</TextBlock>
             </DockPanel>
         <StackPanel Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -127,8 +127,8 @@
             <CheckBox x:Name="cbCardio" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbCardio_Checked"></CheckBox>
         </StackPanel>
         <DockPanel Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Wile_E_Coyote.png" Height="125px" Width="150px"/>
-            <Image Source="C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\images\Characters\Faster-Road-Runner.gif" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\Wile_E_Coyote.png" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\Faster-Road-Runner.gif" Height="125px" Width="150px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Cardiiovascular health is an important part or anyone's health.  Choose <Italic><Bold>Cardio</Bold></Italic> to improve yours!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="3" Grid.Row="11">

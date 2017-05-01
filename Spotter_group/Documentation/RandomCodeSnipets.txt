@@ -26,3 +26,50 @@ Label.Foreground = Brushes.Red;
 	*
 	*/
 	 //xmlDocument.Root.LastNode() to find last ID number
+
+How to save to an array:
+public void SaveArrayToXML()
+        {
+            Student[] students = new Student[4];
+            students[0] = new Student
+            {
+                Id = 101,
+                Name = "Jack",
+                Gender = "Male",
+                Grade = 90
+            };
+            students[1] = new Student
+            {
+                Id = 101,
+                Name = "Jim",
+                Gender = "Male",
+                Grade = 20
+            };
+            students[2] = new Student
+            {
+                Id = 101,
+                Name = "Bob",
+                Gender = "Male",
+                Grade = 60
+            };
+            students[3] = new Student
+            {
+                Id = 101,
+                Name = "Gary",
+                Gender = "Male",
+                Grade = 99
+            };
+
+            XDocument xmlDocument = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XElement("Students",
+                from student in students
+                select new XElement("Student", new XAttribute("Id", student.Id),
+                    new XElement("Name", student.Name),
+                    new XElement("Gender", student.Gender),
+                    new XElement("Grade", student.Grade)
+                    )
+                )
+            );
+            xmlDocument.Save(path2);
+        }

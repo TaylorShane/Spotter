@@ -25,6 +25,7 @@ namespace Spotter_group
     public partial class Register : UserControl
     {
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
 
         int ID = 0;
         string gender = "";
@@ -49,10 +50,11 @@ namespace Spotter_group
             string currentWeight = tbCurrentWeight.Text;
             string currentHeight = tbCurrentHeight.Text;
             string password = tbPassword.Password;
+            string admin = "No";
 
             try
             {
-                XDocument xmlDocument = XDocument.Load(jasonPath);
+                XDocument xmlDocument = XDocument.Load(shanePath);
                 //nextId = xmlDocument.Root.LastNode()
                 int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
                 xmlDocument.Element("Users").Add(
@@ -66,11 +68,15 @@ namespace Spotter_group
                     new XElement("CurrentWeight", currentWeight),
                     new XElement("CurrentHeight", currentHeight),
                     new XElement("Password", password),
-                    new XElement("Workout", workout)
+                    new XElement("Workout", workout),
+                    new XElement("Admin", admin)
                     ));
-                xmlDocument.Save(jasonPath);
+                xmlDocument.Save(shanePath);
 
                 ID++;
+                MessageBox.Show("User successfully added to database.");
+                // this refresh method isn't working    this.NavigationService.Navigate(new Uri("Register.xaml", UriKind.Relative));
+                // not this     Refresh();
             }
             catch (Exception er)
             {

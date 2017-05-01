@@ -11,17 +11,45 @@
     <CurrentHeight>5'8"</CurrentHeight>
     <Password>password</Password>
     <Workout>Cardio</Workout>
+    <Admin>No</Admin>
   </User>
   <User ID="1">
     <FirstName>Jason</FirstName>
     <LastName>Merrill</LastName>
     <BirthDate>07/04/2017</BirthDate>
-    <Username>jasonlmerrill</Username>
+    <Username>jasonlmerrill2</Username>
     <StartDate>07/04/2017</StartDate>
     <Gender>Male</Gender>
     <CurrentWeight>155</CurrentWeight>
     <CurrentHeight>5'8"</CurrentHeight>
     <Password>asdf</Password>
     <Workout>Gain Muscle</Workout>
+    <Admin>Yes</Admin>
+  </User>
+  <User ID="2">
+    <FirstName>Shane</FirstName>
+    <LastName>Taylor</LastName>
+    <BirthDate>29/10/1974</BirthDate>
+    <Username>MasterOfTheUniverse</Username>
+    <StartDate>29/10/1974</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>167</CurrentWeight>
+    <CurrentHeight>Is this in inches alone? Inches AND feet?  Maybe we should use a tool tip?</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Gain Muscle</Workout>
+    <Admin>Yes</Admin>
+  </User>
+  <User ID="3">
+    <FirstName>Shane</FirstName>
+    <LastName>Taylor</LastName>
+    <BirthDate>29/10/1974</BirthDate>
+    <Username>MasterOfTheUniverse2</Username>
+    <StartDate>29/10/1974</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>Male</CurrentWeight>
+    <CurrentHeight>19 FEETS</CurrentHeight>
+    <Password>123456789</Password>
+    <Workout>Gain Muscle</Workout>
+    <Admin>No</Admin>
   </User>
 </Users>
