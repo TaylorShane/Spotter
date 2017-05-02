@@ -71,11 +71,10 @@ namespace Spotter_group
 
         }
 
-        public class Image //Car
+        public class Image
         {
-            public string imageURL { get; set; }
+            public string image { get; set; }
 
         }
-        // public DateTime startdate = new DateTime(2017, 04, 01);
     }
 }
