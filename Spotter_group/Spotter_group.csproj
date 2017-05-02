@@ -188,7 +188,7 @@
     <Resource Include="images\Icons\bench_press.png" />
     <Resource Include="images\Icons\cycle.png" />
     <Resource Include="images\Icons\exercise-icons-vector-1504559.jpg" />
-    <Resource Include="images\Icons\free_weights_arms.png" />
+    <Resource Include="images\Icons\BACKANDSHOULDERS.png" />
     <Resource Include="images\Icons\WHOLE_BODY.png" />
     <Resource Include="images\Icons\jumprope.png" />
     <Resource Include="images\Icons\lateral_stretch.png" />
@@ -224,7 +224,9 @@
     <Resource Include="Documentation\XML Update Delete Insert Code.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Data\Exercises.xml" />
+    <Resource Include="Data\Exercises.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Food.xml" />
@@ -272,7 +274,9 @@
     <Resource Include="images\Gifs\cardio-run.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Data\workit.xml" />
+    <Resource Include="Data\workit.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\JunkCode.txt" />

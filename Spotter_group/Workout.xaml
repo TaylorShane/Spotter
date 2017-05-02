@@ -51,46 +51,46 @@
         
         <!-- some gify fun for the workout page, so feel free to copy the below stuff and add gifs to the GIF folder-->
         <!-- gif 1 -->
-        <StackPanel Background="Wheat" Grid.Column="1" Grid.Row="1">
+        <StackPanel Background="White" Grid.Column="1" Grid.Row="1">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/bench-press.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--gif 2-->
-        <StackPanel Background="Wheat" Grid.Column="1" Grid.Row="2">
+        <StackPanel Background="White" Grid.Column="1" Grid.Row="2">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/jump-rope.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--gif 3-->
-        <StackPanel Background="Wheat" Grid.Column="1" Grid.Row="3">
+        <StackPanel Background="White" Grid.Column="1" Grid.Row="3">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/tone-up.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
             <!--gif 4-->
-        <StackPanel Background="Wheat" Grid.Column="1" Grid.Row="4">
+        <StackPanel Background="White" Grid.Column="1" Grid.Row="4">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio-run.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
         
         <!-- gif 5 -->
-        <StackPanel Background="Wheat" Grid.Column="4" Grid.Row="1">
+        <StackPanel Background="White" Grid.Column="4" Grid.Row="1">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/strength.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
         <!-- gif 6 -->
-        <StackPanel Background="Wheat" Grid.Column="4" Grid.Row="2">
+        <StackPanel Background="White" Grid.Column="4" Grid.Row="2">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
         <!-- gif 7 -->
-        <StackPanel Background="Wheat" Grid.Column="4" Grid.Row="3">
+        <StackPanel Background="White" Grid.Column="4" Grid.Row="3">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/buff.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
         <!-- gif 8 -->
-        <StackPanel Background="Wheat" Grid.Column="4" Grid.Row="4">
+        <StackPanel Background="White" Grid.Column="4" Grid.Row="4">
             <Image gif:ImageBehavior.AnimatedSource="images/Gifs/arms.gif" Height="200" Width="200" VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
@@ -106,6 +106,9 @@
                       DisplayMemberPath="name">
                 
             </ComboBox>
+            
+            
+            
         </StackPanel>
 
 
