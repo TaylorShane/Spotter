@@ -21,9 +21,12 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
-        public SignIn()
+        UserGlobal use_me = new UserGlobal();
+
+        public SignIn(UserGlobal user1)
         {
             InitializeComponent();
+            
         }
 
 
@@ -31,9 +34,9 @@ namespace Spotter_group
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SignIn signIn = new SignIn();
+           // SignIn signIn = new SignIn();
 
-            UserGlobal use_me = new UserGlobal();
+            
 
             try
             {
@@ -42,6 +45,8 @@ namespace Spotter_group
 
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Text;
+
+                
 
                 MessageBox.Show(user_name1);
                 MessageBox.Show(pass_word1);
@@ -69,10 +74,106 @@ namespace Spotter_group
                     throw new Exception("Password Mismatch");
                 }
 
+                else
+                {
+                    MessageBox.Show("Successful Login! \n Please return to profile");
 
-                MessageBox.Show("Successful Login! \n Please return to profile");
+                    //set global first name
+                    IEnumerable<string> FirstName = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                       where (string)Users.Element("Username") == user_name1
+                                                       select Users.Element("FirstName").Value;
 
 
+                    string firstname = FirstName.FirstOrDefault().ToString();
+                    use_me.set_First_Name(firstname);
+
+                    //set global last name
+                    IEnumerable<string> LastName = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                    where (string)Users.Element("Username") == user_name1
+                                                    select Users.Element("LastName").Value;
+
+
+                    string lastname = LastName.FirstOrDefault().ToString();
+                    use_me.set_Last_Name(lastname);
+
+                    //set global birth
+                    IEnumerable<string> birth = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                   where (string)Users.Element("Username") == user_name1
+                                                   select Users.Element("LastName").Value;
+
+
+                    string birthdate = birth.FirstOrDefault().ToString();
+                    use_me.set_Birth_Date(birthdate);
+
+                    //set global username
+                    IEnumerable<string> username = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                where (string)Users.Element("Username") == user_name1
+                                                select Users.Element("Username").Value;
+
+
+                    string username1 = username.FirstOrDefault().ToString();
+                    use_me.set_user_Name(username1);
+
+                    //set global startdate
+                    IEnumerable<string> startdate = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                where (string)Users.Element("Username") == user_name1
+                                                select Users.Element("LastName").Value;
+
+
+                    string startdate1 = startdate.FirstOrDefault().ToString();
+                    use_me.set_Start_Date(startdate1);
+
+                    //set global gender
+                    IEnumerable<string> gender = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                where (string)Users.Element("Username") == user_name1
+                                                select Users.Element("Gender").Value;
+
+
+                    string gender1 = gender.FirstOrDefault().ToString();
+                    use_me.set_Gender(gender1);
+
+                    //set global weight
+                    IEnumerable<string> curr_W = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                 where (string)Users.Element("Username") == user_name1
+                                                 select Users.Element("CurrentWeight").Value;
+
+
+                    string current_WEight = curr_W.FirstOrDefault().ToString();
+                    use_me.set_Gender(current_WEight);
+
+                    //set global height
+                    IEnumerable<string> user_height = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                 where (string)Users.Element("Username") == user_name1
+                                                 select Users.Element("CurrentHeight").Value;
+
+
+                    string height1 = user_height.FirstOrDefault().ToString();
+                    use_me.set_Gender(height1);
+
+                    //set global gender
+                    IEnumerable<string> workout1 = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                 where (string)Users.Element("Username") == user_name1
+                                                 select Users.Element("Workout").Value;
+
+
+                    string workout2 = workout1.FirstOrDefault().ToString();
+                    use_me.set_Workout(workout2);
+
+                    //set global admin
+                    IEnumerable<string> admin = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                 where (string)Users.Element("Username") == user_name1
+                                                 select Users.Element("Gender").Value;
+
+
+                    string admin1 = admin.FirstOrDefault().ToString();
+                    use_me.set_Gender(admin1);
+
+                    MessageBox.Show("Hopefully this shows some stuff \n" +
+                        use_me.get_Gender + "<- should be gender");
+                }
+
+
+                
 
 
             }
