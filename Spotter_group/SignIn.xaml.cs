@@ -33,11 +33,16 @@ namespace Spotter_group
         {
             SignIn signIn = new SignIn();
 
+            UserGlobal use_me = new UserGlobal();
+
             try
             {
 
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Text;
+
+                use_me.set_user_Name(user_name1);
+
 
                 string new1 = "";
 

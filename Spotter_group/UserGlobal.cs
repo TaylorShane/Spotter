@@ -38,6 +38,7 @@ namespace Spotter_group
         private string current_Height;
         private string workout;
         private string admin;
+        private string user_images;
 
         
         
@@ -145,7 +146,7 @@ namespace Spotter_group
         {
             get
             {
-                return current_Weight;
+                return this.current_Weight;
             }
         }
 
@@ -160,7 +161,7 @@ namespace Spotter_group
         {
             get
             {
-                return current_Height;
+                return this.current_Height;
             }
         }
 
@@ -174,7 +175,7 @@ namespace Spotter_group
         {
             get
             {
-                return workout;
+                return this.workout;
             }
         }
 
@@ -188,7 +189,7 @@ namespace Spotter_group
         {
             get
             {
-                return admin;
+                return this.admin;
             }
         }
 
@@ -198,22 +199,24 @@ namespace Spotter_group
             this.admin = s;
         }
 
+        public void set_User_Image(string s)
+        {
+            this.user_images = s;
+        }
+
+        public string get_User_Images
+        {
+            get
+            {
+                return this.user_images;
+            }
+
+        }
 
 
+    }//end class
 
-
-
-
-
-
-
-
-
-
-
-    }
-
-}
+}//end name space
     
 
 
