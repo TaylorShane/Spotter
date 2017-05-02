@@ -47,6 +47,9 @@
             
         </TextBox>
 
+        <Button Grid.Column="1" Grid.Row="4" Height="20" Width="80"
+                Click="Button_Click">Submit</Button>
+
         
 
     </Grid>
