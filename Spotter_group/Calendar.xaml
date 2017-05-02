@@ -17,6 +17,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" Grid.ColumnSpan="3"  HorizontalAlignment="Center" VerticalAlignment="Center">
             <Calendar Name="calendar" Height="Auto" Width="Auto"
@@ -25,9 +26,22 @@
                   SelectedDatesChanged="calendar_SelectedDatesChanged" 
                   />
         </StackPanel>
-        <TextBlock Name="txtBlockTest" Grid.Row="1" Grid.Column="0" Foreground="White">Test</TextBlock>
-        <TextBlock Name="txtBlockDateSeleted" Grid.Row="1" Grid.Column="1" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
-        <TextBlock Name="txtBlockWorkout" Grid.Row="1" Grid.Column="2" Foreground="White">Workout</TextBlock>
-        <TextBlock Name="txtBlockMenu" Grid.Row="1" Grid.Column="3" Foreground="White">Menu</TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White">Start Date from Database</Label>
+            <TextBlock Name="txtStartDate" Foreground="White">Test</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White">Date Selected</Label>
+            <TextBlock Name="txtBlockDateSeleted" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
+            <Separator Margin="5"></Separator>
+            <Label Foreground="White">Date Selected</Label>
+            <TextBlock Name="txtDaysPassed" Foreground="White" ToolTip="Selecte a Date">Days from Start Date to Selected Date</TextBlock>
+        </StackPanel>
+        <StackPanel Margin="10" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White">Workout for today </Label>
+            <TextBlock Name="txtBlockWorkout" Foreground="White">Workout</TextBlock>
+        </StackPanel>
+        
+        <TextBlock Name="txtBlockMenu" Margin="10" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White">Menu</TextBlock>
     </Grid>
 </UserControl>

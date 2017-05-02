@@ -27,34 +27,47 @@ namespace Spotter_group
             populateStartDate();
         }
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
-        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/SampleUsers.xml";
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         // PATH LOCATION
-
+        DateTime futureDate = new DateTime(2017, 05, 30);
+        public DateTime startDate;
         public void populateStartDate()
         {
             /* how to convert from string to DateTime
-            // string date = "01/08/2008";
-            // DateTime dt = Convert.ToDateTime(date);
+            * string date = "01/08/2008";
+            * DateTime dt = Convert.ToDateTime(date);
+            * 
+            * DateTime to String
+            * Value.ToString("MM/dd/yyyy")
+            * 
+            * (EndDate - StartDate).TotalDays
+            * 
+            *   DateTime userStartDate;
+            *   userStartDate = DateTime.Parse(userStartDate);
+            *   string workoutstartdate = UserWorkoutStartDate.FirstOrDefault().ToString();
+            *   datePickerWorkoutStartDate.SelectedDate = DateTime.Parse(workoutstartdate);
+            *   public DateTime startdate = new DateTime(2017, 04, 01);
             */
 
-            txtBlockTest.Text = startdate.ToString("dd/MM/yyyy");
+            string thisUser = "MasterOfTheUniverse"; // replace with global user ID
+            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
+                                                    where (string)Users.Element("Username") == thisUser
+                                                    select Users.Element("StartDate").Value;
 
-            DateTime StartDate;
-            string user = "Shane";
-            IEnumerable<string> startDateResult = from Users in XDocument.Load(shanePath).Descendants("Users")
-                                                 where (string)Users.Element("name") == user
-                                                 select Users.Element("startDate").Value;
 
-            txtBlockTest.Text = startDateResult.FirstOrDefault().ToString();
+            string workoutStartDate = thisUserStartDate.FirstOrDefault().ToString();
+            txtStartDate.Text = workoutStartDate;
+            DateTime startDT = Convert.ToDateTime(workoutStartDate);
+            startDate = startDT;
         }
-
-        public DateTime startdate = new DateTime(2017, 04, 01);
-
-        // txtBlockTest.Text = 
 
         private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
-            txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("dd/MM/yyyy");
+            DateTime dateClicked = calendar.SelectedDate.Value;
+            double day = (dateClicked - startDate).TotalDays;
+
+            txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
+            txtDaysPassed.Text = day.ToString();
 
         }
 
