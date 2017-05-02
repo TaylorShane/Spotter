@@ -15,4 +15,19 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>No</Admin>
   </User>
+  <User ID="1">
+    <FirstName>Shane</FirstName>
+    <LastName>Taylor</LastName>
+    <BirthDate>10/29/1974</BirthDate>
+    <Username>shanetaylor</Username>
+    <StartDate>04/23/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>168</CurrentWeight>
+    <CurrentHeight>5'10"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
 </Users>

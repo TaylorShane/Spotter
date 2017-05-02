@@ -21,14 +21,12 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
-        UserGlobal use_me = new UserGlobal();
 
         public SignIn()
         {
             InitializeComponent();
             
         }
-
 
         string stevePath = @"C:/Users/drof/Source/Repos/Spotter_group/Spotter_group/Data/Users.xml";
 
@@ -85,7 +83,7 @@ namespace Spotter_group
 
 
                     string firstname = FirstName.FirstOrDefault().ToString();
-                    use_me.set_First_Name(firstname);
+                    
 
                     //set global last name
                     IEnumerable<string> LastName = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -94,7 +92,7 @@ namespace Spotter_group
 
 
                     string lastname = LastName.FirstOrDefault().ToString();
-                    use_me.set_Last_Name(lastname);
+                    
 
                     //set global birth
                     IEnumerable<string> birth = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -103,7 +101,7 @@ namespace Spotter_group
 
 
                     string birthdate = birth.FirstOrDefault().ToString();
-                    use_me.set_Birth_Date(birthdate);
+                    
 
                     //set global username
                     IEnumerable<string> username = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -112,7 +110,7 @@ namespace Spotter_group
 
 
                     string username1 = username.FirstOrDefault().ToString();
-                    use_me.set_user_Name(username1);
+                    
 
                     //set global startdate
                     IEnumerable<string> startdate = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -121,7 +119,7 @@ namespace Spotter_group
 
 
                     string startdate1 = startdate.FirstOrDefault().ToString();
-                    use_me.set_Start_Date(startdate1);
+                    
 
                     //set global gender
                     IEnumerable<string> gender = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -130,7 +128,7 @@ namespace Spotter_group
 
 
                     string gender1 = gender.FirstOrDefault().ToString();
-                    use_me.set_Gender(gender1);
+                   
 
                     //set global weight
                     IEnumerable<string> curr_W = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -139,7 +137,7 @@ namespace Spotter_group
 
 
                     string current_WEight = curr_W.FirstOrDefault().ToString();
-                    use_me.set_Gender(current_WEight);
+                    
 
                     //set global height
                     IEnumerable<string> user_height = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -148,7 +146,7 @@ namespace Spotter_group
 
 
                     string height1 = user_height.FirstOrDefault().ToString();
-                    use_me.set_Gender(height1);
+                    
 
                     //set global gender
                     IEnumerable<string> workout1 = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -157,7 +155,7 @@ namespace Spotter_group
 
 
                     string workout2 = workout1.FirstOrDefault().ToString();
-                    use_me.set_Workout(workout2);
+                    
 
                     //set global admin
                     IEnumerable<string> admin = from Users in XDocument.Load(stevePath).Descendants("User")
@@ -166,10 +164,10 @@ namespace Spotter_group
 
 
                     string admin1 = admin.FirstOrDefault().ToString();
-                    use_me.set_Gender(admin1);
+                    
 
-                    MessageBox.Show("Hopefully this shows some stuff \n" +
-                        use_me.get_Gender + "<- should be gender");
+                    MessageBox.Show("Hopefully this shows some stuff \n"
+                        + "<- should be gender");
                 }
 
 
