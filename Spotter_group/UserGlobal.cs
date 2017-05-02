@@ -34,6 +34,7 @@ namespace Spotter_group
         private string first_Name;
         private string last_Name;
         private string birth_Date;
+        private string start_Date;
         private string user_Gender;
         private string current_Weight;
         private string current_Height;
@@ -106,6 +107,20 @@ namespace Spotter_group
             get
             {
                 return last_Name;
+            }
+        }
+
+
+        public void set_Start_Date(string s)
+        {
+            this.start_Date = s;
+        }
+
+        public string get_Start_Date
+        {
+            get
+            {
+                return start_Date;
             }
         }
 

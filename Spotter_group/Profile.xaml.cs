@@ -39,6 +39,7 @@ namespace Spotter_group
                 string fName = "";
                 string lName = "";
                 string name = "";
+                string progressImage = "";
 
                 XDocument doc = XDocument.Load(jasonPath);
 
@@ -122,20 +123,15 @@ namespace Spotter_group
                 int count = 75;
                 
 
-                //Before Image
-                IEnumerable<string> beforeImage = from Users in XDocument.Load(jasonPath).Descendants("User")
+                             
+               //Image
+                IEnumerable<string> progImage = from Users in XDocument.Load(jasonPath).Descendants("User")
                                                    where (string)Users.Element("Username") == refItem
-                                                   select Users.Element("BeforeImage").Value;
+                                                   select Users.Element("ImageAfter").Value;
 
-               
+                progressImage = progImage.FirstOrDefault().ToString();
 
-                //After Image
-                IEnumerable<string> afterImage = from Users in XDocument.Load(jasonPath).Descendants("User")
-                                                   where (string)Users.Element("Username") == refItem
-                                                   select Users.Element("AfterImage").Value;
-
-
-                workout.Add(new WorkoutProgress() { Progress = count, beforeImage = @"Images\Characters\snarfsnarf.png", afterImage = @"Images\Characters\snarfsnarf.png" });
+                workout.Add(new WorkoutProgress() { Progress = count, image = progressImage });
                 ListWorkout.ItemsSource = workout;
 
             }
@@ -155,8 +151,7 @@ namespace Spotter_group
     public class WorkoutProgress
     {
         public int Progress { get; set; }
-        public string beforeImage { get; set; }
-        public string afterImage { get; set; }
+        public string image { get; set; }
     }
 
     

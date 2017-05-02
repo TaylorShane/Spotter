@@ -72,11 +72,11 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                            <ProgressBar Foreground="#009999" Height="140" Grid.Column="1" Grid.ColumnSpan="2" 
+                            <ProgressBar Foreground="#009999" Height="150" Grid.Column="1" Grid.ColumnSpan="2" 
                                  Maximum="100"
                                  Minimum="1"
                                  Value="{Binding Progress}"/>
-                            <Image Grid.Column="3" Height="120" Width="100" Source="{Binding afterImage}"/>
+                            <Image Grid.Column="3" Height="150" Width="130" Source="{Binding image}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
