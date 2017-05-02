@@ -101,7 +101,4 @@ namespace Spotter_group
 
    
 }
-
- 
- 
  
