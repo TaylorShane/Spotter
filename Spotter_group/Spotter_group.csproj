@@ -255,9 +255,6 @@
     <Resource Include="images\Characters\Wile_E_Coyote.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Data\SampleUsers.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Data\Users.xml" />
   </ItemGroup>
   <ItemGroup>

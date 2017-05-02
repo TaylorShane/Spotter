@@ -27,45 +27,55 @@ namespace Spotter_group
             populateStartDate();
         }
 
-        public List<UserData> user = new List<UserData>();
-        public string currentUser;
-        
-
+        //public List<UserData> user = new List<UserData>();              
+        // PATH LOCATION
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
-        // PATH LOCATION
-        DateTime futureDate = new DateTime(2017, 05, 30);
+        string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
+        string user = "";
+        List<DaysPassed> mydate = new List<DaysPassed>();
+
         public DateTime startDate;
+
+        public class DaysPassed
+        {
+            public string days { get; set; }
+        }
         public void populateStartDate()
         {
+            //Get current user
+            // replace with global user ID
+            IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentUser).Descendants("User")
+                                                    select CurrentUser.Element("UserName").Value;
+
+            user = thisUser.FirstOrDefault().ToString();
+
+            //Get current username startdate
             
-            string thisUser = "shanetaylor"; // replace with global user ID
             IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
-                                                    where (string)Users.Element("Username") == thisUser
+                                                    where (string)Users.Element("Username") == user
                                                     select Users.Element("StartDate").Value;
 
 
             string workoutStartDate = thisUserStartDate.FirstOrDefault().ToString();
             txtStartDate.Text = workoutStartDate;
             DateTime startDT = Convert.ToDateTime(workoutStartDate);
-            startDate = startDT;
-            user.Add(new UserData() { day = "day2" });
+            //startDate = startDT;
+            
+
         }
 
         private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
             DateTime dateClicked = calendar.SelectedDate.Value;
             double day = (dateClicked - startDate).TotalDays;
-
+            string dayStringFormat = day.ToString();
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
             txtDaysPassed.Text = day.ToString();
 
+            mydate.Add(new DaysPassed() { days = dayStringFormat });
+            lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
         }
     }
-    public class UserData
-    {
-        public string Id { get; set; }
-        public string day { get; set; }
-
-    }
+   
 }

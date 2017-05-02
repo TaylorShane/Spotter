@@ -84,8 +84,16 @@ namespace Spotter_group
             IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("protein")
                                         where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
-            
-            tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+
+            try
+            {
+                tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            }
+            catch (Exception er)
+            {
+                tboxProteinCalories.Text = 0.ToString();
+            }
+
         }
 
         private void cboBox_Vegetables_DropDownClosed(object sender, EventArgs e)

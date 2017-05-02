@@ -66,11 +66,11 @@
 
         <!-- Column 4 -->
         <StackPanel Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
-            <ListBox Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding Source={StaticResource workouts}, XPath=day2}"
+            <ListBox Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding days}"
                       DisplayMemberPath="name" ></ListBox>             <!--               ="{Binding Source={StaticResource workouts}, XPath=day2}" -->
         </StackPanel>
         <StackPanel Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
-            <ListBox Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding Source={StaticResource workouts}, XPath=day2}"
+            <ListBox Name="lboxSelectedDateWorkoutDisplay" Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding days}"
                       DisplayMemberPath="details" ></ListBox>
         </StackPanel>
         
