@@ -72,26 +72,31 @@
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 30% 1 rep </details>
   </workout>
+  <day>1</day>
    <workout id="lWv2">
     <muscle>Legs</muscle>
     <name>Bodyweight Squats</name>
     <details>1 set, 10 reps, with bar</details>
   </workout>
+  <day>4</day>
    <workout id="lWv2">
     <muscle>Legs</muscle>
     <name>Single Leg Calf Raise</name>
     <details>1 set, 6 reps, bodyweight</details>
   </workout>
   <workout id="lWv2">
+    <day>7</day>
     <muscle>Arms</muscle>
     <name>Tricep Extensions</name>
     <details>1 set, 10 sets, 30% 1 rep</details>
   </workout>
+  <day>9</day>
   <workout id="lWv2">
     <muscle>Core</muscle>
     <name>Ab Crunch on Ball</name>
     <details>1 set, 10 reps, no weight</details>
   </workout>
+  <day>12</day>
     <workout id="lWv2">
     <muscle>Core</muscle>
     <name>Plank</name>
@@ -99,26 +104,31 @@
     </workout>
   
   <workout id="gMv1">
+    <day>15</day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>17</day>
     <muscle>Chest</muscle>
     <name>Dumbbell Flye</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>20</day>
     <muscle>Back and Shoulders</muscle>
     <name>Barbell Bent-over Row</name>
     <details>2 sets, 8 reps, 80% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>23</day>
     <muscle>Back and Shoulders</muscle>
     <name>Seater Reverse Flye</name>
     <details>2 sets, 8 reps, 80% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>25</day>
     <muscle>Legs</muscle>
     <name>Alternating Dumbbell Lunge</name>
     <details>1 set, 20 reps each legs, no weight</details>
@@ -128,17 +138,20 @@
     <name>Barbell Squats</name>
     <details>2 sets, 6 reps, 40% 1 rep</details>
   </workout>
+  <day>28</day>
   <workout id="gMv1">
     <muscle>Arms</muscle>
     <name>Bicep Curls</name>
     <details>1 sets, 8 reps, 60% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>1</day>
     <muscle>Arms</muscle>
     <name>Tricep Extensions</name>
     <details>1 set, 8 reps, 60% 1 rep</details>
   </workout>
   <workout id="gMv1">
+    <day>4</day>
     <muscle>Core</muscle>
     <name>Incline Barbell Bench Press</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
