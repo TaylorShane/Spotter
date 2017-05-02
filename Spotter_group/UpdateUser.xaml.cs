@@ -19,20 +19,7 @@ namespace Spotter_group
     /// <summary>
     /// Interaction logic for UpdateUser.xaml
     /// </summary>
-    public class UserInfo
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string BirthDate { get; set; }
-        public string Username { get; set; }
-        public string StartDate { get; set; }
-        public string Gender { get; set; }
-        public string CurrentWeight { get; set; }
-        public string CurrentHeight { get; set; }
-        public string Password { get; set; }
-        public string Workout { get; set; }
-        public string Admin { get; set; }
-    }
+   
     public partial class UpdateUser : UserControl
     {
         public UpdateUser()
@@ -44,30 +31,17 @@ namespace Spotter_group
 
         private void cboBoxUsername_DropDownClosed(object sender, EventArgs e)
         {
-            /*
-            List <UserInfo> User = new List<UserInfo>();
-            UserInfo thisUser = new UserInfo();
-            thisUser.FirstName = txtBoxFirstName.Text;
-            thisUser.LastName = txtBoxLastName.Text;
-            thisUser.BirthDate = txtBoxBirthDate.Text;
-            thisUser.StartDate = txtBoxWorkoutStartDate.Text;
-            thisUser.Gender = txtBoxGender.Text;
-            thisUser.CurrentWeight = txtBoxCurrentWeight.Text;
-            thisUser.CurrentHeight = txtBoxHeight.Text;
-            thisUser.Password = txtBoxPassword.Text;
-            thisUser.Workout = txtBoxWorkout.Text;
-            thisUser.Admin = cboBoxAdmin.Text;
-            */
+           
             string refItem = cboBoxUsername.Text;
             string FirstName = txtBoxFirstName.Text;
             string LastName = txtBoxLastName.Text;
-            string BirthDate = txtBoxBirthDate.Text;
-            string StartDate = txtBoxWorkoutStartDate.Text;
+            string BirthDate = datePickerBirthDate.Text;
+            string StartDate = datePickerWorkoutStartDate.Text;
             string Gender = txtBoxGender.Text;
             string CurrentWeight = txtBoxCurrentWeight.Text;
             string CurrentHeight = txtBoxHeight.Text;
             string Password = txtBoxPassword.Text;
-            string Workout = txtBoxWorkout.Text;
+            string Workout = cboBoxWorkout.Text;
             string Admin = cboBoxAdmin.Text;
 
             try
@@ -83,22 +57,24 @@ namespace Spotter_group
                 IEnumerable<string> UserLastName = from Users in XDocument.Load(shanePath).Descendants("User")
                                                    where (string)Users.Element("Username") == refItem
                                                    select Users.Element("LastName").Value;
-
+                
                 txtBoxLastName.Text = UserLastName.FirstOrDefault().ToString();
 
                 // Birth Date
                 IEnumerable<string> UserBirthDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == refItem
                                                     select Users.Element("BirthDate").Value;
+
+                string DOB = UserBirthDate.FirstOrDefault().ToString();
+                datePickerBirthDate.SelectedDate = DateTime.Parse(DOB);
                 
-                txtBoxBirthDate.Text = UserBirthDate.FirstOrDefault().ToString();
 
                 // Workout
                 IEnumerable<string> UserWorkout = from Users in XDocument.Load(shanePath).Descendants("User")
                                                   where (string)Users.Element("Username") == refItem
                                                   select Users.Element("Workout").Value;
 
-                txtBoxWorkout.Text = UserWorkout.FirstOrDefault().ToString();
+                cboBoxWorkout.Text = UserWorkout.FirstOrDefault().ToString();
 
                 // Workout Start Date
                 IEnumerable<string> UserWorkoutStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
@@ -106,15 +82,8 @@ namespace Spotter_group
                                                            select Users.Element("StartDate").Value;
 
 
-                string workoutstartdate = UserWorkoutStartDate.FirstOrDefault().ToString();
-                DateTime dt = Convert.ToDateTime(workoutstartdate);
-                txtBoxWorkoutStartDate.SelectedDate = DateTime.Parse(workoutstartdate); 
-                //txtBoxWorkoutStartDate.Text = UserWorkoutStartDate.FirstOrDefault().ToString();
-
-                	/* how to convert from string to DateTime
-	                *
-	                * string date = "01/08/2008";
-	                * DateTime dt = Convert.ToDateTime(date); */
+                string workoutstartdate = UserWorkoutStartDate.FirstOrDefault().ToString();                
+                datePickerWorkoutStartDate.SelectedDate = DateTime.Parse(workoutstartdate); 
 
                 // Gender
                 IEnumerable<string> UserGender = from Users in XDocument.Load(shanePath).Descendants("User")
@@ -162,13 +131,13 @@ namespace Spotter_group
             string refItem = cboBoxUsername.Text;
             string FirstName = txtBoxFirstName.Text;
             string LastName = txtBoxLastName.Text;
-            string BirthDate = txtBoxBirthDate.Text;
-            string StartDate = txtBoxWorkoutStartDate.Text;
+            string BirthDate = datePickerWorkoutStartDate.Text;
+            string StartDate = datePickerWorkoutStartDate.Text;
             string Gender = txtBoxGender.Text;
             string CurrentWeight = txtBoxCurrentWeight.Text;
             string CurrentHeight = txtBoxHeight.Text;
             string Password = txtBoxPassword.Text;
-            string Workout = txtBoxWorkout.Text;
+            string Workout = cboBoxWorkout.Text;
             string Admin = cboBoxAdmin.Text;
 
             try

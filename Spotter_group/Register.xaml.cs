@@ -54,7 +54,7 @@ namespace Spotter_group
 
             try
             {
-                XDocument xmlDocument = XDocument.Load(jasonPath);
+                XDocument xmlDocument = XDocument.Load(shanePath);
                 //nextId = xmlDocument.Root.LastNode()
                 int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
                 xmlDocument.Element("Users").Add(
@@ -71,7 +71,7 @@ namespace Spotter_group
                     new XElement("Workout", workout),
                     new XElement("Admin", admin)
                     ));
-                xmlDocument.Save(jasonPath);
+                xmlDocument.Save(shanePath);
 
                 ID++;
                 MessageBox.Show("User successfully added to database.");
