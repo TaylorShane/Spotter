@@ -62,6 +62,7 @@ namespace Spotter_group
                     XDocument xmlDocument = XDocument.Load(jasonPath);
                     //nextId = xmlDocument.Root.LastNode()
                     int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
+
                     xmlDocument.Element("Users").Add(
                         new XElement("User", new XAttribute("ID", nextId + 1),
                         new XElement("FirstName", firstName),

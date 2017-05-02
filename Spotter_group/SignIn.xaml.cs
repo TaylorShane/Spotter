@@ -21,6 +21,7 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
+      
 
         public SignIn()
         {
@@ -28,11 +29,12 @@ namespace Spotter_group
             
         }
 
+
         string stevePath = @"C:/Users/drof/Source/Repos/Spotter_group/Spotter_group/Data/Users.xml";
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           // SignIn signIn = new SignIn();
+           
 
             
 
@@ -76,98 +78,7 @@ namespace Spotter_group
                 {
                     MessageBox.Show("Successful Login! \n Please return to profile");
 
-                    //set global first name
-                    IEnumerable<string> FirstName = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                       where (string)Users.Element("Username") == user_name1
-                                                       select Users.Element("FirstName").Value;
-
-
-                    string firstname = FirstName.FirstOrDefault().ToString();
-                    
-
-                    //set global last name
-                    IEnumerable<string> LastName = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                    where (string)Users.Element("Username") == user_name1
-                                                    select Users.Element("LastName").Value;
-
-
-                    string lastname = LastName.FirstOrDefault().ToString();
-                    
-
-                    //set global birth
-                    IEnumerable<string> birth = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                   where (string)Users.Element("Username") == user_name1
-                                                   select Users.Element("LastName").Value;
-
-
-                    string birthdate = birth.FirstOrDefault().ToString();
-                    
-
-                    //set global username
-                    IEnumerable<string> username = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                where (string)Users.Element("Username") == user_name1
-                                                select Users.Element("Username").Value;
-
-
-                    string username1 = username.FirstOrDefault().ToString();
-                    
-
-                    //set global startdate
-                    IEnumerable<string> startdate = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                where (string)Users.Element("Username") == user_name1
-                                                select Users.Element("LastName").Value;
-
-
-                    string startdate1 = startdate.FirstOrDefault().ToString();
-                    
-
-                    //set global gender
-                    IEnumerable<string> gender = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                where (string)Users.Element("Username") == user_name1
-                                                select Users.Element("Gender").Value;
-
-
-                    string gender1 = gender.FirstOrDefault().ToString();
                    
-
-                    //set global weight
-                    IEnumerable<string> curr_W = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                 where (string)Users.Element("Username") == user_name1
-                                                 select Users.Element("CurrentWeight").Value;
-
-
-                    string current_WEight = curr_W.FirstOrDefault().ToString();
-                    
-
-                    //set global height
-                    IEnumerable<string> user_height = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                 where (string)Users.Element("Username") == user_name1
-                                                 select Users.Element("CurrentHeight").Value;
-
-
-                    string height1 = user_height.FirstOrDefault().ToString();
-                    
-
-                    //set global gender
-                    IEnumerable<string> workout1 = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                 where (string)Users.Element("Username") == user_name1
-                                                 select Users.Element("Workout").Value;
-
-
-                    string workout2 = workout1.FirstOrDefault().ToString();
-                    
-
-                    //set global admin
-                    IEnumerable<string> admin = from Users in XDocument.Load(stevePath).Descendants("User")
-                                                 where (string)Users.Element("Username") == user_name1
-                                                 select Users.Element("Gender").Value;
-
-
-                    string admin1 = admin.FirstOrDefault().ToString();
-                    
-
-                    MessageBox.Show("Hopefully this shows some stuff \n"
-                        + "<- should be gender");
                 }
 
 
@@ -180,45 +91,14 @@ namespace Spotter_group
             //when login and password dont match, we catch the error and display box you are a naughty person
             catch (Exception err)
             {
-                MessageBox.Show("Please Ty Aain!");
+                MessageBox.Show("Please Ty Aain! Password Mismatch!");
             }
 
 
 
-
-            /*use_me.set_user_Name(user_name1);
-
-
-               string new1 = "";
-
-               XDocument xmlDoc = XDocument.Load(stevePath);
-
-               new1 = xmlDoc.Element("users")
-                       .Elements("profile")
-                       .Where(x => x.Attribute("Id").Value == user_name1)
-                       .FirstOrDefault()
-                       .ToString();
-
-               MessageBox.Show(new1 + "!!!");
-
-
-
-              // Password
-               IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
-                                                  where (string)Users.Element("Username") == refItem
-                                                  select Users.Element("Password").Value;
-
-               txtBoxPassword.Text = UserPassword.FirstOrDefault().ToString();
-
-
-
-*/
         }
     }
 
    
 }
-
- 
- 
  

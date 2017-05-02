@@ -84,7 +84,6 @@
     <Compile Include="UpdateUser.xaml.cs">
       <DependentUpon>UpdateUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserGlobal.cs" />
     <Compile Include="Workout.xaml.cs">
       <DependentUpon>Workout.xaml</DependentUpon>
     </Compile>
@@ -292,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Documentation\DataBinding ProgressBar.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\CurrentUser.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
