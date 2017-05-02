@@ -27,9 +27,10 @@ namespace Spotter_group
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
-            Profile profile = new Profile();
+            Register register = new Register();
             grid2.Children.Clear();
-            grid2.Children.Add(profile);
+            grid2.Children.Add(register);
+            
         }
 
         private void MenuItemSignIn_Click(object sender, RoutedEventArgs e)
@@ -110,6 +111,13 @@ namespace Spotter_group
             Progress progress = new Progress();
             grid2.Children.Clear();
             grid2.Children.Add(progress);
+        }
+
+        private void btnSign_in_Click(object sender, RoutedEventArgs e)
+        {
+            SignIn signIn = new SignIn();
+            grid2.Children.Clear();
+            grid2.Children.Add(signIn);
         }
     }
 }
