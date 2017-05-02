@@ -21,6 +21,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="3*"/>
@@ -84,55 +85,57 @@
             <Label Foreground="#FFE0E0E0" FontSize="20">Password</Label>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <PasswordBox x:Name="tbPassword" Width="200px" ToolTip="Must be at least 8 characters"/>
+            <PasswordBox x:Name="tbPassword" Width="200px" ToolTip="Must be at least 8 characters" />
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center">
             <Label Foreground="#FFE0E0E0" FontSize="20">Confirm Password</Label>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <PasswordBox x:Name="tbConfirmPassword" Width="200px"/>
+            <PasswordBox x:Name="tbConfirmPassword" Width="200px" />
         </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4" Margin="0,15">
+        <Label x:Name="lblError" Foreground="Red" Grid.Column="3" Grid.Row="6"></Label>
+        
+        <StackPanel Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4" Margin="0,15">
             <Label Foreground="#FFE0E0E0" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Character Transformation</Label>
         </StackPanel>
-
-        <StackPanel Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+               
+        <StackPanel Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblToneUP" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Tone Up</TextBlock>
             <RadioButton x:Name="cbToneUp" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbToneUp_Checked"></RadioButton>
         </StackPanel>
-        <DockPanel  Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <DockPanel  Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="Images\Characters\Ursula.png" Height="125px" Width="125px"/>
             <Image Source="Images\Characters\littlemermaid.png" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to become leaner with more muscle definition?  Then this workout routine is for you!  Our <Italic><Bold>Tone UP</Bold></Italic> will help you loose weight and add a little muscle, too!</TextBlock>
         </DockPanel>
-        <StackPanel Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblGain" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Gain Muscle</TextBlock>
             <RadioButton x:Name="cbGainMuslce" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbGainMuslce_Checked"></RadioButton>
         </StackPanel>
-        <DockPanel Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <DockPanel Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="Images\Characters\snarfsnarf.png" Height="125px" Width="125px"/>
             <Image Source="Images\Characters\thundercat.png" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to bulk up?  Become bigger and stronger??  Our <Italic><Bold>Gain Muscle</Bold></Italic> routine will incorporate heavier weights with fewer reps.  This tried and true technique will get your body beach ready!</TextBlock>
         </DockPanel>
-        <StackPanel Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblLoseWeight" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Lose Weight</TextBlock>
             <RadioButton x:Name="cbLoseWeight" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbLoseWeight_Checked"></RadioButton>
         </StackPanel>
-        <DockPanel Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <DockPanel Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="Images\Characters\Stimpy.png" Height="115px" Width="115px"/>
             <Image Source="Images\Characters\ren.png" Height="115px" Width="115px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Use our <Italic><Bold>Lose Weight</Bold></Italic> routine to shed any unwanted pounds!</TextBlock>
             </DockPanel>
-        <StackPanel Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblCardio" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Cardio</TextBlock>
             <RadioButton x:Name="cbCardio" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbCardio_Checked"></RadioButton>
         </StackPanel>
-        <DockPanel Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <DockPanel Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Image Source="Images\Characters\Wile_E_Coyote.png" Height="125px" Width="125px"/>
             <Image Source="Images\Characters\Faster-Road-Runner.gif" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Cardiiovascular health is an important part or anyone's health.  Choose <Italic><Bold>Cardio</Bold></Italic> to improve yours!</TextBlock>
         </DockPanel>
-        <StackPanel Grid.Column="3" Grid.Row="11">
+        <StackPanel Grid.Column="3" Grid.Row="12">
             <Button x:Name="btnRegister" Width="100px" Click="btnRegister_Click">Register</Button>
         </StackPanel>
     </Grid>
