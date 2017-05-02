@@ -27,7 +27,7 @@ namespace Spotter_group
         }
 
 
-        string stevePath = @"file:///C:/Users/Gamer/Source/Repos/Spotter_group/Spotter_group/Data/Signin.xml";
+        string stevePath = @"C:/Users/drof/Source/Repos/Spotter_group/Spotter_group/Data/Users.xml";
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,34 +37,89 @@ namespace Spotter_group
 
             try
             {
+                //this is trying to signin
+
 
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Text;
 
-                use_me.set_user_Name(user_name1);
+                MessageBox.Show(user_name1);
+                MessageBox.Show(pass_word1);
+
+                /*
+                //user da user name
+                IEnumerable<string> UserName = from Users in XDocument.Load(stevePath).Descendants("User")
+                                               where (string)Users.Element("Username") == user_name1
+                                              select Users.Element("Username").Value;
+*/
 
 
-                string new1 = "";
+                //user password list of 1
 
-                XDocument xmlDoc = XDocument.Load(stevePath);
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(stevePath).Descendants("User")
+                                                   where (string)Users.Element("Username") == user_name1
+                                                   select Users.Element("Password").Value;
 
-                new1 = xmlDoc.Element("users")
-                        .Elements("profile")
-                        .Where(x => x.Attribute("Id").Value == user_name1)
-                        .FirstOrDefault()
-                        .ToString();
 
-                MessageBox.Show(new1 + "!!!");
+                string s2 = UserPassword.FirstOrDefault().ToString();
+                
+
+                if (s2 != pass_word1)
+                {
+                    throw new Exception("Password Mismatch");
+                }
+
+
+                MessageBox.Show("Successful Login! \n Please return to profile");
+
+
+
 
             }
 
-            catch(Exception err)
+
+            //when login and password dont match, we catch the error and display box you are a naughty person
+            catch (Exception err)
             {
-                MessageBox.Show("There was a serious Error! \n" +
-                    err.ToString());
-                    }
+                MessageBox.Show("Please Ty Aain!");
+            }
 
 
+
+
+            /*use_me.set_user_Name(user_name1);
+
+
+               string new1 = "";
+
+               XDocument xmlDoc = XDocument.Load(stevePath);
+
+               new1 = xmlDoc.Element("users")
+                       .Elements("profile")
+                       .Where(x => x.Attribute("Id").Value == user_name1)
+                       .FirstOrDefault()
+                       .ToString();
+
+               MessageBox.Show(new1 + "!!!");
+
+
+
+              // Password
+               IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
+                                                  where (string)Users.Element("Username") == refItem
+                                                  select Users.Element("Password").Value;
+
+               txtBoxPassword.Text = UserPassword.FirstOrDefault().ToString();
+
+
+
+*/
         }
     }
+
+   
 }
+
+ 
+ 
+ 
