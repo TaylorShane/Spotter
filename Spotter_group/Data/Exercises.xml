@@ -5,12 +5,14 @@
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps no weight, only bar</details>
+    <image>/images/Icons/ARMS.png</image>
   </day2>
   <day2 id="lWv1">
     <day>2</day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
+    
   </day2>
    <day2 id="lWv1">
      <day>2</day>
