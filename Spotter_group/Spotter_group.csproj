@@ -84,7 +84,6 @@
     <Compile Include="UpdateUser.xaml.cs">
       <DependentUpon>UpdateUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserGlobal.cs" />
     <Compile Include="Workout.xaml.cs">
       <DependentUpon>Workout.xaml</DependentUpon>
     </Compile>
