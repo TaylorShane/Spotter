@@ -33,6 +33,8 @@ namespace Spotter_group
         string dateOfBirth = "";
         string startDate = "";
         int nextID = 0;
+        string imageBefore = "";
+        string imageAfter = "";
 
         //PATH LOCATION
 
@@ -53,10 +55,11 @@ namespace Spotter_group
                 string currentHeight = tbCurrentHeight.Text;
                 string password = tbPassword.Password;
                 string admin = "No";
+               
 
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(jasonPath);
                     //nextId = xmlDocument.Root.LastNode()
                     int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
                     xmlDocument.Element("Users").Add(
@@ -71,9 +74,11 @@ namespace Spotter_group
                         new XElement("CurrentHeight", currentHeight),
                         new XElement("Password", password),
                         new XElement("Workout", workout),
+                        new XElement("ImageBefore", imageBefore),
+                        new XElement("ImageAfter", imageAfter),
                         new XElement("Admin", admin)
                         ));
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(jasonPath);
 
                     ID++;
                     MessageBox.Show("User successfully added to database.");
@@ -129,21 +134,29 @@ namespace Spotter_group
         private void cbToneUp_Checked(object sender, RoutedEventArgs e)
         {
             workout = lblToneUP.Text;
+            imageBefore = @"Images\Characters\Ursula.png";
+            imageAfter = @"Images\Characters\littlemermaid.png";
         }
 
         private void cbGainMuslce_Checked(object sender, RoutedEventArgs e)
         {
             workout = lblGain.Text;
+            imageBefore = @"Images\Characters\snarfsnarf.png";
+            imageAfter = @"Images\Characters\thundercat.png";
         }
 
         private void cbLoseWeight_Checked(object sender, RoutedEventArgs e)
         {
             workout = lblLoseWeight.Text;
+            imageBefore = @"Images\Characters\Stimpy.png";
+            imageAfter = @"Images\Characters\ren.png";
         }
 
         private void cbCardio_Checked(object sender, RoutedEventArgs e)
         {
             workout = lblCardio.Text;
+            imageBefore = @"Images\Characters\Wile_E_Coyote.png";
+            imageAfter = @"Images\Characters\Faster - Road - Runner.gif";
         }
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)

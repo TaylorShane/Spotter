@@ -78,4 +78,19 @@
     <Workout>Lose Weight</Workout>
     <Admin>No</Admin>
   </User>
+  <User ID="6">
+    <FirstName>test</FirstName>
+    <LastName>test</LastName>
+    <BirthDate></BirthDate>
+    <Username>test</Username>
+    <StartDate></StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>1</CurrentWeight>
+    <CurrentHeight>2</CurrentHeight>
+    <Password>111</Password>
+    <Workout>Tone Up</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
 </Users>
