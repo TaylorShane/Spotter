@@ -22,19 +22,20 @@ namespace Spotter_group
     public partial class Profile : UserControl
     {
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        List<WorkoutProgress> workout = new List<WorkoutProgress>();
+        
 
 
         public Profile()
         {
             InitializeComponent();
-            
         }
 
         public void populatePage()
         {
             try
             {
-
+                
                 string refItem = testbox.Text;
                 string fName = "";
                 string lName = "";
@@ -117,7 +118,14 @@ namespace Spotter_group
 
                 lblPassword.Content = UserPassword.FirstOrDefault().ToString();
 
-                
+
+                int count = 50;
+                workout.Add(new WorkoutProgress() { Progress = count });
+
+                ListWorkout.ItemsSource = workout;
+
+
+
             }
             catch (Exception er)
             {
@@ -131,4 +139,11 @@ namespace Spotter_group
 
         }
     }
+
+    public class WorkoutProgress
+    {
+        public int Progress { get; set; }
+    }
+    
+
 }
