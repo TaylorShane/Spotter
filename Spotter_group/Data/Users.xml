@@ -3,9 +3,9 @@
   <User ID="0">
     <FirstName>Jason</FirstName>
     <LastName>Merrill</LastName>
-    <BirthDate>16/08/1983</BirthDate>
+    <BirthDate>08/16/1983</BirthDate>
     <Username>jasonlmerrill</Username>
-    <StartDate>16/08/1983</StartDate>
+    <StartDate>08/16/1983</StartDate>
     <Gender>Male</Gender>
     <CurrentWeight>155</CurrentWeight>
     <CurrentHeight>5'8"</CurrentHeight>
@@ -42,14 +42,40 @@
   <User ID="3">
     <FirstName>Shane</FirstName>
     <LastName>Taylor</LastName>
-    <BirthDate>29/10/1974</BirthDate>
+    <BirthDate>10/29/1974</BirthDate>
     <Username>MasterOfTheUniverse2</Username>
-    <StartDate>29/10/1974</StartDate>
+    <StartDate>05/15/2017</StartDate>
     <Gender>Male</Gender>
     <CurrentWeight>Male</CurrentWeight>
     <CurrentHeight>19 FEETS</CurrentHeight>
     <Password>123456789</Password>
     <Workout>Gain Muscle</Workout>
+    <Admin>No</Admin>
+  </User>
+  <User ID="4">
+    <FirstName>asdf</FirstName>
+    <LastName>asdf</LastName>
+    <BirthDate>2/5/2017</BirthDate>
+    <Username>asdf</Username>
+    <StartDate>2/5/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>Male</CurrentWeight>
+    <CurrentHeight>asdf</CurrentHeight>
+    <Password>qwerty</Password>
+    <Workout>Lose Weight</Workout>
+    <Admin>No</Admin>
+  </User>
+  <User ID="5">
+    <FirstName>Mr.</FirstName>
+    <LastName>Stimpy</LastName>
+    <BirthDate>05/06/1991</BirthDate>
+    <Username>stimpster</Username>
+    <StartDate>06/05/1991</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>35</CurrentWeight>
+    <CurrentHeight>18"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Lose Weight</Workout>
     <Admin>No</Admin>
   </User>
 </Users>
