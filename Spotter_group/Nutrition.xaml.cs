@@ -93,7 +93,6 @@ namespace Spotter_group
             {
                 tboxProteinCalories.Text = 0.ToString();
             }
-
         }
 
         private void cboBox_Vegetables_DropDownClosed(object sender, EventArgs e)
