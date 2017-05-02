@@ -28,8 +28,8 @@ namespace Spotter_group
             InitializeComponent();
             
         }
-
-
+        string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string stevePath = @"C:/Users/drof/Source/Repos/Spotter_group/Spotter_group/Data/Users.xml";
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace Spotter_group
 
                 //user password list of 1
 
-                IEnumerable<string> UserPassword = from Users in XDocument.Load(stevePath).Descendants("User")
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(jasonPath).Descendants("User")
                                                    where (string)Users.Element("Username") == user_name1
                                                    select Users.Element("Password").Value;
 
@@ -76,6 +76,14 @@ namespace Spotter_group
 
                 else
                 {
+                    XDocument xmlDocument = XDocument.Load(currentPath);
+                    xmlDocument.Element("CurrentUser").Add(
+                       new XElement("User", new XAttribute("ID", 0),
+                       new XElement("UserName", user_name1)));
+                    xmlDocument.Save(currentPath);
+
+
+
                     MessageBox.Show("Successful Login! \n Please return to profile");
 
                    
