@@ -24,6 +24,7 @@ namespace Spotter_group
     <Admin>No</Admin>
 
     */
+
     public class UserGlobal
     {
 
