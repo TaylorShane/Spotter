@@ -44,7 +44,7 @@ namespace Spotter_group
 
 
                 string user_name1 = user_name.Text;
-                string pass_word1 = pass_word.Password;
+                string pass_word1 = pass_word.Text;
 
                 
 
