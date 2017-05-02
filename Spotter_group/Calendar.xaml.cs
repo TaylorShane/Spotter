@@ -26,6 +26,11 @@ namespace Spotter_group
             InitializeComponent();
             populateStartDate();
         }
+
+        public List<UserData> user = new List<UserData>();
+        public string currentUser;
+        
+
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         // PATH LOCATION
@@ -33,23 +38,8 @@ namespace Spotter_group
         public DateTime startDate;
         public void populateStartDate()
         {
-            /* how to convert from string to DateTime
-            * string date = "01/08/2008";
-            * DateTime dt = Convert.ToDateTime(date);
-            * 
-            * DateTime to String
-            * Value.ToString("MM/dd/yyyy")
-            * 
-            * (EndDate - StartDate).TotalDays
-            * 
-            *   DateTime userStartDate;
-            *   userStartDate = DateTime.Parse(userStartDate);
-            *   string workoutstartdate = UserWorkoutStartDate.FirstOrDefault().ToString();
-            *   datePickerWorkoutStartDate.SelectedDate = DateTime.Parse(workoutstartdate);
-            *   public DateTime startdate = new DateTime(2017, 04, 01);
-            */
-
-            string thisUser = "MasterOfTheUniverse"; // replace with global user ID
+            
+            string thisUser = "shanetaylor"; // replace with global user ID
             IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == thisUser
                                                     select Users.Element("StartDate").Value;
@@ -59,6 +49,7 @@ namespace Spotter_group
             txtStartDate.Text = workoutStartDate;
             DateTime startDT = Convert.ToDateTime(workoutStartDate);
             startDate = startDT;
+            user.Add(new UserData() { day = "day2" });
         }
 
         private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
@@ -70,11 +61,11 @@ namespace Spotter_group
             txtDaysPassed.Text = day.ToString();
 
         }
+    }
+    public class UserData
+    {
+        public string Id { get; set; }
+        public string day { get; set; }
 
-        public class Image
-        {
-            public string image { get; set; }
-
-        }
     }
 }
