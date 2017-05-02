@@ -27,64 +27,107 @@ namespace Spotter_group
         public Profile()
         {
             InitializeComponent();
+            
         }
 
-        private void lblName_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        public void populatePage()
         {
-            tbName.Visibility = System.Windows.Visibility.Visible;
-        }
+            try
+            {
 
-        private void lblDOB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbDOB.Visibility = System.Windows.Visibility.Visible;
-        }
+                string refItem = testbox.Text;
+                string fName = "";
+                string lName = "";
+                string name = "";
 
-        private void lblUsername_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbUsername.Visibility = System.Windows.Visibility.Visible;
+                XDocument doc = XDocument.Load(jasonPath);
 
-        }
+                // First Name
+                IEnumerable<string> UserFirstName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                    where (string)Users.Element("Username") == refItem
+                                                    select Users.Element("FirstName").Value;
 
-        private void lblWeight_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbWeight.Visibility = System.Windows.Visibility.Visible;
+                fName = UserFirstName.FirstOrDefault().ToString();
 
-        }
+                // Last Name
+                IEnumerable<string> UserLastName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                   where (string)Users.Element("Username") == refItem
+                                                   select Users.Element("LastName").Value;
 
-        private void lblStartDate_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbStartDate.Visibility = System.Windows.Visibility.Visible;
+                lName = UserLastName.FirstOrDefault().ToString();
+                name = fName + " " + lName;
+                lblName.Content = name;
 
-        }
 
-        private void lblPassword_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbPassword.Visibility = System.Windows.Visibility.Visible;
+                // Birth Date
+                IEnumerable<string> UserBirthDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                    where (string)Users.Element("Username") == refItem
+                                                    select Users.Element("BirthDate").Value;
 
-        }
+                lblDOB.Content = UserBirthDate.FirstOrDefault().ToString();
 
-        private void lblWorkout_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            cbWorkouts.Visibility = System.Windows.Visibility.Visible;
 
-        }
+                // Workout
+                IEnumerable<string> UserWorkout = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                  where (string)Users.Element("Username") == refItem
+                                                  select Users.Element("Workout").Value;
 
-        private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            tbGoals.Visibility = System.Windows.Visibility.Visible;
+                lblWorkout.Content = UserWorkout.FirstOrDefault().ToString();
 
+                // Workout Start Date
+                IEnumerable<string> UserWorkoutStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                           where (string)Users.Element("Username") == refItem
+                                                           select Users.Element("StartDate").Value;
+
+
+                lblStartDate.Content = UserWorkoutStartDate.FirstOrDefault().ToString();
+
+                // Gender
+                IEnumerable<string> UserGender = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                 where (string)Users.Element("Username") == refItem
+                                                 select Users.Element("Gender").Value;
+
+                lblGender.Content = UserGender.FirstOrDefault().ToString();
+
+                // UserName
+                IEnumerable<string> UserName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                 where (string)Users.Element("Username") == refItem
+                                                 select Users.Element("Username").Value;
+
+                lblUsername.Content = UserName.FirstOrDefault().ToString();
+
+                // Current Weight
+                IEnumerable<string> UserCurrentWeight = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                        where (string)Users.Element("Username") == refItem
+                                                        select Users.Element("CurrentWeight").Value;
+
+                lblWeight.Content = UserGender.FirstOrDefault().ToString();
+
+                // Heigth
+                IEnumerable<string> UserHeight = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                 where (string)Users.Element("Username") == refItem
+                                                 select Users.Element("CurrentHeight").Value;
+
+                lblHeight.Content = UserHeight.FirstOrDefault().ToString();
+
+                // Password
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                   where (string)Users.Element("Username") == refItem
+                                                   select Users.Element("Password").Value;
+
+                lblPassword.Content = UserPassword.FirstOrDefault().ToString();
+
+                
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Check the file path.  Make sure it works for your machine.");
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            XDocument xmlDocument = XDocument.Load(jasonPath);
-            xmlDocument.Element("Users")
-                                .Elements("User")
-                                .Where(x => x.Attribute("ID").Value == testbox.Text).FirstOrDefault()
-                                .SetElementValue("FirstName", lblName.Content);
-            xmlDocument.Save(jasonPath);
-
-            
+            populatePage();
 
         }
     }
