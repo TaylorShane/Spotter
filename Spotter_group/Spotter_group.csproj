@@ -183,22 +183,21 @@
     <Resource Include="images\Characters\thundercat.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\Icons\arm_curl.png" />
-    <Resource Include="images\Icons\arm_curl_free_weight.png" />
+    <Resource Include="images\Icons\ARMS.png" />
     <Resource Include="images\Icons\bench_press-512.png" />
     <Resource Include="images\Icons\bench_press.png" />
     <Resource Include="images\Icons\cycle.png" />
     <Resource Include="images\Icons\exercise-icons-vector-1504559.jpg" />
     <Resource Include="images\Icons\free_weights_arms.png" />
-    <Resource Include="images\Icons\jumping_jacks.png" />
+    <Resource Include="images\Icons\WHOLE_BODY.png" />
     <Resource Include="images\Icons\jumprope.png" />
     <Resource Include="images\Icons\lateral_stretch.png" />
-    <Resource Include="images\Icons\leg-extension-gym-legs-workout-3acc4faf132c817f-256x256.png" />
+    <Resource Include="images\Icons\LEGS.png" />
     <Resource Include="images\Icons\medicine_ball_situp.png" />
     <Resource Include="images\Icons\plank_crunch.png" />
     <Resource Include="images\Icons\running.png" />
     <Resource Include="images\Icons\sitting_stretch.png" />
-    <Resource Include="images\Icons\situps.png" />
+    <Resource Include="images\Icons\CORE.png" />
     <Resource Include="images\Icons\squat_or_shoulder_press.png" />
     <Resource Include="images\Icons\tredmill.png" />
     <Resource Include="images\Icons\Untitled-1.png" />
@@ -286,6 +285,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Signin.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Documentation\DataBinding ProgressBar.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
