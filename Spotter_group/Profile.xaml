@@ -17,7 +17,7 @@
     <Grid x:Name="gridProfile" Margin="150,50">
         
                
-                    <Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -34,7 +34,6 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <TextBox Name="testbox"></TextBox>
         
         <Label Grid.Row="0" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#009999" Grid.ColumnSpan="4">Profile</Label>
 
@@ -81,11 +80,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
-        <Button Grid.Column="3" Grid.Row="0" Click="Button_Click">Populate</Button>
-
-
-                  
+         
           
     </Grid>
 </UserControl>

@@ -22,12 +22,28 @@ namespace Spotter_group
     public partial class Profile : UserControl
     {
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+
         List<WorkoutProgress> workout = new List<WorkoutProgress>();
+        string cUser = "";
         
 
         public Profile()
         {
             InitializeComponent();
+            try { findUser(); }
+            catch(Exception er) { MessageBox.Show("Please Signin to view your profile!");  }
+            
+        }
+
+        public void findUser()
+        {
+            IEnumerable<string> CurrentUser = from CurrentUsers in XDocument.Load(currentPath).Descendants("User")
+                                              select CurrentUsers.Element("UserName").Value;
+
+            cUser = CurrentUser.FirstOrDefault().ToString();
+            populatePage();
+
         }
 
         public void populatePage()
@@ -35,7 +51,7 @@ namespace Spotter_group
             try
             {
                 
-                string refItem = testbox.Text;
+                string refItem = cUser;
                 string fName = "";
                 string lName = "";
                 string name = "";
