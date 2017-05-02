@@ -23,7 +23,7 @@ namespace Spotter_group
     {
         UserGlobal use_me = new UserGlobal();
 
-        public SignIn(UserGlobal user1)
+        public SignIn()
         {
             InitializeComponent();
             
