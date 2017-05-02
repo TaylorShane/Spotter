@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Spotter_group
 {
@@ -20,6 +21,8 @@ namespace Spotter_group
     /// </summary>
     public partial class MainWindow : Window
     {
+        string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -118,6 +121,13 @@ namespace Spotter_group
             SignIn signIn = new SignIn();
             grid2.Children.Clear();
             grid2.Children.Add(signIn);
+        }
+
+        private void menuLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            XDocument xmlDocument = XDocument.Load(currentPath);
+            xmlDocument.Root.Elements().Remove();
+            xmlDocument.Save(currentPath);
         }
     }
 }
