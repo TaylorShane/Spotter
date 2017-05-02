@@ -40,7 +40,7 @@
             <Grid Name="grid2"
                   Background="Black"
                   Margin="5">
-                <Button x:Name="btnSign_in"  Content="Sign In" Height="60" Width="125" Panel.ZIndex="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,32"/>
+                <Button x:Name="btnSign_in"  Content="Sign In" Height="60" Width="125" Panel.ZIndex="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,100,32" Click="btnSign_in_Click"/>
                 <Button x:Name="btnReg"  Grid.Row="1" Content="Register" Height="60" Width="125" Click="btnReg_Click" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,35"/>
                 <Image Name="imgMainWindowSplash"  Margin="85,65,85,115" Source="images/Graphics/blue boy lifter.png"></Image>
             </Grid>

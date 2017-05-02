@@ -25,7 +25,6 @@ namespace Spotter_group
         List<WorkoutProgress> workout = new List<WorkoutProgress>();
         
 
-
         public Profile()
         {
             InitializeComponent();
@@ -40,6 +39,7 @@ namespace Spotter_group
                 string fName = "";
                 string lName = "";
                 string name = "";
+                string progressImage = "";
 
                 XDocument doc = XDocument.Load(jasonPath);
 
@@ -119,12 +119,20 @@ namespace Spotter_group
                 lblPassword.Content = UserPassword.FirstOrDefault().ToString();
 
 
-                int count = 50;
-                workout.Add(new WorkoutProgress() { Progress = count });
+                //Progress bar
+                int count = 75;
+                
 
+                             
+               //Image
+                IEnumerable<string> progImage = from Users in XDocument.Load(jasonPath).Descendants("User")
+                                                   where (string)Users.Element("Username") == refItem
+                                                   select Users.Element("ImageAfter").Value;
+
+                progressImage = progImage.FirstOrDefault().ToString();
+
+                workout.Add(new WorkoutProgress() { Progress = count, image = progressImage });
                 ListWorkout.ItemsSource = workout;
-
-
 
             }
             catch (Exception er)
@@ -143,7 +151,9 @@ namespace Spotter_group
     public class WorkoutProgress
     {
         public int Progress { get; set; }
+        public string image { get; set; }
     }
+
     
 
 }
