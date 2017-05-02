@@ -72,9 +72,6 @@
     <Compile Include="Nutrition.xaml.cs">
       <DependentUpon>Nutrition.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Progress.xaml.cs">
-      <DependentUpon>Progress.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
@@ -120,10 +117,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profile.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Progress.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -285,9 +278,6 @@
     <Resource Include="images\Gifs\buff.gif" />
     <Resource Include="images\Gifs\cardio.gif" />
     <Resource Include="images\Gifs\strength.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Data\Signin.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Documentation\DataBinding ProgressBar.txt" />

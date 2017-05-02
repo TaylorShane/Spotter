@@ -128,6 +128,9 @@ namespace Spotter_group
             XDocument xmlDocument = XDocument.Load(currentPath);
             xmlDocument.Root.Elements().Remove();
             xmlDocument.Save(currentPath);
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }

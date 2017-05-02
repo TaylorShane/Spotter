@@ -31,7 +31,9 @@ namespace Spotter_group
         public Profile()
         {
             InitializeComponent();
-            findUser();
+            try { findUser(); }
+            catch(Exception er) { MessageBox.Show("Please Signin to view your profile!");  }
+            
         }
 
         public void findUser()

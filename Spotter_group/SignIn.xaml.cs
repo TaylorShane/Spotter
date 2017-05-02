@@ -44,12 +44,7 @@ namespace Spotter_group
 
 
                 string user_name1 = user_name.Text;
-                string pass_word1 = pass_word.Text;
-
-                
-
-                MessageBox.Show(user_name1);
-                MessageBox.Show(pass_word1);
+                string pass_word1 = pass_word.Password;
 
                 /*
                 //user da user name
