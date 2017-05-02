@@ -115,7 +115,7 @@ namespace Spotter_group
         
         private void tbDOB_CalendarClosed(object sender, RoutedEventArgs e)
         {
-           dateOfBirth = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
+           dateOfBirth = tbDOB.SelectedDate.Value.ToString("MM/dd/yyyy");
         }
 
         private void cbToneUp_Checked(object sender, RoutedEventArgs e)
@@ -140,7 +140,7 @@ namespace Spotter_group
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)
         {
-            startDate = tbStartDate.SelectedDate.Value.ToString("dd/MM/yyyy");
+            startDate = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
         }
     }
 }

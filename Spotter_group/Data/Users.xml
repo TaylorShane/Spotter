@@ -52,17 +52,4 @@
     <Workout>Gain Muscle</Workout>
     <Admin>No</Admin>
   </User>
-  <User ID="4">
-    <FirstName>Tony</FirstName>
-    <LastName>Danza</LastName>
-    <BirthDate>01/01/1958</BirthDate>
-    <Username>ToneBone</Username>
-    <StartDate>01/01/1958</StartDate>
-    <Gender>Male</Gender>
-    <CurrentWeight>225</CurrentWeight>
-    <CurrentHeight>5' 2"</CurrentHeight>
-    <Password>123456</Password>
-    <Workout>Lose Weight</Workout>
-    <Admin>No</Admin>
-  </User>
 </Users>
