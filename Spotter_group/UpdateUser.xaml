@@ -63,10 +63,15 @@
             <TextBox Name="txtBoxLastName" Width="200px"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxBirthDate" Width="200px"></TextBox>
+            <DatePicker Name="datePickerBirthDate" Width="200px"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxWorkout" Width="200px"></TextBox>
+            <ComboBox Name="cboBoxWorkout" Width="200px">
+                <ComboBoxItem>Cardio</ComboBoxItem>
+                <ComboBoxItem>Gain Muscle</ComboBoxItem>
+                <ComboBoxItem>Lose Weight</ComboBoxItem>
+                <ComboBoxItem>Tone Up</ComboBoxItem>
+            </ComboBox>
         </StackPanel>
 
         <!-- Column 3 Labels -->
@@ -95,7 +100,7 @@
 
         <!-- Column 4 controls -->
         <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <DatePicker Name="txtBoxWorkoutStartDate" Width="200px"></DatePicker>
+            <DatePicker Name="datePickerWorkoutStartDate" Width="200px"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
             <ComboBox Name="txtBoxGender" Width="200px">

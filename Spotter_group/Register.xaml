@@ -70,6 +70,7 @@
             <Label Foreground="#FFE0E0E0" FontSize="20">Gender</Label>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="2">
+            
             <RadioButton x:Name="cbFemale" GroupName="gender" Foreground="#FFE0E0E0" FontSize="20" Checked="cbFemale_Checked">Female</RadioButton>
             <RadioButton x:Name="cbMale" GroupName="gender" Foreground="#FFE0E0E0" FontSize="20" Checked="cbMale_Checked">Male</RadioButton>
         </StackPanel>
@@ -97,38 +98,38 @@
 
         <StackPanel Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblToneUP" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Tone Up</TextBlock>
-            <CheckBox x:Name="cbToneUp" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbToneUp_Checked"></CheckBox>
+            <RadioButton x:Name="cbToneUp" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbToneUp_Checked"></RadioButton>
         </StackPanel>
         <DockPanel  Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="Images\Characters\Ursula.png" Height="150px" Width="150px"/>
-            <Image Source="Images\Characters\littlemermaid.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\Ursula.png" Height="125px" Width="125px"/>
+            <Image Source="Images\Characters\littlemermaid.png" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to become leaner with more muscle definition?  Then this workout routine is for you!  Our <Italic><Bold>Tone UP</Bold></Italic> will help you loose weight and add a little muscle, too!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblGain" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Gain Muscle</TextBlock>
-            <CheckBox x:Name="cbGainMuslce" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbGainMuslce_Checked"></CheckBox>
+            <RadioButton x:Name="cbGainMuslce" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbGainMuslce_Checked"></RadioButton>
         </StackPanel>
         <DockPanel Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="Images\Characters\snarfsnarf.png" Height="150px" Width="150px"/>
-            <Image Source="Images\Characters\thundercat.png" Height="150px" Width="150px"/>
+            <Image Source="Images\Characters\snarfsnarf.png" Height="125px" Width="125px"/>
+            <Image Source="Images\Characters\thundercat.png" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Want to bulk up?  Become bigger and stronger??  Our <Italic><Bold>Gain Muscle</Bold></Italic> routine will incorporate heavier weights with fewer reps.  This tried and true technique will get your body beach ready!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblLoseWeight" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Lose Weight</TextBlock>
-            <CheckBox x:Name="cbLoseWeight" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbLoseWeight_Checked"></CheckBox>
+            <RadioButton x:Name="cbLoseWeight" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbLoseWeight_Checked"></RadioButton>
         </StackPanel>
         <DockPanel Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="Images\Characters\Stimpy.png" Height="125px" Width="150px"/>
-            <Image Source="Images\Characters\ren.png" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\Stimpy.png" Height="115px" Width="115px"/>
+            <Image Source="Images\Characters\ren.png" Height="115px" Width="115px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Use our <Italic><Bold>Lose Weight</Bold></Italic> routine to shed any unwanted pounds!</TextBlock>
             </DockPanel>
         <StackPanel Grid.Column="2" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="lblCardio" Foreground="#FFE0E0E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20">Cardio</TextBlock>
-            <CheckBox x:Name="cbCardio" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbCardio_Checked"></CheckBox>
+            <RadioButton x:Name="cbCardio" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbCardio_Checked"></RadioButton>
         </StackPanel>
         <DockPanel Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="Images\Characters\Wile_E_Coyote.png" Height="125px" Width="150px"/>
-            <Image Source="Images\Characters\Faster-Road-Runner.gif" Height="125px" Width="150px"/>
+            <Image Source="Images\Characters\Wile_E_Coyote.png" Height="125px" Width="125px"/>
+            <Image Source="Images\Characters\Faster-Road-Runner.gif" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Cardiiovascular health is an important part or anyone's health.  Choose <Italic><Bold>Cardio</Bold></Italic> to improve yours!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="3" Grid.Row="11">
