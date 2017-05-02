@@ -104,5 +104,12 @@ namespace Spotter_group
             grid2.Children.Clear();
             grid2.Children.Add(updateUser);
         }
+
+        private void menuProgress_Click(object sender, RoutedEventArgs e)
+        {
+            Progress progress = new Progress();
+            grid2.Children.Clear();
+            grid2.Children.Add(progress);
+        }
     }
 }

@@ -33,6 +33,7 @@
                 <MenuItem Header="Nutrition" x:Name="MenuItemNutrition" Foreground="Black" Click="MenuItemNutrition_Click"/>
             </MenuItem>
             <MenuItem Header="Logout" Foreground="White"/>
+            <MenuItem x:Name="menuProgress" Header="Progress" Foreground="White" Click="menuProgress_Click"/>
         </Menu>
         <UserControl Margin="70,50,70,50"
                      Background="#009999">

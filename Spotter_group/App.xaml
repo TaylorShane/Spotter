@@ -4,6 +4,10 @@
              xmlns:local="clr-namespace:Spotter_group"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+
+
+
+
     </Application.Resources>
 </Application>

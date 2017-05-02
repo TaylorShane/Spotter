@@ -20,9 +20,14 @@ namespace Spotter_group
     /// </summary>
     public partial class Progress : UserControl
     {
+        List<WorkoutProgress> workout = new List<WorkoutProgress>();
+
         public Progress()
         {
             InitializeComponent();
+
+            
         }
     }
+    
 }

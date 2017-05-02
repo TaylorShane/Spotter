@@ -15,7 +15,9 @@
     
     
     <Grid x:Name="gridProfile" Margin="150,50">
-        <Grid.ColumnDefinitions>
+        
+               
+                    <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -24,6 +26,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -65,6 +68,27 @@
         <TextBlock  FontSize="20" Grid.Column="2" Grid.Row="5" Foreground="#FFE0E0E0" HorizontalAlignment="Right" VerticalAlignment="Center">Gender</TextBlock>
         <Label Margin="10" FontSize="20" x:Name="lblGender" Grid.Column="3" Grid.Row="5" Foreground="#009999" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
 
-        <Button Grid.Column="3" Grid.Row="10" Click="Button_Click">Populate</Button>
+        <Label Grid.Column="0" Grid.Row="6" FontSize="30" Foreground="#009999" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4">Progress</Label>
+        <ListBox Name="ListWorkout" HorizontalContentAlignment="Stretch" Grid.Row="7" Grid.ColumnSpan="2" Grid.Column="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+
+                        <ProgressBar Height="100px" Foreground="#009999"
+                                 Maximum="100"
+                                 Minimum="1"
+                                 Value="{Binding Progress}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Image Source="" Grid.Column="0" Grid.Row="7"/>
+        <Image Source="" Grid.Column="3" Grid.Row="7"/>
+
+        <Button Grid.Column="3" Grid.Row="0" Click="Button_Click">Populate</Button>
+
+
+                  
+          
     </Grid>
 </UserControl>

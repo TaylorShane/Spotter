@@ -6,7 +6,34 @@
              xmlns:local="clr-namespace:Spotter_group"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
+    <Grid x:Name="gridProgress">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        
+        <ListBox Name="ListWorkout" HorizontalContentAlignment="Stretch" Grid.Column="1" Grid.Row="3">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        
+
+
+                        <ProgressBar Height="100px"
+                                 Maximum="100"
+                                 Minimum="1"
+                                 Value="{Binding Progress}"/>
+                        </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>
