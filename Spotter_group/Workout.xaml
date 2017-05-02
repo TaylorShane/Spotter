@@ -12,7 +12,6 @@
     you will see at the bottom wpf animator, feel free to add more stuff, found this stuff
     really fun -->
 
-    
     <UserControl.Resources>
         <XmlDataProvider Source="Data/workit.xml"
                          XPath="exercise"

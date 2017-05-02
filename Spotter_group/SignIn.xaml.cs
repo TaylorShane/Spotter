@@ -21,9 +21,12 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
+      
+
         public SignIn()
         {
             InitializeComponent();
+            
         }
 
 
@@ -31,9 +34,9 @@ namespace Spotter_group
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SignIn signIn = new SignIn();
+           
 
-            UserGlobal use_me = new UserGlobal();
+            
 
             try
             {
@@ -42,6 +45,8 @@ namespace Spotter_group
 
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Text;
+
+                
 
                 MessageBox.Show(user_name1);
                 MessageBox.Show(pass_word1);
@@ -69,10 +74,15 @@ namespace Spotter_group
                     throw new Exception("Password Mismatch");
                 }
 
+                else
+                {
+                    MessageBox.Show("Successful Login! \n Please return to profile");
 
-                MessageBox.Show("Successful Login! \n Please return to profile");
+                   
+                }
 
 
+                
 
 
             }
@@ -81,45 +91,14 @@ namespace Spotter_group
             //when login and password dont match, we catch the error and display box you are a naughty person
             catch (Exception err)
             {
-                MessageBox.Show("Please Ty Aain!");
+                MessageBox.Show("Please Ty Aain! Password Mismatch!");
             }
 
 
 
-
-            /*use_me.set_user_Name(user_name1);
-
-
-               string new1 = "";
-
-               XDocument xmlDoc = XDocument.Load(stevePath);
-
-               new1 = xmlDoc.Element("users")
-                       .Elements("profile")
-                       .Where(x => x.Attribute("Id").Value == user_name1)
-                       .FirstOrDefault()
-                       .ToString();
-
-               MessageBox.Show(new1 + "!!!");
-
-
-
-              // Password
-               IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
-                                                  where (string)Users.Element("Username") == refItem
-                                                  select Users.Element("Password").Value;
-
-               txtBoxPassword.Text = UserPassword.FirstOrDefault().ToString();
-
-
-
-*/
         }
     }
 
    
 }
-
- 
- 
  

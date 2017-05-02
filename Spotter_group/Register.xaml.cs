@@ -112,9 +112,6 @@ namespace Spotter_group
             else
                 lblError.Content = "Passwords do not match!";
 
-           
-
-
         }
 
         private void cbFemale_Checked(object sender, RoutedEventArgs e)
