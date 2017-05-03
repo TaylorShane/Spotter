@@ -48,7 +48,7 @@
             <Label Foreground="White">Date Selected</Label>
             <TextBlock Name="txtBlockDateSeleted" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
             <Separator Margin="5"></Separator>
-            <Label Foreground="White">Date Selected</Label>
+            <Label Foreground="White">Days passed</Label>
             <TextBlock Name="txtDaysPassed" Foreground="White" ToolTip="Selecte a Date">Days from Start Date to Selected Date</TextBlock>
         </StackPanel>
 
@@ -66,8 +66,10 @@
 
         <!-- Column 4 -->
         <StackPanel Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
-            <ListBox Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding days}"
-                      DisplayMemberPath="name" ></ListBox>             <!--               ="{Binding Source={StaticResource workouts}, XPath=day2}" -->
+            <ListBox Foreground="White" Background="Black" Focusable="False" 
+                     ItemsSource="{Binding Source={StaticResource workouts}, XPath=day2}"
+                      DisplayMemberPath="name" ></ListBox>
+            <!-- ="{Binding days}" OR ="{Binding Source={StaticResource workouts}, XPath=day2}" -->
         </StackPanel>
         <StackPanel Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
             <ListBox Name="lboxSelectedDateWorkoutDisplay" Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding days}"

@@ -35,12 +35,14 @@ namespace Spotter_group
         string user = "";
         List<DaysPassed> mydate = new List<DaysPassed>();
 
+        public string result;
         public DateTime startDate;
 
         public class DaysPassed
         {
             public string days { get; set; }
         }
+        public string XPath { get; set; }
         public void populateStartDate()
         {
             //Get current user
@@ -59,7 +61,7 @@ namespace Spotter_group
 
             string workoutStartDate = thisUserStartDate.FirstOrDefault().ToString();
             txtStartDate.Text = workoutStartDate;
-            DateTime startDT = Convert.ToDateTime(workoutStartDate);
+            startDate = Convert.ToDateTime(workoutStartDate);
             //startDate = startDT;
             
 
@@ -71,9 +73,12 @@ namespace Spotter_group
             double day = (dateClicked - startDate).TotalDays;
             string dayStringFormat = day.ToString();
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
-            txtDaysPassed.Text = day.ToString();
+            txtDaysPassed.Text = dayStringFormat;
 
-            mydate.Add(new DaysPassed() { days = dayStringFormat });
+            XPath = dayStringFormat;
+            //mydate.Add(new DaysPassed() { days = "Source={StaticResource workouts}, XPath=" + dayStringFormat });
+            // Source={StaticResource workouts}, XPath=day2
+            MessageBox.Show(result);
             lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
         }
     }
