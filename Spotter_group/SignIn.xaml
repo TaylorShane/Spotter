@@ -25,7 +25,7 @@
                FontSize="70" HorizontalAlignment="Center"
                VerticalAlignment="Center" BorderThickness="2" BorderBrush="#666666" >Sign In</Label>
 
-        <Image Grid.ColumnSpan="4" Panel.ZIndex="1" Height="900" Width="1100" Source="images\Graphics\signin.png" Grid.Column="0" Grid.Row="1"/>
+        <Image Grid.ColumnSpan="4" Panel.ZIndex="1" Margin="20"  Height="800" VerticalAlignment="Center" Width="1100" Source="images\Graphics\signin.png" Grid.Column="0" Grid.Row="1"/>
         <StackPanel Grid.Column="2" Grid.Row="1" Panel.ZIndex="2" Orientation="Vertical" VerticalAlignment="Center" >
             
             <Label Grid.Row="2" Grid.Column="1" Foreground="#009999"
