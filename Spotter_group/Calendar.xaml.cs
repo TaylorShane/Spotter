@@ -29,7 +29,7 @@ namespace Spotter_group
 
         //public List<UserData> user = new List<UserData>();              
         // PATH LOCATION
-        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
         string user = "";
@@ -54,7 +54,7 @@ namespace Spotter_group
 
             //Get current username startdate
             
-            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
+            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
                                                     where (string)Users.Element("Username") == user
                                                     select Users.Element("StartDate").Value;
 

@@ -22,10 +22,21 @@ namespace Spotter_group
     public partial class MainWindow : Window
     {
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string visiblePath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Visible.xml";
 
         public MainWindow()
         {
             InitializeComponent();
+            isVisible();
+        }
+        public void isVisible()
+        {
+            IEnumerable<string> menuVisible = from Users in XDocument.Load(visiblePath).Descendants("Visible")
+                                             select Users.Element("isVisible").Value;
+            string test = menuVisible.FirstOrDefault().ToString();
+
+            MenuItemSpotter.Visibility = System.Windows.Visibility.Hidden;
+
         }
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
@@ -100,6 +111,9 @@ namespace Spotter_group
             Admin admin = new Admin();
             grid2.Children.Clear();
             grid2.Children.Add(admin);
+
+
+
         }
 
         private void MenuItemUpdateUser_Click(object sender, RoutedEventArgs e)
@@ -116,6 +130,7 @@ namespace Spotter_group
             SignIn signIn = new SignIn();
             grid2.Children.Clear();
             grid2.Children.Add(signIn);
+            MenuItemSpotter.Visibility = System.Windows.Visibility.Visible;
         }
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)
