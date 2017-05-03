@@ -13,115 +13,255 @@
                          x:Key="User"/>
     </UserControl.Resources>
     <Grid Name="GridUpdateUser">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
 
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Label Margin="20" Foreground="#009999" Grid.ColumnSpan="2" Grid.Column="1" FontSize="30">Update User</Label>
-        
-       <!-- Column 1 Labels -->
-        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Select Username</Label>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">First name: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Last Name: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Birth Date</Label>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Workout</Label>
-        </StackPanel>
+        <TabControl TabStripPlacement="Top" Background="#000000">
+            <TabItem Header="Update User" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
 
-        <!-- Column 2 Controls -->
-        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <ComboBox Name="cboBoxUsername" IsReadOnly="True" Margin="5, 10, 5, 10" Height="25" 
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.25*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Margin="2" Foreground="#009999" Grid.ColumnSpan="2" Grid.Column="1" FontSize="30">Update User</Label>
+
+                    <!-- Column 1 Labels -->
+                    <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Select Username</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">First name:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Last Name:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Birth Date</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Workout</Label>
+                    </StackPanel>
+
+                    <!-- Column 2 Controls -->
+                    <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="cboBoxUsername" IsReadOnly="True" Margin="5, 10, 5, 10" Height="25" 
                       VerticalAlignment="Top" Foreground="Black" Width="200px"
                       ItemsSource="{Binding Source={StaticResource User}, XPath=User}" 
                       DisplayMemberPath="Username" DropDownClosed="cboBoxUsername_DropDownClosed"></ComboBox>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxFirstName" Width="200px"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxLastName" Width="200px"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <DatePicker Name="datePickerBirthDate" Width="200px"></DatePicker>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <ComboBox Name="cboBoxWorkout" Width="200px">
-                <ComboBoxItem>Cardio</ComboBoxItem>
-                <ComboBoxItem>Gain Muscle</ComboBoxItem>
-                <ComboBoxItem>Lose Weight</ComboBoxItem>
-                <ComboBoxItem>Tone Up</ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxFirstName" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxLastName" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <DatePicker Name="datePickerBirthDate" Width="200px"></DatePicker>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="cboBoxWorkout" Width="200px">
+                            <ComboBoxItem>Cardio</ComboBoxItem>
+                            <ComboBoxItem>Gain Muscle</ComboBoxItem>
+                            <ComboBoxItem>Lose Weight</ComboBoxItem>
+                            <ComboBoxItem>Tone Up</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
 
-        <!-- Column 3 Labels -->
-        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Workout Start Date: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Gender: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Current Weight: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Height: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Password:</Label>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Label Foreground="White" FontSize="20">Admin: </Label>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
-            <Button Name="btnUpdateUser" Height="40" Width="80" Click="btnUpdateUser_Click">Update</Button>
-        </StackPanel>
+                    <!-- Column 3 Labels -->
+                    <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Workout Start Date:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Gender:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Current Weight:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Height:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Password:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Admin:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                        <Button Name="btnUpdateUser" Height="40" Width="80" Click="btnUpdateUser_Click">Update</Button>
+                    </StackPanel>
+
+                    <!-- Column 4 controls -->
+                    <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <DatePicker Name="datePickerWorkoutStartDate" Width="200px"></DatePicker>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="txtBoxGender" Width="200px">
+                            <ComboBoxItem>Male</ComboBoxItem>
+                            <ComboBoxItem>Female</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxCurrentWeight" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxHeight" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxPassword" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="cboBoxAdmin" Width="200px">
+                            <ComboBoxItem>Yes</ComboBoxItem>
+                            <ComboBoxItem>No</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+    <!-- TAB ITEM 2 -->
+            
+            <TabItem Header="Add User">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1.25*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Margin="2" Foreground="#009999" Grid.ColumnSpan="2" Grid.Column="1" FontSize="30">Add User</Label>
+
+                    <!-- Column 1 Labels -->
+                    <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Select Username</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">First name:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Last Name:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Birth Date</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Workout</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Admin:</Label>
+                    </StackPanel>
+
+                    <!-- Column 2 Controls -->
+                    <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxUsernameADD" Margin="5, 10, 5, 10" Height="25" 
+                      VerticalAlignment="Top" Foreground="Black" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxFirstNameADD" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxLastNameADD" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <DatePicker Name="datePickerBirthDateADD" Width="200px"></DatePicker>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="cboBoxWorkoutADD" Width="200px">
+                            <ComboBoxItem>Cardio</ComboBoxItem>
+                            <ComboBoxItem>Gain Muscle</ComboBoxItem>
+                            <ComboBoxItem>Lose Weight</ComboBoxItem>
+                            <ComboBoxItem>Tone Up</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="cboBoxAdminADD" Width="200px">
+                            <ComboBoxItem>Yes</ComboBoxItem>
+                            <ComboBoxItem>No</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Column 3 Labels -->
+                    <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Workout Start Date:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Gender:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Current Weight:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Height:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Password:</Label>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">
+                        <Label Foreground="White" FontSize="20">Select Workout</Label>
+                    </StackPanel>
+                    
+                    
+                    
 
 
-        <!-- Column 4 controls -->
-        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <DatePicker Name="datePickerWorkoutStartDate" Width="200px"></DatePicker>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <ComboBox Name="txtBoxGender" Width="200px">
-                <ComboBoxItem>Male</ComboBoxItem>
-                <ComboBoxItem>Female</ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxCurrentWeight" Width="200px"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxHeight" Width="200px"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <TextBox Name="txtBoxPassword" Width="200px"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <ComboBox Name="cboBoxAdmin" Width="200px">
-                <ComboBoxItem>Yes</ComboBoxItem>
-                <ComboBoxItem>No</ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
+                    <!-- Column 4 controls -->
+                    <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <DatePicker Name="datePickerWorkoutStartDateADD" Width="200px"></DatePicker>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <ComboBox Name="txtBoxGenderADD" Width="200px">
+                            <ComboBoxItem>Male</ComboBoxItem>
+                            <ComboBoxItem>Female</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxCurrentWeightADD" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxHeightADD" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <TextBox Name="txtBoxPasswordADD" Width="200px"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                        <RadioButton x:Name="cbToneUp" GroupName="workout" HorizontalAlignment="Left" Checked="cbToneUp_Checked" Foreground="White">Tone Up</RadioButton>
+                        <RadioButton x:Name="cbGainMuslce" GroupName="workout" HorizontalAlignment="Left" Checked="cbGainMuslce_Checked" Foreground="White">Gain Muscle</RadioButton>
+                        <RadioButton x:Name="cbLoseWeight" GroupName="workout" HorizontalAlignment="Left" Checked="cbLoseWeight_Checked" Foreground="White">Loose Weight</RadioButton>
+                        <RadioButton x:Name="cbCardio" GroupName="workout" HorizontalAlignment="Left" Checked="cbCardio_Checked" Foreground="White">Cardio</RadioButton>
+
+                    </StackPanel>
+                    
+                    
+                    <!-- Button -->
+                    <StackPanel Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                        <Button Name="btnAddUser" Height="40" Width="80" Click="btnAddUser_Click">Add User</Button>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </UserControl>
