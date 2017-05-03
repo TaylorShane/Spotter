@@ -104,7 +104,15 @@ namespace Spotter_group
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
-            tboxVeggieCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            
+            try
+            {
+                tboxVeggieCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            }
+            catch (Exception er)
+            {
+                tboxProteinCalories.Text = 0.ToString();
+            }
         }
 
         private void cboBox_Fruits_DropDownClosed(object sender, EventArgs e)
@@ -116,7 +124,15 @@ namespace Spotter_group
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
-            tboxFruitsCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            
+            try
+            {
+                tboxFruitsCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            }
+            catch (Exception er)
+            {
+                tboxProteinCalories.Text = 0.ToString();
+            }
         }
 
         private void cboBox_Alcohol_DropDownClosed(object sender, EventArgs e)
@@ -128,7 +144,15 @@ namespace Spotter_group
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
-            tboxAlcoholCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            
+            try
+            {
+                tboxAlcoholCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            }
+            catch (Exception er)
+            {
+                tboxProteinCalories.Text = 0.ToString();
+            }
         }
 
         private void cboBox_Misc_DropDownClosed(object sender, EventArgs e)
@@ -140,7 +164,15 @@ namespace Spotter_group
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
-            tboxMiscCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            
+            try
+            {
+                tboxMiscCalories.Text = CaloriesResult.FirstOrDefault().ToString();
+            }
+            catch (Exception er)
+            {
+                tboxProteinCalories.Text = 0.ToString();
+            }
         }
     }
 }
