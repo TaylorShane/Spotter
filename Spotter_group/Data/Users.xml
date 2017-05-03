@@ -60,4 +60,49 @@
     <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
+  <User ID="5">
+    <FirstName>Selena</FirstName>
+    <LastName>Gomez</LastName>
+    <BirthDate>02/03/2009</BirthDate>
+    <Username>selenagomez</Username>
+    <StartDate>05/01/2017</StartDate>
+    <Gender>Female</Gender>
+    <CurrentWeight>100</CurrentWeight>
+    <CurrentHeight>4'11"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Tone Up</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="6">
+    <FirstName>Bobby</FirstName>
+    <LastName>Brown</LastName>
+    <BirthDate>01/29/1971</BirthDate>
+    <Username>bobbybrown</Username>
+    <StartDate>03/21/2017</StartDate>
+    <Gender>Female</Gender>
+    <CurrentWeight>250</CurrentWeight>
+    <CurrentHeight>5' 8"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Lose Weight</Workout>
+    <ImageBefore>Images\Characters\Stimpy.png</ImageBefore>
+    <ImageAfter>Images\Characters\ren.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="7">
+    <FirstName></FirstName>
+    <LastName></LastName>
+    <BirthDate>01/29/1971</BirthDate>
+    <Username></Username>
+    <StartDate>03/21/2017</StartDate>
+    <Gender>Female</Gender>
+    <CurrentWeight></CurrentWeight>
+    <CurrentHeight></CurrentHeight>
+    <Password></Password>
+    <Workout>Lose Weight</Workout>
+    <ImageBefore>Images\Characters\Stimpy.png</ImageBefore>
+    <ImageAfter>Images\Characters\ren.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
 </Users>

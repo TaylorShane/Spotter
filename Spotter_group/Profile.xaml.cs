@@ -147,10 +147,11 @@ namespace Spotter_group
                 double days = (dateNow - startDateDT).TotalDays;
 
                 int count = Convert.ToInt32(days);
+                /*
                 MessageBox.Show("date now = " + dateNow + "/n" +
                                 " - startDateDT " + startDateDT + "/n"
                                 + " = count " + count);
-
+                                */
 
 
 

@@ -73,7 +73,7 @@
                                  Maximum="51"
                                  Minimum="1"
                                  Value="{Binding Progress}"/>
-                            <Image Grid.Column="3" Height="150" Width="130" Source="{Binding image}"/>
+                            <Image Grid.Column="3" Height="120" Width="100" Source="{Binding image}" VerticalAlignment="Top" HorizontalAlignment="Center"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

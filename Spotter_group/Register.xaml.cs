@@ -59,7 +59,7 @@ namespace Spotter_group
 
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(jasonPath);
+                    XDocument xmlDocument = XDocument.Load(shanePath);
                     //nextId = xmlDocument.Root.LastNode()
                     int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
 
@@ -79,10 +79,11 @@ namespace Spotter_group
                         new XElement("ImageAfter", imageAfter),
                         new XElement("Admin", admin)
                         ));
-                    xmlDocument.Save(jasonPath);
+                    xmlDocument.Save(shanePath);
 
                     ID++;
-                    MessageBox.Show("User successfully added to database.");
+                    MessageBox.Show("User successfully added to database." + Environment.NewLine +
+                                    "Please Sign In!");
                     // this refresh method isn't working    this.NavigationService.Navigate(new Uri("Register.xaml", UriKind.Relative));
                     // not this     Refresh();
                 }
@@ -159,7 +160,7 @@ namespace Spotter_group
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)
         {
-            startDate = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
+            startDate = tbStartDate.SelectedDate.Value.ToString("MM/dd/yyyy");
         }
 
         
