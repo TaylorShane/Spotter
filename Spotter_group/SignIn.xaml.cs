@@ -21,13 +21,16 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
-      
+
+        List<Visibility> visible = new List<Visibility>();
 
         public SignIn()
         {
             InitializeComponent();
             
         }
+
+        string visiblePath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Visible.xml";
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string stevePath = @"C:/Users/drof/Source/Repos/Spotter_group/Spotter_group/Data/Users.xml";
@@ -52,7 +55,7 @@ namespace Spotter_group
 
                 //user password list of 1
 
-                IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(jasonPath).Descendants("User")
                                                    where (string)Users.Element("Username") == user_name1
                                                    select Users.Element("Password").Value;
 
@@ -67,13 +70,24 @@ namespace Spotter_group
 
                 else
                 {
-                    XDocument xmlDocument = XDocument.Load(ShaneCurrentPath);
+                    XDocument xmlDocument = XDocument.Load(currentPath);
                     xmlDocument.Element("CurrentUser").Add(
                        new XElement("User", new XAttribute("ID", 0),
                        new XElement("UserName", user_name1)));
-                    xmlDocument.Save(ShaneCurrentPath);
+                    xmlDocument.Save(currentPath);
 
                     MessageBox.Show("Successful Login! \n Please return to profile");
+
+                    string visibility = "Visible";
+
+                   XDocument xmlDocumentVis = XDocument.Load(visiblePath);
+                    xmlDocumentVis.Element("Visible").Add(
+                       new XElement("isVisible", visibility));
+                    xmlDocumentVis.Save(visiblePath);
+
+
+                    visible.Add(new Visibility() { isVis = "Visible" });
+                    //ListWorkout.ItemsSource = workout;
 
                 }
 
@@ -90,7 +104,10 @@ namespace Spotter_group
 
         }
     }
+    public class Visibility
+    {
+        public string isVis { get; set; }
+    }
 
-   
 }
  
