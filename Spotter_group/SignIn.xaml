@@ -9,50 +9,52 @@
     <Grid>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="2" Grid.Column="1" Foreground="White"
+        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Foreground="White"
+               FontSize="70" HorizontalAlignment="Center"
+               VerticalAlignment="Center" BorderThickness="2" BorderBrush="#666666" >Sign In</Label>
+
+        <Image Grid.ColumnSpan="4" Panel.ZIndex="1" Height="900" Width="1100" Source="images\Graphics\signin.png" Grid.Column="0" Grid.Row="1"/>
+        <StackPanel Grid.Column="2" Grid.Row="1" Panel.ZIndex="2" Orientation="Vertical" VerticalAlignment="Center" >
+            
+            <Label Grid.Row="2" Grid.Column="1" Foreground="#009999"
                HorizontalAlignment="Center"
-               VerticalAlignment="Top">Username:
-        </Label>
+               VerticalAlignment="Top" FontSize="20">Username:
+            </Label>
 
-        <Label Grid.Row="3" Grid.Column="1" 
-               Foreground="White"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Top">Password:
-        </Label>
 
-        
-
-        <TextBox Grid.Column="1" Grid.Row="2" Name="user_name"
+            <TextBox Grid.Column="1" Grid.Row="2" Name="user_name"
                  Height="20" Width="130" VerticalAlignment="Center"
                  HorizontalAlignment="Center">
-            
-        </TextBox>
+            </TextBox>
+
+            <Label Grid.Row="3" Grid.Column="1" 
+               Foreground="#009999"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top" FontSize="20">Password:
+            </Label>
 
         <PasswordBox Grid.Column="1" Grid.Row="3" Name="pass_word" Height="20"
                  Width="130"
                   VerticalAlignment="Center" HorizontalAlignment="Center">
-            
         </PasswordBox>
+        </StackPanel>
 
-        <Button Grid.Column="1" Grid.Row="4" Height="20" Width="80"
-                Click="Button_Click">Submit</Button>
+        <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Height="60" Width="125"
+                Click="Button_Click" HorizontalAlignment="Center">Submit</Button>
 
-        <Label Grid.Column="0" Grid.Row="0" Foreground="White"
-               Grid.ColumnSpan="2" FontSize="40" HorizontalAlignment="Right"
-               VerticalAlignment="Center">Sign In</Label>
+      
 
     </Grid>
     

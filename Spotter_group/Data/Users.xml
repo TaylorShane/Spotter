@@ -30,4 +30,19 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>No</Admin>
   </User>
+  <User ID="2">
+    <FirstName></FirstName>
+    <LastName></LastName>
+    <BirthDate></BirthDate>
+    <Username></Username>
+    <StartDate></StartDate>
+    <Gender></Gender>
+    <CurrentWeight></CurrentWeight>
+    <CurrentHeight></CurrentHeight>
+    <Password></Password>
+    <Workout></Workout>
+    <ImageBefore></ImageBefore>
+    <ImageAfter></ImageAfter>
+    <Admin>No</Admin>
+  </User>
 </Users>
