@@ -54,13 +54,12 @@
 
         <!-- Column 2 -->
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Foreground="White">Workout for today </Label>
-            <TextBlock Name="txtBlockWorkout" Foreground="White">Workout</TextBlock>
+            
         </StackPanel>
         
         <!-- Column 3 -->
-        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Right" Margin="10" Background="#666666">
-            <Image Height="100" Width="100" Source="images/Icons/WHOLE_BODY.png" ></Image>
+        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Right" Margin="10">
+            
             
         </StackPanel>
 

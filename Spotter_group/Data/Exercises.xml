@@ -4,31 +4,28 @@
     <day>2</day>  
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
-    <details1>1 set, 10 reps no weight, only bar</details1>
-    <details2>1 set, 10 reps, 20% 1 rep max </details2>
-    <details3>1 set, 10 reps, 20% 1 rep max </details3>
-    <details4>1 set, 10 reps, no weight </details4>
+    <details>1 set, 10 reps no weight, only bar</details>
     <image>/images/Icons/ARMS.png</image>
   </workout>
   <workout id="lWv1">
     <day>0</day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
-    
+    <details>1 set, 10 reps, 20% 1 rep max </details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
   </workout>
   <workout id="lWv1">
      <day>0</day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
-    
+    <details>1 set, 10 reps, 20% 1 rep max </details>
      <image>/images/Icons/BACKANDSHOULDERS.png</image>
   </workout>
   <workout id="lWv1">
-     <day> 0 </day>
+    <day> 0 </day>
     <muscle>Legs</muscle>
     <name>BodyWeight Squats</name>
-    
+    <details>1 set, 10 reps, no weight </details>
      <image>/images/Icons/LEGS.png</image>
   </workout>
   <workout id="lWv1">
@@ -59,369 +56,372 @@
     <details>1 set, 30 seconds </details>
     <image>/images/Icons/CORE.png</image>
   </workout>
-  <day8 id="lWv2">
+  <workout id="lWv2">
     <day>8</day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>1 set, 10 reps, no weight, only bar </details>
-  </day8>
-    <day8 id="lWv2">
+  </workout>
+  <workout id="lWv2">
      <day>8</day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 30% 1 rep </details>
       <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day8>
-     <day8 id="lWv2">
+  </workout>
+  <workout id="lWv2">
 		 <day>8</day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 30% 1 rep </details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day8>
-   <day8 id="lWv2">
+  </workout>
+  <workout id="lWv2">
     <day>8</day>
     <muscle>Legs</muscle>
     <name>Bodyweight Squats</name>
     <details>1 set, 10 reps, with bar</details>
      <image>/images/Icons/LEGS.png</image>
-  </day8>
-   <day10 id="lWv2">
+  </workout>
+  <workout id="lWv2">
     <day>10</day>
     <muscle>Legs</muscle>
     <name>Single Leg Calf Raise</name>
     <details>1 set, 6 reps, bodyweight</details>
      <image>/images/Icons/LEGS.png</image>
-  </day10>
-  <day10 id="lWv2">
+  </workout>
+  <workout id="lWv2">
     <day>10</day>
     <muscle>Arms</muscle>
     <name>Tricep Extensions</name>
     <details>1 set, 10 sets, 30% 1 rep</details>
     <image>/images/Icons/ARMS.png</image>
-  </day10>
-  <day10 id="lWv2">
+  </workout>
+  <workout id="lWv2">
     <day>10</day>
     <muscle>Core</muscle>
     <name>Ab Crunch on Ball</name>
     <details>1 set, 10 reps, no weight</details>
     <image>/images/Icons/CORE.png</image>
-  </day10>
-  <day10 id="lWv2">
+  </workout>
+  <workout id="lWv2">
     <day>10</day>
     <muscle>Core</muscle>
     <name>Plank</name>
     <details>1 set, 60 seconds</details>
     <image>/images/Icons/CORE.png</image>
-  </day10>
-  
-  <day15 id="gMv1">
+  </workout>
+
+  <workout id="gMv1">
     <day>15</day>
     <muscle>Chest</muscle>
     <name>Barbell Bench Press</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
-  </day15>
-  <day15 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>15</day>
     <muscle>Chest</muscle>
     <name>Dumbbell Flye</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
-  </day15>
-  <day15 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>15</day>
     <muscle>Back and Shoulders</muscle>
     <name>Barbell Bent-over Row</name>
     <details>2 sets, 8 reps, 80% 1 rep</details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day15>
-  <day15 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>15</day>
     <muscle>Back and Shoulders</muscle>
     <name>Seater Reverse Flye</name>
     <details>2 sets, 8 reps, 80% 1 rep</details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day15>
-  <day17 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>17</day>
     <muscle>Legs</muscle>
     <name>Alternating Dumbbell Lunge</name>
     <details>1 set, 20 reps each legs, no weight</details>
     <image>/images/Icons/LEGS.png</image>
-  </day17>
-  <day17 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>17</day>
     <muscle>Legs</muscle>
     <name>Barbell Squats</name>
     <details>2 sets, 6 reps, 40% 1 rep</details>
     <image>/images/Icons/LEGS.png</image>
-  </day17>
-  <day17 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>17</day>
     <muscle>Arms</muscle>
     <name>Bicep Curls</name>
     <details>1 sets, 8 reps, 60% 1 rep</details>
     <image>/images/Icons/ARMS.png</image>
-  </day17>
-  <day17 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>17</day>
     <muscle>Arms</muscle>
     <name>Tricep Extensions</name>
     <details>1 set, 8 reps, 60% 1 rep</details>
     <image>/images/Icons/ARMS.png</image>
-  </day17>
-  <day24 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>24</day>
     <muscle>Core</muscle>
     <name>Incline Barbell Bench Press</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
     <image>/images/Icons/CORE.png</image>
-  </day24>
-  <day24 id="gMv1">
+  </workout>
+  <workout id="gMv1">
     <day>24</day>
     <muscle>Core</muscle>
     <name>V-Up</name>
     <details>1 set, 10 reps</details>
     <image>/images/Icons/CORE.png</image>
-  </day24>
-  <day24 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>24</day>
     <muscle>Chest</muscle>
     <name>Incline Barbell Bench Press </name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
-  </day24>
-  <day24 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>24</day>
     <muscle>Chest</muscle>
     <name>Dumbell Flye</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
-  </day24>
-  <day26 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>26</day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pull-Down</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day26>
-  <day26 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>26</day>
     <muscle>Back and Shoulders</muscle>
     <name>oulder Press</name>
     <details>2 sets, 6 reps, 80% 1 rep</details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day26>
-  <day26 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>26</day>
     <muscle>Back and Shoulders</muscle>
     <name>Kettlebell high pull</name>
     <details>1 sets, 6 reps, 60% 1 rep</details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day26>
-  <day26 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>26</day>
     <muscle>Legs</muscle>
     <name>Deadlift</name>
     <details>1 set, 20 reps each legs, 40$ 1 rep max</details>
     <image>/images/Icons/LEGS.png</image>
-  </day26>
-  <day31 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>31</day>
     <muscle>Legs</muscle>
     <name>Barbell Squats</name>
     <details>2 sets, 6 reps, 40% 1 rep</details>
     <image>/images/Icons/LEGS.png</image>
-  </day31>
-  <day31 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>31</day>
     <muscle>Arms</muscle>
     <name>Tricep Dips</name>
     <details>2 sets, 12 reps, no weights</details>
     <image>/images/Icons/ARMS.png</image>
-  </day31>
-  <day31 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>31</day>
     <muscle>Core</muscle>
     <name>Crunch Twist</name>
     <details>1 set, 10 reps</details>
     <image>/images/Icons/CORE.png</image>
-  </day31>
-  <day31 id="gMv2">
+  </workout>
+  <workout id="gMv2">
     <day>31</day>
     <muscle>Core</muscle>
     <name>V-Up</name>
     <details>1 set, 10 reps</details>
     <image>/images/Icons/CORE.png</image>
-  </day31>
-  <day33 id="iCeV1">
+  </workout>
+  <workout id="iCeV1">
     <day>33</day>
     <muscle>Whole Body</muscle>
     <name>Jumping Jacks</name>
     <details>2 sets, 60 seconds</details>
-  </day33>
-   <day33 id="iCeV1">
+  </workout>
+  <workout id="iCeV1">
     <day>33</day>
     <muscle>Whole Body</muscle>
     <name>Speed Walking</name>
     <details>2 miles</details>
-  </day33>
-   <day33 id="iCeV1">
+  </workout>
+  <workout id="iCeV1">
      <day>33</day>
     <muscle>Whole Body</muscle>
     <name>Stairs</name>
     <details>15 minutes</details>
-  </day33>
-   <day33 id="iCeV1">
+  </workout>
+  <workout id="iCeV1">
      <day>33</day>
     <muscle>Whole Body</muscle>
     <name>Cycling</name>
     <details>10 minutes</details>
-  </day33>
-   <day38 id="iCeV2">
+  </workout>
+  <workout id="iCeV2">
     <day>38</day>
     <muscle>Whole Body</muscle>
     <name>Jumping Jacks</name>
     <details>3 sets, 60 seconds</details>
-  </day38>
-  <day38 id="iCeV2">
+  </workout>
+     <workout id="iCeV2">
     <day>38</day>
     <muscle>Whole Body</muscle>
     <name>Speed Walking</name>
     <details>3 miles</details>
-  </day38>
-   <day38 id="iCeV2">
+  </workout>
+     <workout id="iCeV2">
      <day>38</day>
     <muscle>Whole Body</muscle>
     <name>Stairs</name>
     <details>20 minutes</details>
-  </day38>
-  <day38 id="iCeV2">
+  </workout>
+     <workout id="iCeV2">
     <day>38</day>
     <muscle>Whole Body</muscle>
     <name>Cycling</name>
     <details>15 minutes</details>
-  </day38>
-  <day40 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>40</day>
     <name>Chest</name>
     <details>Chest Press</details>
     <type>2 sets, 8 reps, 40% 1 rep</type>
-  </day40>
-  <day40 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>40</day>
     <name>Chest</name>
     <details>Incline Chest Press</details>
     <type>1 sets, 8 reps, 40% 1 rep</type>
-  </day40>
-  <day40 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>40</day>
     <name>Chest</name>
     <details>Dumbell Flye</details>
     <type>2 sets, 8 reps, 40% 1 rep</type>
-  </day40>
-  <day40 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>40</day>
     <name>Back and Shoulders</name>
     <details>Cable Shrug</details>
     <type>2 sets, 8 reps, 40% 1 rep</type>
-  </day40>
-  <day42 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>42</day>
     <name>Back and Shoulders</name>
     <details>Dumbell Lateral Raise</details>
     <type>2 sets, 8 reps, 40% 1 rep</type>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day42>
-  <day42 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>42</day>
     <name>Back and Shoulders</name>
     <details>One-Arm Row</details>
     <type>2 sets, 8 reps, 40% 1 rep</type>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day42>
-  <day42 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>42</day>
     <name>Legs</name>
     <details>Back Squat</details>
     <type>1 sets, 15 reps, only bar</type>
-  </day42>
-  <day42 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>42</day>
     <name>Legs</name>
     <details>Alternating Leg Jumps</details>
     <type>2 sets, 15 reps each side</type>
     <image>/images/Icons/LEGS.png</image>
-  </day42>
-   <day42 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>42</day>
     <name>Arms</name>
     <details>Dumbell Reverse Curl</details>
     <type>2 sets, 15 reps each side</type>
     <image>/images/Icons/ARMS.png</image>
-  </day42>
-   <day47 id="tUv2">
+  </workout>
+     <workout id="tUv2">
      <day>47</day>
     <name>Chest</name>
     <details>Chest Press</details>
     <type>2 sets, 8 reps, 50% 1 rep</type>
-  </day47>
-  <day47 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>47</day>
     <name>Chest</name>
     <details>Incline Chest Press</details>
     <type>1 sets, 8 reps, 50% 1 rep</type>
-  </day47>
-  <day47 id="tUv1">
+  </workout>
+     <workout id="tUv1">
     <day>47</day>
     <name>Chest</name>
     <details>Dumbell Flye</details>
     <type>2 sets, 8 reps, 50% 1 rep</type>
-  </day47>
-  <day47 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>47</day>
     <name>Back and Shoulders</name>
     <details>Cable Shrug</details>
     <type>2 sets, 8 reps, 50% 1 rep</type>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day47>
-  <day49 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>49</day>
     <name>Back and Shoulders</name>
     <details>Cable Stright Down Pull-Dowl</details>
     <type>2 sets, 8 reps, 50% 1 rep</type>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day49>
-  <day49 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>49</day>
     <name>Back and Shoulders</name>
     <details>Seated Reverse Flye</details>
     <type>2 sets, 8 reps, 50% 1 rep</type>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
-  </day49>
-  <day49 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>49</day>
     <name>Legs</name>
     <details>Front Squat</details>
     <type>1 sets, 15 reps, only bar</type>
     <image>/images/Icons/LEGS.png</image>
-  </day49>
-  <day49 id="tUv2">
+  </workout>
+     <workout id="tUv2">
     <day>49</day>
     <name>Legs</name>
     <details>Alternating Leg Jumps</details>
     <type>2 sets, 15 reps each side</type>
     <image>/images/Icons/LEGS.png</image>
-  </day49>
-   <day51 id="tUv2">
+  </workout>
+     <workout id="tUv2">
      <day>51</day>
     <name>Arms</name>
     <details>Dumbell Reverse Curl</details>
     <type>1 set, 15reps. 40% 1 rep</type>
      <image>/images/Icons/ARMS.png</image>
-  </day51>
-   <day51 id="tUv1">
+  </workout>
+     <workout id="tUv1">
      <day>51</day>
     <name>Arms</name>
     <details>Hammer Cuel</details>
     <type>1 set, 15reps. 40% 1 rep</type>
      <image>/images/Icons/ARMS.png</image>
-  </day51>
+  </workout>
+
+
+
 </Exercises>
