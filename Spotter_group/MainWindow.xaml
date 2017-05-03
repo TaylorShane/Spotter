@@ -19,7 +19,7 @@
                 <LinearGradientBrush>
                 </LinearGradientBrush>
             </Menu.Background>
-            <MenuItem Header="Spotter" x:Name="MenuItemSpotter" Foreground="White" Click="MenuItemSpotter_Click" Visibility="Hidden"></MenuItem>
+            <MenuItem Header="Spotter" x:Name="MenuItemSpotter" Foreground="White" Click="MenuItemSpotter_Click" Visibility="Visible"></MenuItem>
             <MenuItem Header="User" Foreground="White" Click="MenuItem_Click" Visibility="Visible">
                 <MenuItem x:Name="MenuItemSignIn" Header="Sign in" Foreground="Black" Click="MenuItemSignIn_Click"/>
                 <MenuItem x:Name="MenuItemRegister" Header="Register" Foreground="Black" Click="MenuItemRegister_Click"/>
