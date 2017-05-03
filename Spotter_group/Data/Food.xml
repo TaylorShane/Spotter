@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <food_items>
-  <protein>Protein<name Id="Dead Babies">Dead Babies</name><calories>400</calories></protein>
-  <fruit>Fruit<name Id="Jack Fruit">Jack Fruit</name><calories>88</calories></fruit>
-  <protein>Protein<name Id="Human Meat">Human Meat</name><calories>5000</calories></protein>
   <protein>
     <name Id="Chicken">Chicken</name>
     <calories>142</calories>
