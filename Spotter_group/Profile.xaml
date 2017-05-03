@@ -13,9 +13,7 @@
     </UserControl.Resources>
     
     
-    
     <Grid x:Name="gridProfile" Margin="150,50">
-        
                
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -80,7 +78,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-         
           
     </Grid>
 </UserControl>
