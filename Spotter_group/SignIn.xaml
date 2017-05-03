@@ -7,7 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*"/>
@@ -23,7 +22,7 @@
 
         <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Foreground="White"
                FontSize="70" HorizontalAlignment="Center"
-               VerticalAlignment="Center" BorderThickness="2" BorderBrush="#666666" >Sign In</Label>
+               VerticalAlignment="Center" BorderThickness="0" BorderBrush="#666666" >Sign In</Label>
 
         <Image Grid.ColumnSpan="4" Panel.ZIndex="1" Margin="20"  Height="800" VerticalAlignment="Center" Width="1100" Source="images\Graphics\signin.png" Grid.Column="0" Grid.Row="1"/>
         <StackPanel Grid.Column="2" Grid.Row="1" Panel.ZIndex="2" Orientation="Vertical" VerticalAlignment="Center" >

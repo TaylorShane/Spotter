@@ -23,6 +23,8 @@ namespace Spotter_group
     {
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+        string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
 
         List<WorkoutProgress> workout = new List<WorkoutProgress>();
         string cUser = "";
@@ -33,12 +35,16 @@ namespace Spotter_group
             InitializeComponent();
             try { findUser(); }
             catch(Exception er) { MessageBox.Show("Please Signin to view your profile!");  }
-            
+
         }
 
+        public static string startDateString = "";
+        public DateTime startDateDT;
+        public DateTime dateNow = System.DateTime.Now;
+        
         public void findUser()
         {
-            IEnumerable<string> CurrentUser = from CurrentUsers in XDocument.Load(currentPath).Descendants("User")
+            IEnumerable<string> CurrentUser = from CurrentUsers in XDocument.Load(shaneCurrentPath).Descendants("User")
                                               select CurrentUsers.Element("UserName").Value;
 
             cUser = CurrentUser.FirstOrDefault().ToString();
@@ -57,17 +63,17 @@ namespace Spotter_group
                 string name = "";
                 string progressImage = "";
 
-                XDocument doc = XDocument.Load(jasonPath);
+                XDocument doc = XDocument.Load(shanePath);
 
                 // First Name
-                IEnumerable<string> UserFirstName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserFirstName = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == refItem
                                                     select Users.Element("FirstName").Value;
 
                 fName = UserFirstName.FirstOrDefault().ToString();
 
                 // Last Name
-                IEnumerable<string> UserLastName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserLastName = from Users in XDocument.Load(shanePath).Descendants("User")
                                                    where (string)Users.Element("Username") == refItem
                                                    select Users.Element("LastName").Value;
 
@@ -77,7 +83,7 @@ namespace Spotter_group
 
 
                 // Birth Date
-                IEnumerable<string> UserBirthDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserBirthDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == refItem
                                                     select Users.Element("BirthDate").Value;
 
@@ -85,50 +91,51 @@ namespace Spotter_group
 
 
                 // Workout
-                IEnumerable<string> UserWorkout = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserWorkout = from Users in XDocument.Load(shanePath).Descendants("User")
                                                   where (string)Users.Element("Username") == refItem
                                                   select Users.Element("Workout").Value;
 
                 lblWorkout.Content = UserWorkout.FirstOrDefault().ToString();
 
                 // Workout Start Date
-                IEnumerable<string> UserWorkoutStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserWorkoutStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                            where (string)Users.Element("Username") == refItem
                                                            select Users.Element("StartDate").Value;
 
 
                 lblStartDate.Content = UserWorkoutStartDate.FirstOrDefault().ToString();
+                startDateString = UserWorkoutStartDate.FirstOrDefault().ToString();
 
                 // Gender
-                IEnumerable<string> UserGender = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserGender = from Users in XDocument.Load(shanePath).Descendants("User")
                                                  where (string)Users.Element("Username") == refItem
                                                  select Users.Element("Gender").Value;
 
                 lblGender.Content = UserGender.FirstOrDefault().ToString();
 
                 // UserName
-                IEnumerable<string> UserName = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserName = from Users in XDocument.Load(shanePath).Descendants("User")
                                                  where (string)Users.Element("Username") == refItem
                                                  select Users.Element("Username").Value;
 
                 lblUsername.Content = UserName.FirstOrDefault().ToString();
 
                 // Current Weight
-                IEnumerable<string> UserCurrentWeight = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserCurrentWeight = from Users in XDocument.Load(shanePath).Descendants("User")
                                                         where (string)Users.Element("Username") == refItem
                                                         select Users.Element("CurrentWeight").Value;
 
                 lblWeight.Content = UserGender.FirstOrDefault().ToString();
 
                 // Heigth
-                IEnumerable<string> UserHeight = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserHeight = from Users in XDocument.Load(shanePath).Descendants("User")
                                                  where (string)Users.Element("Username") == refItem
                                                  select Users.Element("CurrentHeight").Value;
 
                 lblHeight.Content = UserHeight.FirstOrDefault().ToString();
 
                 // Password
-                IEnumerable<string> UserPassword = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
                                                    where (string)Users.Element("Username") == refItem
                                                    select Users.Element("Password").Value;
 
@@ -136,12 +143,19 @@ namespace Spotter_group
 
 
                 //Progress bar
-                int count = 75;
-                
+                startDateDT=Convert.ToDateTime(startDateString);
+                double days = (dateNow - startDateDT).TotalDays;
 
-                             
+                int count = Convert.ToInt32(days);
+                MessageBox.Show("date now = " + dateNow + "/n" +
+                                " - startDateDT " + startDateDT + "/n"
+                                + " = count " + count);
+
+
+
+
                //Image
-                IEnumerable<string> progImage = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> progImage = from Users in XDocument.Load(shanePath).Descendants("User")
                                                    where (string)Users.Element("Username") == refItem
                                                    select Users.Element("ImageAfter").Value;
 

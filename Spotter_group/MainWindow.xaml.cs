@@ -23,6 +23,7 @@ namespace Spotter_group
     {
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
 
         public MainWindow()
         {
@@ -100,7 +101,7 @@ namespace Spotter_group
         private void MenuItemAdmin_Click(object sender, RoutedEventArgs e)
         {
 
-            IEnumerable<string> CurrentUser = from user1 in XDocument.Load(currentPath).Descendants("User")
+            IEnumerable<string> CurrentUser = from user1 in XDocument.Load(shaneCurrentPath).Descendants("User")
                                               select user1.Element("UserName").Value;
 
             string theUserName = CurrentUser.FirstOrDefault().ToString();
@@ -111,7 +112,7 @@ namespace Spotter_group
 
 
 
-            IEnumerable<string> adminStuff = from user2 in XDocument.Load(jasonPath).Descendants("User")
+            IEnumerable<string> adminStuff = from user2 in XDocument.Load(shaneCurrentPath).Descendants("User")
                                              where (string)user2.Element("Username") == theUserName
                                              select user2.Element("Admin").Value;
 
@@ -160,9 +161,9 @@ namespace Spotter_group
 
         private void menuLogOut_Click(object sender, RoutedEventArgs e)
         {
-            XDocument xmlDocument = XDocument.Load(currentPath);
+            XDocument xmlDocument = XDocument.Load(shaneCurrentPath);
             xmlDocument.Root.Elements().Remove();
-            xmlDocument.Save(currentPath);
+            xmlDocument.Save(shaneCurrentPath);
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();

@@ -21,9 +21,6 @@ namespace Spotter_group
     /// </summary>
     public partial class SignIn : UserControl
     {
-
-        List<Visibility> visible = new List<Visibility>();
-
         public SignIn()
         {
             InitializeComponent();
@@ -45,17 +42,7 @@ namespace Spotter_group
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Password;
 
-                /*
-                //user da user name
-                IEnumerable<string> UserName = from Users in XDocument.Load(stevePath).Descendants("User")
-                                               where (string)Users.Element("Username") == user_name1
-                                              select Users.Element("Username").Value;
-*/
-
-
-                //user password list of 1
-
-                IEnumerable<string> UserPassword = from Users in XDocument.Load(jasonPath).Descendants("User")
+                IEnumerable<string> UserPassword = from Users in XDocument.Load(shanePath).Descendants("User")
                                                    where (string)Users.Element("Username") == user_name1
                                                    select Users.Element("Password").Value;
 
@@ -70,44 +57,24 @@ namespace Spotter_group
 
                 else
                 {
-                    XDocument xmlDocument = XDocument.Load(currentPath);
+                    XDocument xmlDocument = XDocument.Load(ShaneCurrentPath);
                     xmlDocument.Element("CurrentUser").Add(
                        new XElement("User", new XAttribute("ID", 0),
                        new XElement("UserName", user_name1)));
-                    xmlDocument.Save(currentPath);
+                    xmlDocument.Save(ShaneCurrentPath);
 
                     MessageBox.Show("Successful Login! \n Please return to profile");
-
-                    string visibility = "Visible";
-
-                   XDocument xmlDocumentVis = XDocument.Load(visiblePath);
-                    xmlDocumentVis.Element("Visible").Add(
-                       new XElement("isVisible", visibility));
-                    xmlDocumentVis.Save(visiblePath);
-
-
-                    visible.Add(new Visibility() { isVis = "Visible" });
-                    //ListWorkout.ItemsSource = workout;
 
                 }
 
             }
-
 
             //when login and password dont match, we catch the error and display box you are a naughty person
             catch (Exception err)
             {
                 MessageBox.Show("Please Ty Aain! Password Mismatch!");
             }
-
-
-
         }
     }
-    public class Visibility
-    {
-        public string isVis { get; set; }
-    }
-
 }
  
