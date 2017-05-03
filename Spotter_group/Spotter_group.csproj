@@ -248,7 +248,9 @@
     <Resource Include="images\Characters\Wile_E_Coyote.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Data\Users.xml" />
+    <Resource Include="Data\Users.xml">
+      <SubType>Designer</SubType>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Gifs\jump-rope.gif" />

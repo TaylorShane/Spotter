@@ -22,7 +22,6 @@ namespace Spotter_group
     public partial class MainWindow : Window
     {
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
-        string visiblePath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Visible.xml";
 
         public MainWindow()
         {
@@ -108,12 +107,46 @@ namespace Spotter_group
 
         private void MenuItemAdmin_Click(object sender, RoutedEventArgs e)
         {
-            Admin admin = new Admin();
-            grid2.Children.Clear();
-            grid2.Children.Add(admin);
+
+            IEnumerable<string> CurrentUser = from user1 in XDocument.Load(currentPath).Descendants("User")
+                                              select user1.Element("UserName").Value;
+
+            string theUserName = CurrentUser.FirstOrDefault().ToString();
 
 
 
+            MessageBox.Show(theUserName);
+
+
+
+            IEnumerable<string> adminStuff = from user2 in XDocument.Load(userPath).Descendants("User")
+                                             where (string)user2.Element("Username") == theUserName
+                                             select user2.Element("Admin").Value;
+
+
+
+            string adminVal = adminStuff.FirstOrDefault().ToString();
+
+            MessageBox.Show(adminVal);
+
+            if (adminVal == "Yes")
+            {
+
+                Admin admin = new Admin();
+                grid2.Children.Clear();
+                grid2.Children.Add(admin);
+
+            }
+
+            else
+            {
+                MessageBox.Show("Game Over");
+            }
+
+
+
+
+     
         }
 
         private void MenuItemUpdateUser_Click(object sender, RoutedEventArgs e)
