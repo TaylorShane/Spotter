@@ -29,32 +29,55 @@ namespace Spotter_group
 
         //public List<UserData> user = new List<UserData>();              
         // PATH LOCATION
-        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
+        string shaneExercisePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Exercises.xml";
         string user = "";
-        List<DaysPassed> mydate = new List<DaysPassed>();
+        public string dayStringFormat;
+        double day = 0;
+        List<Workouts> todaysWorkouts = new List<Workouts>();
 
         public string result;
         public DateTime startDate;
 
-        public class DaysPassed
+        public class Workouts
         {
-            public string days { get; set; }
+            public string details1 { get; set; }
+            public string details2 { get; set; }
+            public string details3 { get; set; }
+            public string details4 { get; set; }
         }
-        public string XPath { get; set; }
+       
+        
+
+        private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateTime dateClicked = calendar.SelectedDate.Value;
+            day = (dateClicked - startDate).TotalDays;
+            dayStringFormat = day.ToString();
+            txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
+            txtDaysPassed.Text = dayStringFormat;
+
+            result = "day" + dayStringFormat;
+            //mydate.Add(new DaysPassed() { days = "Source={StaticResource workouts}, XPath=" + dayStringFormat });
+            // Source={StaticResource workouts}, XPath=day2
+            MessageBox.Show(result);
+            //lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
+        }
+
         public void populateStartDate()
         {
             //Get current user
             // replace with global user ID
             IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentUser).Descendants("User")
-                                                    select CurrentUser.Element("UserName").Value;
+                                           select CurrentUser.Element("UserName").Value;
 
             user = thisUser.FirstOrDefault().ToString();
 
             //Get current username startdate
-            
-            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+
+            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
                                                     where (string)Users.Element("Username") == user
                                                     select Users.Element("StartDate").Value;
 
@@ -63,23 +86,43 @@ namespace Spotter_group
             txtStartDate.Text = workoutStartDate;
             startDate = Convert.ToDateTime(workoutStartDate);
             //startDate = startDT;
+
+            IEnumerable<string> workout1 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
+                                           where (string)Exercises.Element("day") == dayStringFormat
+                                           select Exercises.Element("details1").Value;
+            try
+            {
+                MessageBox.Show(workout1.ToString());
+
+                todaysWorkouts.Add(new Workouts() { details1 = workout1.FirstOrDefault().ToString() });
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(workout1.ToString());
+            }
+
             
+            IEnumerable<string> workout2 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
+                                           where (string)Exercises.Element("day") == dayStringFormat
+                                           select Exercises.Element("details2").Value;
 
-        }
+            todaysWorkouts.Add(new Workouts() { details2 = workout2.FirstOrDefault().ToString() });
 
-        private void calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
-        {
-            DateTime dateClicked = calendar.SelectedDate.Value;
-            double day = (dateClicked - startDate).TotalDays;
-            string dayStringFormat = day.ToString();
-            txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
-            txtDaysPassed.Text = dayStringFormat;
 
-            XPath = dayStringFormat;
-            //mydate.Add(new DaysPassed() { days = "Source={StaticResource workouts}, XPath=" + dayStringFormat });
-            // Source={StaticResource workouts}, XPath=day2
-            MessageBox.Show(result);
-            lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
+            IEnumerable<string> workout3 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
+                                           where (string)Exercises.Element("day") == dayStringFormat
+                                           select Exercises.Element("details3").Value;
+
+            todaysWorkouts.Add(new Workouts() { details3 = workout3.FirstOrDefault().ToString() });
+
+
+            IEnumerable<string> workout4 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
+                                           where (string)Exercises.Element("day") == dayStringFormat
+                                           select Exercises.Element("details4").Value;
+
+            todaysWorkouts.Add(new Workouts() { details4 = workout4.FirstOrDefault().ToString() });
+
+            ListBoxWorkoutsResults.ItemsSource = todaysWorkouts;
         }
     }
    
