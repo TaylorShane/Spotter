@@ -25,6 +25,7 @@ namespace Spotter_group
         {
             InitializeComponent();
         }
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Food.xml";
 
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
         // PATH LOCATION
@@ -89,7 +90,7 @@ namespace Spotter_group
             string refItem = cboBox_Proteins.Text;
             // MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("protein")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(jasonPath).Descendants("protein")
                                         where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
@@ -108,7 +109,7 @@ namespace Spotter_group
             string refItem = cboBox_Vegetables.Text;
             // MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("veggie")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(jasonPath).Descendants("veggie")
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
@@ -128,7 +129,7 @@ namespace Spotter_group
             string refItem = cboBox_Fruits.Text;
             // MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("fruit")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(jasonPath).Descendants("fruit")
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
@@ -148,7 +149,7 @@ namespace Spotter_group
             string refItem = cboBox_Alcohol.Text;
             // MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("alcohol")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(jasonPath).Descendants("alcohol")
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 
@@ -168,7 +169,7 @@ namespace Spotter_group
             string refItem = cboBox_Misc.Text;
             // MessageBox.Show(refItem);
 
-            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(shanePath).Descendants("other")
+            IEnumerable<string> CaloriesResult = from food_items in XDocument.Load(jasonPath).Descendants("other")
                                                  where (string)food_items.Element("name") == refItem
                                                  select food_items.Element("calories").Value;
 

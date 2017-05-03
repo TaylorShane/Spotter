@@ -28,7 +28,7 @@
     <Workout>Cardio</Workout>
     <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
-    <Admin>No</Admin>
+    <Admin>Yes</Admin>
   </User>
   <User ID="3">
     <FirstName>tom</FirstName>
