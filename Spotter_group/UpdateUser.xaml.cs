@@ -203,27 +203,11 @@ namespace Spotter_group
 
         ///////////////////////////////////////////////////////////////
 
-
-
-        private void cboBoxUsername_DropDownClosedADD(object sender, EventArgs e)
-        {
-            //string refItem = cboBoxUsernameADD.Text;
-            string FirstName = txtBoxFirstNameADD.Text;
-            string LastName = txtBoxLastNameADD.Text;
-            string BirthDate = datePickerBirthDateADD.Text;
-            string StartDate = datePickerWorkoutStartDateADD.Text;
-            string Gender = txtBoxGenderADD.Text;
-            string CurrentWeight = txtBoxCurrentWeightADD.Text;
-            string CurrentHeight = txtBoxHeightADD.Text;
-            string Password = txtBoxPasswordADD.Text;
-            string Workout = cboBoxWorkoutADD.Text;
-            string Admin = cboBoxAdminADD.Text;           
-        }
-
         private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
             //string refItem = cboBoxUsernameADD.Text;
             int ID = 0;
+            string UserName = txtBoxUsernameADD.Text;
             string FirstName = txtBoxFirstNameADD.Text;
             string LastName = txtBoxLastNameADD.Text;
             string BirthDate = datePickerWorkoutStartDateADD.Text;
@@ -250,7 +234,7 @@ namespace Spotter_group
                     new XElement("FirstName", FirstName),
                     new XElement("LastName", LastName),
                     new XElement("BirthDate", BirthDate),
-                    new XElement("Username", userName),
+                    new XElement("Username", UserName),
                     new XElement("StartDate", StartDate),
                     new XElement("Gender", Gender),
                     new XElement("CurrentWeight", CurrentWeight),

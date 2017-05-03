@@ -45,4 +45,19 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>Yes</Admin>
   </User>
+  <User ID="4">
+    <FirstName>Bob</FirstName>
+    <LastName>Dylan</LastName>
+    <BirthDate>4/16/2017</BirthDate>
+    <Username>bobdylan</Username>
+    <StartDate>4/16/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>140</CurrentWeight>
+    <CurrentHeight>5'8"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Gain Muscle</Workout>
+    <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
+    <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
 </Users>
