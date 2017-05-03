@@ -22,6 +22,7 @@ namespace Spotter_group
     public partial class MainWindow : Window
     {
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string userPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\User.xml";
 
         public MainWindow()
         {
