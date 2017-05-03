@@ -18,8 +18,6 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -28,51 +26,45 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-        <Label Grid.ColumnSpan="2" Foreground="#666666" FontSize="25">Workout Scheduler</Label>
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="3"  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
-            <Calendar Name="calendar" Height="Auto" Width="Auto"
-                  Margin="6,24,-38,32" SelectionMode="SingleRange" IsTodayHighlighted="True" 
+        <Label Grid.ColumnSpan="4" Foreground="#009999" FontSize="40" HorizontalAlignment="Center">Workout Scheduler</Label>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="80,80,10,10">
+            <Viewbox Height="400" Width="500">
+                <Calendar Name="calendar" 
+                  SelectionMode="SingleRange" IsTodayHighlighted="True" 
                   Background="#009999" BorderBrush="#666666" BorderThickness="5" 
                   SelectedDatesChanged="calendar_SelectedDatesChanged" 
                   />
+            </Viewbox>
         </StackPanel>
 
         <!-- Column 0 -->
-        <StackPanel Grid.Column="0" Grid.Row="2" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Foreground="White">Start Date from Database</Label>
-            <TextBlock Name="txtStartDate" Foreground="White">Test</TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White" FontSize="20">Start Date from Database</Label>
+            <TextBlock Name="txtStartDate" Foreground="White" FontSize="20">Test</TextBlock>
         </StackPanel>
 
         <!-- Column 1 -->
-        <StackPanel Grid.Column="1" Grid.Row="2" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Foreground="White">Date Selected</Label>
-            <TextBlock Name="txtBlockDateSeleted" Foreground="White" ToolTip="Selecte a Date">Date Selected</TextBlock>
+        <StackPanel Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Foreground="White" FontSize="20">Date Selected</Label>
+            <TextBlock Name="txtBlockDateSeleted" Foreground="White" ToolTip="Selecte a Date" FontSize="20">Date Selected</TextBlock>
             <Separator Margin="5"></Separator>
-            <Label Foreground="White">Days passed</Label>
-            <TextBlock Name="txtDaysPassed" Foreground="White" ToolTip="Selecte a Date">Days from Start Date to Selected Date</TextBlock>
+            <Label Foreground="White" FontSize="20">Days passed</Label>
+            <TextBlock Name="txtDaysPassed" Foreground="White" ToolTip="Selecte a Date" FontSize="20">Days from Start Date to Selected Date</TextBlock>
         </StackPanel>
 
-        <!-- Column 2 -->
-        <StackPanel Margin="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            
-        </StackPanel>
+
         
-        <!-- Column 3 -->
-        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Right" Margin="10">
-            
-            
-        </StackPanel>
-
-        <!-- Column 4 -->
-        <StackPanel Grid.Column="4" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
-            <ListBox Foreground="White" Background="Black" Focusable="False" 
-                     Name="ListBoxWorkoutsResults"
-                      DisplayMemberPath="name" ></ListBox>
-            <!-- ="{Binding days}" OR ="{Binding Source={StaticResource workouts}, XPath=day2}" -->
-        </StackPanel>
-        <StackPanel Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Margin="10">
-            <ListBox Name="lboxSelectedDateWorkoutDisplay" Foreground="White" Background="Black" Focusable="False" ItemsSource="{Binding days}"
-                      DisplayMemberPath="details" ></ListBox>
+        <!-- Column 2 -->
+        <StackPanel Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Right" Margin="10,10,100,10">
+            <DataGrid Margin="20" Name="dataGrid">
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBox MinWidth="150" Name="tbDetails"></TextBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+            </DataGrid>
         </StackPanel>
         
     </Grid>
