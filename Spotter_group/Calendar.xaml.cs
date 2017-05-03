@@ -29,13 +29,20 @@ namespace Spotter_group
 
         //public List<UserData> user = new List<UserData>();              
         // PATH LOCATION
-        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
+        string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string jasonExercisePath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Exercises.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
         string shaneExercisePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Exercises.xml";
         string user = "";
-        public string dayStringFormat;
-        double day = 0;
+
+        string dayStringFormat = DateTime.Now.ToString();
+       	
+
+
+        public double day = 0;
         List<Workouts> todaysWorkouts = new List<Workouts>();
 
         public string result;
@@ -56,6 +63,7 @@ namespace Spotter_group
             DateTime dateClicked = calendar.SelectedDate.Value;
             day = (dateClicked - startDate).TotalDays;
             dayStringFormat = day.ToString();
+
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
             txtDaysPassed.Text = dayStringFormat;
 
@@ -70,14 +78,14 @@ namespace Spotter_group
         {
             //Get current user
             // replace with global user ID
-            IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentUser).Descendants("User")
+            IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentPath).Descendants("User")
                                            select CurrentUser.Element("UserName").Value;
 
             user = thisUser.FirstOrDefault().ToString();
 
             //Get current username startdate
 
-            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(shanePath).Descendants("User")
+            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
                                                     where (string)Users.Element("Username") == user
                                                     select Users.Element("StartDate").Value;
 
@@ -87,42 +95,7 @@ namespace Spotter_group
             startDate = Convert.ToDateTime(workoutStartDate);
             //startDate = startDT;
 
-            IEnumerable<string> workout1 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
-                                           where (string)Exercises.Element("day") == dayStringFormat
-                                           select Exercises.Element("details1").Value;
-            try
-            {
-                MessageBox.Show(workout1.ToString());
-
-                todaysWorkouts.Add(new Workouts() { details1 = workout1.FirstOrDefault().ToString() });
-            }
-            catch(Exception er)
-            {
-                MessageBox.Show(workout1.ToString());
-            }
-
-            
-            IEnumerable<string> workout2 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
-                                           where (string)Exercises.Element("day") == dayStringFormat
-                                           select Exercises.Element("details2").Value;
-
-            todaysWorkouts.Add(new Workouts() { details2 = workout2.FirstOrDefault().ToString() });
-
-
-            IEnumerable<string> workout3 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
-                                           where (string)Exercises.Element("day") == dayStringFormat
-                                           select Exercises.Element("details3").Value;
-
-            todaysWorkouts.Add(new Workouts() { details3 = workout3.FirstOrDefault().ToString() });
-
-
-            IEnumerable<string> workout4 = from Exercises in XDocument.Load(shaneExercisePath).Descendants("workout")
-                                           where (string)Exercises.Element("day") == dayStringFormat
-                                           select Exercises.Element("details4").Value;
-
-            todaysWorkouts.Add(new Workouts() { details4 = workout4.FirstOrDefault().ToString() });
-
-            ListBoxWorkoutsResults.ItemsSource = todaysWorkouts;
+           
         }
     }
    
