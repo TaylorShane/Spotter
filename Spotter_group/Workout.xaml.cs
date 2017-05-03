@@ -32,16 +32,16 @@ namespace Spotter_group
         }
 
 
-        string stevePath = @"file:///C:/Users/Gamer/Source/Repos/Spotter_group/Spotter_group/Data/workit.xml";
+        string stevePath = @"C:\Users\drof\Source\Repos\Spotter_group\Spotter_group\Data\workit.xml";
 
 
         public void setWorkoutInformation()
         {
         }
 
-        private void workout_cboBox_DropDownClosed(object sender, EventArgs e)
+       /* private void workout_cboBox_DropDownClosed(object sender, EventArgs e)
         {
-            string user_workout = workout_cboBox.Text;
+            
 
             workout_name.Text = user_workout;
 
@@ -63,13 +63,82 @@ namespace Spotter_group
           //  MessageBox.Show(otherstuff.FirstOrDefault());
 
             workout_instructions.Text = otherstuff.FirstOrDefault().ToString();
+            }*/
+
+
+        private void fun_button_Click(object sender, RoutedEventArgs e)
+        {
+            IEnumerable<string> otherstuff = from exercise in XDocument.Load(stevePath).Descendants("muscle")
+                                                         select exercise.Element("details").Value;
+
+            IEnumerable<string> otherstuff2 = from exercise in XDocument.Load(stevePath).Descendants("muscle")
+                                             select exercise.Element("machine").Value;
+
+            Random rand = new Random();
+            
+
+
+            int i_count = 0;
+            int m_count = 0;
+            string[] instruction_Array = new string[99];
+            string[] machine_Array = new string[99];
+
+
+
+
+
+            foreach (var item in otherstuff)
+            {
+
+                instruction_Array[i_count] = item;
+                i_count++;
+            }
 
             
-                                             
+
+
+            foreach (var item in otherstuff2)
+            {
+
+                machine_Array[m_count] = item;
+                m_count++;
+            }
+
+
+
+
+
+
+            int lucky = rand.Next(0, i_count);
+
+            workout_instructions.Text = instruction_Array[lucky];
+            machine_name.Text = machine_Array[lucky];
+           // MessageBox.Show(instruction_Array[lucky])
+
+
 
         }
-
-       
     }
 
+
+    /*
+     * int count = 0;
+
+            foreach(var item in otherstuff)
+            {
+                count++;
+            }
+
+            int[] funArray = new int[99];
+
+            for(int i=0; i< count; i++)
+            {
+                funArray[i] = i;
+            }
+
+            var rando = funArray.*/
+
+
+
 }
+ 

@@ -21,10 +21,167 @@ namespace Spotter_group
     /// </summary>
     public partial class Calendar : UserControl
     {
+
         public Calendar()
         {
             InitializeComponent();
             populateStartDate();
+            populateDataGrid();
+
+        }
+        public class Record
+        {
+            public string Day { get; set; }
+            public string Muscle { get; set; }
+            public string Workout { get; set; }
+            public string Details { get; set; }
+        }
+
+        public void populateDataGrid()
+        {
+            try
+            {
+                
+                IEnumerable<string> day1 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                           where (string)Exercises.Element("workout").Attribute("id") == "lWv1"
+                                          select Exercises.Element("workout").Element("day").Value;
+
+                string date1 = day1.FirstOrDefault().ToString();
+
+
+                IEnumerable<string> muscle1 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                              where (string)Exercises.Element("workout").Attribute("id") == "lWv1"
+                                              select Exercises.Element("workout").Element("muscle").Value;
+
+                string musc1 = muscle1.FirstOrDefault().ToString();
+
+                IEnumerable<string> workout1 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                               where (string)Exercises.Element("workout").Attribute("id") == "lWv1"
+                                               select Exercises.Element("workout").Element("name").Value;
+
+                string wo1 = workout1.FirstOrDefault().ToString();
+
+                IEnumerable<string> dets1 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                            where (string)Exercises.Element("workout").Attribute("id") == "lWv1"
+                                            select Exercises.Element("workout").Element("details").Value;
+
+                string details1 = dets1.FirstOrDefault().ToString();
+                /*
+                IEnumerable<string> day2 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                           where (string)Exercises.Element("workout").Attribute("id") == "lWv2"
+                                           select Exercises.Element("workout").Element("day").Value;
+
+                string date2 = day2.FirstOrDefault().ToString();
+
+
+
+                IEnumerable<string> muscle2 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                              where (string)Exercises.Element("workout").Attribute("id") == "lWv2"
+                                              select Exercises.Element("workout").Element("muscle").Value;
+
+                string musc2 = muscle2.FirstOrDefault().ToString();
+
+
+                IEnumerable<string> workout2 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                               where (string)Exercises.Element("workout").Attribute("id") == "lWv2"
+                                               select Exercises.Element("workout").Element("name").Value;
+
+                string wo2 = workout2.FirstOrDefault().ToString();
+
+                IEnumerable<string> dets2 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                            where (string)Exercises.Element("workout").Attribute("id") == "lWv2"
+                                            select Exercises.Element("workout").Element("details").Value;
+
+                string details2 = dets2.FirstOrDefault().ToString();
+                
+                                IEnumerable<string> day3 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                           where (string)Exercises.Element("workout").Attribute("id") == "lWv3"
+                                                           select Exercises.Element("workout").Element("day").Value;
+
+                                string date3 = day3.FirstOrDefault().ToString();
+
+
+                                IEnumerable<string> muscle3 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                              where (string)Exercises.Element("workout").Attribute("id") == "lWv3"
+                                                              select Exercises.Element("workout").Element("muscle").Value;
+
+                                string musc3 = muscle3.FirstOrDefault().ToString();
+
+                                IEnumerable<string> workout3 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                               where (string)Exercises.Element("workout").Attribute("id") == "lWv3"
+                                                               select Exercises.Element("workout").Element("name").Value;
+
+                                string wo3 = workout3.FirstOrDefault().ToString();
+
+                                IEnumerable<string> dets3 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                            where (string)Exercises.Element("workout").Attribute("id") == "lWv3"
+                                                            select Exercises.Element("workout").Element("details").Value;
+
+                                string details3 = dets3.FirstOrDefault().ToString();
+
+                
+                                               IEnumerable<string> day4 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                          where (string)Exercises.Element("workout").Attribute("id") == "lWv4"
+                                                         select Exercises.Element("workout").Element("day").Value;
+
+                               string date4 = day4.FirstOrDefault().ToString();
+
+
+                               IEnumerable<string> muscle4 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                             where (string)Exercises.Element("workout").Attribute("id") == "lWv4"
+                                                             select Exercises.Element("workout").Element("muscle").Value;
+
+                               string musc4 = muscle4.FirstOrDefault().ToString();
+
+                               IEnumerable<string> workout4 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                              where (string)Exercises.Element("workout").Attribute("id") == "lWv4"
+                                                              select Exercises.Element("workout").Element("name").Value;
+
+                               string wo4 = workout4.FirstOrDefault().ToString();
+
+                               IEnumerable<string> dets4 = from Exercises in XDocument.Load(jasonExercisePath).Descendants("Exercises")
+                                                           where (string)Exercises.Element("workout").Attribute("id") == "lWv4"
+                                                           select Exercises.Element("workout").Element("details").Value;
+
+                               string details4 = dets4.FirstOrDefault().ToString();
+                              */
+                dataGrid.ItemsSource = new Record[] {
+                new Record {
+                Day = date1,
+                Muscle = musc1,
+                Workout = wo1,
+                Details = details1
+                },/*
+                new Record {
+                Day = date2,
+                Muscle = musc2,
+                Workout = wo2,
+                Details = details2
+                },
+                new Record {
+                Day = date3,
+                Muscle = musc3,
+                Workout = wo3,
+                Details = details3
+                },
+                new Record {
+                Day = date4,
+                Muscle = musc4,
+                Workout = wo4,
+                Details = details4
+                }*/
+            };
+                dataGrid.IsReadOnly = true;
+
+            }
+            catch ( Exception err)
+            {
+                MessageBox.Show("not working");
+            }
+
+
+
+
         }
 
         //public List<UserData> user = new List<UserData>();              
@@ -67,10 +224,10 @@ namespace Spotter_group
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
             txtDaysPassed.Text = dayStringFormat;
 
-            result = "day" + dayStringFormat;
+            //result = "day" + dayStringFormat;
             //mydate.Add(new DaysPassed() { days = "Source={StaticResource workouts}, XPath=" + dayStringFormat });
             // Source={StaticResource workouts}, XPath=day2
-            MessageBox.Show(result);
+            //MessageBox.Show(result);
             //lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
         }
 
@@ -97,6 +254,10 @@ namespace Spotter_group
 
            
         }
+
+
+
+
     }
    
 }

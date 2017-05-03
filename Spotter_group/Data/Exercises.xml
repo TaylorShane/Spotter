@@ -7,22 +7,22 @@
     <details>1 set, 10 reps no weight, only bar</details>
     <image>/images/Icons/ARMS.png</image>
   </workout>
-  <workout id="lWv1">
-    <day>0</day>
+  <workout id="2">
+    <day>2</day>
     <muscle>Back and Shoulders</muscle>
     <name>Machine Lateral Pulldown</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
     <image>/images/Icons/BACKANDSHOULDERS.png</image>
   </workout>
-  <workout id="lWv1">
-     <day>0</day>
+  <workout id="lWv3">
+     <day>2</day>
     <muscle>Back and Shoulders</muscle>
     <name>Shoulder Press</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
      <image>/images/Icons/BACKANDSHOULDERS.png</image>
   </workout>
-  <workout id="lWv1">
-    <day> 0 </day>
+  <workout id="lWv4">
+    <day>2</day>
     <muscle>Legs</muscle>
     <name>BodyWeight Squats</name>
     <details>1 set, 10 reps, no weight </details>

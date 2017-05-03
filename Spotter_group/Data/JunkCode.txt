@@ -236,4 +236,51 @@
 
 
 
-*/
+*/        <!-- text block descript a doodoos
+        
+        
+        
+     <muscle>
+		<name>Core - 1</name>
+		<details>Incline Barbell Bench Press</details>
+		<type>2 sets, 6 reps, 80% 1 rep</type>
+	</muscle>
+        
+        
+        
+        
+        hey guys, if you are reading this you have stumbled upon my absolute insanity.
+        i for the life of me can not figure out how to select (or read from another xml file)
+                    1) the program
+                    2) the version
+                    3) the muscle group
+        
+                    all the above is needed to query and  display the following
+        
+                    A) workout name
+                    B) workout instructions
+        
+        
+     i am starting to believe either the format or the logic is becoming to complicated. the nutrition querys are good examples but they
+        dont combine multi binding, additionally i tried looking in the other xml files for what program/version the user selected, maybe read from there.
+        
+        im not sure if i should do multiple combo boxes? this seemed to be  a little more automated, like we wanted this specific xml file to handle everything?
+        
+        im covering my ass with this and just made a simple xml file and query like nutrition, sorry i couldnt get more complicated with this, i spent 
+        over half a day playing around its just not super flush, u can check junk code for all my half ass ideas and trys
+        
+        
+                    drop down
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Label Foreground="Wheat">Please Select</Label>
+            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="workout_cboBox" 
+                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
+                      DropDownClosed="workout_cboBox_DropDownClosed"
+                      ItemsSource="{Binding Source={StaticResource work}, XPath=muscle }" 
+                      DisplayMemberPath="name">
+                
+            </ComboBox>
+            
+            
+            
+        </StackPanel>-->

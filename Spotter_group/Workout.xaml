@@ -19,7 +19,7 @@
     </UserControl.Resources>
 
 
-    <Grid>
+    <Grid Margin="5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -29,7 +29,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height=".5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -47,71 +47,69 @@
             </TextBlock>
 
         </StackPanel>
-        
+
         <!-- some gify fun for the workout page, so feel free to copy the below stuff and add gifs to the GIF folder-->
         <!-- gif 1 -->
-        <StackPanel Background="White" Grid.Column="1" Grid.Row="1">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/bench-press.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="1" Grid.RowSpan="2" Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/bench-press.gif" Height="200" Width="200" 
+                   VerticalAlignment="Center" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--gif 2-->
-        <StackPanel Background="White" Grid.Column="1" Grid.Row="2">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/jump-rope.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="black" Grid.Column="1" Grid.Row="2" Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/jump-rope.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--gif 3-->
-        <StackPanel Background="White" Grid.Column="1" Grid.Row="3">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/tone-up.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="1" Grid.Row="3" Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/tone-up.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
-            <!--gif 4-->
-        <StackPanel Background="White" Grid.Column="1" Grid.Row="4">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio-run.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <!--gif 4-->
+        <StackPanel Background="Black" Grid.Column="1" Grid.Row="4"  Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio-run.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
-        
+
         <!-- gif 5 -->
-        <StackPanel Background="White" Grid.Column="4" Grid.Row="1">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/strength.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="4" Grid.Row="1"  Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/strength.gif" Height="200" Width="200"
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
+
         <!-- gif 6 -->
-        <StackPanel Background="White" Grid.Column="4" Grid.Row="2">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="4" Grid.Row="2"  Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/cardio.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
+
         <!-- gif 7 -->
-        <StackPanel Background="White" Grid.Column="4" Grid.Row="3">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/buff.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="4" Grid.Row="3"  Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/buff.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
+
         <!-- gif 8 -->
-        <StackPanel Background="White" Grid.Column="4" Grid.Row="4">
-            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/arms.gif" Height="200" Width="200" VerticalAlignment="Center" 
+        <StackPanel Background="Black" Grid.Column="4" Grid.Row="4"  Margin="20">
+            <Image gif:ImageBehavior.AnimatedSource="images/Gifs/arms.gif" Height="200" Width="200" 
+                   VerticalAlignment="Top" 
                    HorizontalAlignment="Center"/>
         </StackPanel>
 
 
-        <!--drop down-->
-        <StackPanel Grid.Column="0" Grid.Row="1">
-            <Label Foreground="Wheat">Please Select</Label>
-            <ComboBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" x:Name="workout_cboBox" 
-                      Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
-                      DropDownClosed="workout_cboBox_DropDownClosed"
-                      ItemsSource="{Binding Source={StaticResource work}, XPath=muscle }" 
-                      DisplayMemberPath="name">
-                
-            </ComboBox>
-            
-            
-            
-        </StackPanel>
 
 
-       
+
+
 
 
         <!--machine name-->
@@ -128,47 +126,16 @@
                    FontSize="60">
         </TextBlock>
 
+        <!-- fun button-->
+        <Button Name="fun_button" Grid.Column="3" Grid.Row="1"
+                Height="20" Width="65" VerticalAlignment="Top"
+                HorizontalAlignment="Left" Click="fun_button_Click"
+                
+                Grid.ColumnSpan="2" 
+                >Fun Button</Button>
 
 
-        <!-- text block descript a doodoos
-        
-        
-        
-        <muscle>
-		<name>Core - 1</name>
-		<details>Incline Barbell Bench Press</details>
-		<type>2 sets, 6 reps, 80% 1 rep</type>
-	</muscle>
-        
-        
-        
-        
-        hey guys, if you are reading this you have stumbled upon my absolute insanity.
-        i for the life of me can not figure out how to select (or read from another xml file)
-                    1) the program
-                    2) the version
-                    3) the muscle group
-        
-                    all the above is needed to query and  display the following
-        
-                    A) workout name
-                    B) workout instructions
-        
-        
-     i am starting to believe either the format or the logic is becoming to complicated. the nutrition querys are good examples but they
-        dont combine multi binding, additionally i tried looking in the other xml files for what program/version the user selected, maybe read from there.
-        
-        im not sure if i should do multiple combo boxes? this seemed to be  a little more automated, like we wanted this specific xml file to handle everything?
-        
-        im covering my ass with this and just made a simple xml file and query like nutrition, sorry i couldnt get more complicated with this, i spent 
-        over half a day playing around its just not super flush, u can check junk code for all my half ass ideas and trys
-        
-        
 
--           -->
 
- 
-     
-    
     </Grid>
 </UserControl>
