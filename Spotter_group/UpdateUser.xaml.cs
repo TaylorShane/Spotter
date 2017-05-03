@@ -28,6 +28,8 @@ namespace Spotter_group
         }
 
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+        string imageBefore = "";
+        string imageAfter = "";
 
         private void cboBoxUsername_DropDownClosed(object sender, EventArgs e)
         {
@@ -195,6 +197,101 @@ namespace Spotter_group
             {
                 MessageBox.Show("User not updated");
             }
+        }
+
+
+
+        ///////////////////////////////////////////////////////////////
+
+        private void btnAddUser_Click(object sender, RoutedEventArgs e)
+        {
+            //string refItem = cboBoxUsernameADD.Text;
+            int ID = 0;
+            string UserName = txtBoxUsernameADD.Text;
+            string FirstName = txtBoxFirstNameADD.Text;
+            string LastName = txtBoxLastNameADD.Text;
+            string BirthDate = datePickerWorkoutStartDateADD.Text;
+            string StartDate = datePickerWorkoutStartDateADD.Text;
+            string Gender = txtBoxGenderADD.Text;
+            string CurrentWeight = txtBoxCurrentWeightADD.Text;
+            string CurrentHeight = txtBoxHeightADD.Text;
+            string Password = txtBoxPasswordADD.Text;
+            string Workout = cboBoxWorkoutADD.Text;
+            string Admin = cboBoxAdminADD.Text;
+
+            string userName = "";
+            
+
+
+            try
+            {
+                XDocument xmlDocument = XDocument.Load(shanePath);
+                //nextId = xmlDocument.Root.LastNode()
+                int nextId = (int)xmlDocument.Descendants("User").Last().Attribute("ID");//  xmlDocument.Root.LastNode
+
+                xmlDocument.Element("Users").Add(
+                    new XElement("User", new XAttribute("ID", nextId + 1),
+                    new XElement("FirstName", FirstName),
+                    new XElement("LastName", LastName),
+                    new XElement("BirthDate", BirthDate),
+                    new XElement("Username", UserName),
+                    new XElement("StartDate", StartDate),
+                    new XElement("Gender", Gender),
+                    new XElement("CurrentWeight", CurrentWeight),
+                    new XElement("CurrentHeight", CurrentHeight),
+                    new XElement("Password", Password),
+                    new XElement("Workout", Workout),
+                    new XElement("ImageBefore", imageBefore),
+                    new XElement("ImageAfter", imageAfter),
+                    new XElement("Admin", Admin)
+                    ));
+                xmlDocument.Save(shanePath);
+
+                ID++;
+                MessageBox.Show("User successfully added to database.");
+
+
+
+
+                xmlDocument.Save(shanePath);
+                MessageBox.Show("User successfully updated");
+
+            }
+
+            catch (Exception er)
+            {
+                MessageBox.Show("User not updated");
+            }
+
+
+        }
+
+        private void cbToneUp_Checked(object sender, RoutedEventArgs e)
+        {
+            
+            imageBefore = @"Images\Characters\Ursula.png";
+            imageAfter = @"Images\Characters\littlemermaid.png";
+        }
+
+        private void cbGainMuslce_Checked(object sender, RoutedEventArgs e)
+        {
+            
+            imageBefore = @"Images\Characters\snarfsnarf.png";
+            imageAfter = @"Images\Characters\thundercat.png";
+        }
+
+        private void cbLoseWeight_Checked(object sender, RoutedEventArgs e)
+        {
+            
+            imageBefore = @"Images\Characters\Stimpy.png";
+            imageAfter = @"Images\Characters\ren.png";
+        }
+
+        private void cbCardio_Checked(object sender, RoutedEventArgs e)
+        {
+            
+            imageBefore = @"Images\Characters\Wile_E_Coyote.png";
+            imageAfter = @"Images\Characters\Faster - Road - Runner.gif";
         }
     }
 }

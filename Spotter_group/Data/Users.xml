@@ -30,19 +30,34 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>Yes</Admin>
   </User>
-  <User ID="2">
-    <FirstName></FirstName>
-    <LastName></LastName>
-    <BirthDate></BirthDate>
+  <User ID="3">
+    <FirstName>tom</FirstName>
+    <LastName>petty</LastName>
+    <BirthDate>4/1/2017</BirthDate>
     <Username></Username>
-    <StartDate></StartDate>
-    <Gender></Gender>
-    <CurrentWeight></CurrentWeight>
-    <CurrentHeight></CurrentHeight>
-    <Password></Password>
-    <Workout></Workout>
-    <ImageBefore></ImageBefore>
-    <ImageAfter></ImageAfter>
+    <StartDate>4/1/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>150</CurrentWeight>
+    <CurrentHeight>5'10"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>Yes</Admin>
+  </User>
+  <User ID="4">
+    <FirstName>Bob</FirstName>
+    <LastName>Dylan</LastName>
+    <BirthDate>4/16/2017</BirthDate>
+    <Username>bobdylan</Username>
+    <StartDate>4/16/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>140</CurrentWeight>
+    <CurrentHeight>5'8"</CurrentHeight>
+    <Password>password</Password>
+    <Workout>Gain Muscle</Workout>
+    <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
+    <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
 </Users>
