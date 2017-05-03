@@ -22,21 +22,13 @@ namespace Spotter_group
     public partial class MainWindow : Window
     {
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
 
         public MainWindow()
         {
             InitializeComponent();
-            isVisible();
         }
-        public void isVisible()
-        {
-            IEnumerable<string> menuVisible = from Users in XDocument.Load(visiblePath).Descendants("Visible")
-                                             select Users.Element("isVisible").Value;
-            string test = menuVisible.FirstOrDefault().ToString();
-
-            MenuItemSpotter.Visibility = System.Windows.Visibility.Hidden;
-
-        }
+        
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
@@ -119,7 +111,7 @@ namespace Spotter_group
 
 
 
-            IEnumerable<string> adminStuff = from user2 in XDocument.Load(userPath).Descendants("User")
+            IEnumerable<string> adminStuff = from user2 in XDocument.Load(jasonPath).Descendants("User")
                                              where (string)user2.Element("Username") == theUserName
                                              select user2.Element("Admin").Value;
 
