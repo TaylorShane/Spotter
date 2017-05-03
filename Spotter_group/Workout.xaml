@@ -37,7 +37,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="4">
-            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Working Out</Label>
+            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">No Pain No Gain</Label>
             <!--<TextBlock x:Name="txtBlock_CaloriesToConsume" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>-->
 
             <!--workout name-->

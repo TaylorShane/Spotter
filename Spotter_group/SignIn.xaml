@@ -52,7 +52,7 @@
         </StackPanel>
 
         <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Height="60" Width="125"
-                Click="Button_Click" HorizontalAlignment="Center">Submit</Button>
+                Click="Button_Click" HorizontalAlignment="Center">Login</Button>
 
       
 
