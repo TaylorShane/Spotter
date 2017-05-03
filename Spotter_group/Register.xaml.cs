@@ -159,7 +159,7 @@ namespace Spotter_group
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)
         {
-            startDate = tbDOB.SelectedDate.Value.ToString("dd/MM/yyyy");
+            startDate = tbStartDate.SelectedDate.Value.ToString("dd/MM/yyyy");
         }
 
         
