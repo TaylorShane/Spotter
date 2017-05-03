@@ -12,3 +12,4 @@ Things to do
 
 6.  Subscriber delegate for progress bar.
 
+7. Admin pages need admin privledges to interact with.

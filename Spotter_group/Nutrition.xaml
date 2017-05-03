@@ -35,9 +35,16 @@
         </Menu>
         -->
         <StackPanel Margin="32,10,48,10" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="5">
-            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">Calories to Consume</Label>
-            <TextBlock x:Name="txtBlock_CaloriesToConsume" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>
+            <Label Grid.Column="4" Foreground="White" HorizontalAlignment="Center" FontSize="25">This Meal's Calories</Label>
+            <TextBlock x:Name="txtThisMealCalories" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" ToolTip="2000"  Height="150"/>
         </StackPanel>
+        
+        <!-- Calorie Count total-->
+        <StackPanel Grid.Column="4" Margin="15">
+            <Label  Foreground="White" HorizontalAlignment="Center" FontSize="20">Total Meals Calories</Label>
+            <TextBlock Name="lblCalorieTotal"  Foreground="White"  FontSize="50" ToolTip="2000 daily calories" HorizontalAlignment="Center" Height="150"></TextBlock>
+        </StackPanel>
+        
 
         <Label Foreground="White" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Proteins</Label>
         <Label Foreground="White" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">Vegetables</Label>

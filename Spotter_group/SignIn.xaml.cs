@@ -36,15 +36,9 @@ namespace Spotter_group
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
-
-            
-
             try
             {
                 //this is trying to signin
-
-
                 string user_name1 = user_name.Text;
                 string pass_word1 = pass_word.Password;
 
@@ -79,16 +73,9 @@ namespace Spotter_group
                        new XElement("UserName", user_name1)));
                     xmlDocument.Save(ShaneCurrentPath);
 
-
-
                     MessageBox.Show("Successful Login! \n Please return to profile");
 
-                   
                 }
-
-
-                
-
 
             }
 

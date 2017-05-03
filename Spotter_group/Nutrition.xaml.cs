@@ -14,7 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
 
-
 namespace Spotter_group
 {
     /// <summary>
@@ -29,11 +28,16 @@ namespace Spotter_group
 
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
         // PATH LOCATION
+        public int TotalMealsCalories = 0;
+
+        public void getTotalMealCalories(int total)
+        {
+
+        }
         private void btnSaveMeal_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                
                 string protein = cboBox_Proteins.Text;
                 int proteinCalories = Convert.ToInt32(tboxProteinCalories.Text);
                 int veggieCalories = Convert.ToInt32(tboxVeggieCalories.Text);
@@ -41,38 +45,42 @@ namespace Spotter_group
                 int alcoholCalories = Convert.ToInt32(tboxAlcoholCalories.Text);
                 int miscCalories = Convert.ToInt32(tboxMiscCalories.Text);
                 int totalCalories = proteinCalories + veggieCalories + fruitsCalories + alcoholCalories + miscCalories;
-                txtBlock_CaloriesToConsume.Text = totalCalories.ToString();
-                string display = txtBlock_CaloriesToConsume.Text;
+                txtThisMealCalories.Text = totalCalories.ToString();
+                string display = txtThisMealCalories.Text;
 
+                TotalMealsCalories += totalCalories;
                 var converter = new System.Windows.Media.BrushConverter();
                 var teal = (Brush)converter.ConvertFromString("#009999");
 
-                if (totalCalories < 1500)
+                getTotalMealCalories(TotalMealsCalories);
+                lblCalorieTotal.Text = TotalMealsCalories.ToString();
+
+                if (TotalMealsCalories < 1500)
                 {
-                    txtBlock_CaloriesToConsume.Foreground = Brushes.Green;
+                    lblCalorieTotal.Foreground = Brushes.Green;
                 }
-                else if (totalCalories >= 1800 && totalCalories < 2000)
+                else if (TotalMealsCalories >= 1800 && TotalMealsCalories < 2000)
                 {
-                    txtBlock_CaloriesToConsume.Foreground = Brushes.Yellow;
+                    lblCalorieTotal.Foreground = Brushes.Yellow;
                 }
-                else if (totalCalories == 2000)
+                else if (TotalMealsCalories == 2000)
                 {
-                    
-                    display = txtBlock_CaloriesToConsume.Text;
-                    
-                    txtBlock_CaloriesToConsume.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#009999")); ;
-                    txtBlock_CaloriesToConsume.Text = "Great! " + display + " calories";
+                    display = lblCalorieTotal.Text;
+
+                    lblCalorieTotal.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#009999")); ;
+                    lblCalorieTotal.Text = "Great! " + display + " calories";
                 }
-                else if(totalCalories > 2000)
+                else if(TotalMealsCalories > 2000)
                 {
-                    txtBlock_CaloriesToConsume.Foreground = Brushes.Red;
+                    lblCalorieTotal.Foreground = Brushes.Red;
                 }
+
+
             }
             catch (Exception er)
             { // vs17 kept giving me crap for not displaying the er.tostring sorry 
                 MessageBox.Show("Please enter a numeric value for each calorie count box" + er.ToString());
             }
-            
         }
         
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
