@@ -22,6 +22,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Label Grid.Column="1" Grid.Row="0" Foreground="White"
+               FontSize="70" HorizontalAlignment="Center"
+               VerticalAlignment="Center" BorderThickness="2" BorderBrush="#666666" >Sign In</Label>
+
         <Label Grid.Row="2" Grid.Column="1" Foreground="White"
                HorizontalAlignment="Center"
                VerticalAlignment="Top">Username:
@@ -50,9 +54,7 @@
         <Button Grid.Column="1" Grid.Row="4" Height="20" Width="80"
                 Click="Button_Click">Submit</Button>
 
-        <Label Grid.Column="0" Grid.Row="0" Foreground="White"
-               Grid.ColumnSpan="2" FontSize="40" HorizontalAlignment="Right"
-               VerticalAlignment="Center">Sign In</Label>
+      
 
     </Grid>
     
