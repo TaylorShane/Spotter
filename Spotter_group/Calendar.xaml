@@ -20,13 +20,13 @@
             <ColumnDefinition Width="1.15*" />
             <ColumnDefinition Width="1.15*" />
             <ColumnDefinition Width=".5*" />
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1.5*" />
+            <ColumnDefinition Width="1.5*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height=".5*"/>
-            <RowDefinition Height="1.25*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height=".75*"/>
 
         </Grid.RowDefinitions>
         <Label Grid.ColumnSpan="2" Foreground="#666666" FontSize="25">Workout Scheduler</Label>
@@ -81,7 +81,7 @@
                        Width="200" Height="225"
                      ScrollViewer.ScrollChanged="lbx1_ScrollChanged" DisplayMemberPath="details" 
                      
-                     ItemsSource="{Binding Source={StaticResource workout}, XPath=workout}"></ListBox>
+                     ItemsSource="{Binding Source={StaticResource workout}, XPath=workout}" HorizontalAlignment="Left"></ListBox>
         </StackPanel>
 
     </Grid>

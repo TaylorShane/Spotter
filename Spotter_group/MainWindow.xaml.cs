@@ -25,6 +25,8 @@ namespace Spotter_group
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
 
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -108,11 +110,11 @@ namespace Spotter_group
 
 
 
-            MessageBox.Show(theUserName);
+            //MessageBox.Show(theUserName);
 
 
 
-            IEnumerable<string> adminStuff = from user2 in XDocument.Load(shaneCurrentPath).Descendants("User")
+            IEnumerable<string> adminStuff = from user2 in XDocument.Load(shanePath).Descendants("User")
                                              where (string)user2.Element("Username") == theUserName
                                              select user2.Element("Admin").Value;
 
@@ -120,7 +122,7 @@ namespace Spotter_group
 
             string adminVal = adminStuff.FirstOrDefault().ToString();
 
-            MessageBox.Show(adminVal);
+            
 
             if (adminVal == "Yes")
             {
@@ -128,12 +130,13 @@ namespace Spotter_group
                 Admin admin = new Admin();
                 grid2.Children.Clear();
                 grid2.Children.Add(admin);
+                MessageBox.Show("Welcome Admin");
 
             }
 
             else
             {
-                MessageBox.Show("Game Over");
+                MessageBox.Show("You are not an Admin");
             }
 
 

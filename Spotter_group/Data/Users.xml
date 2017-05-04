@@ -30,11 +30,11 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>Yes</Admin>
   </User>
-  <User ID="3">
+  <User ID="2">
     <FirstName>Tom</FirstName>
     <LastName>Petty</LastName>
     <BirthDate>4/1/2017</BirthDate>
-    <Username></Username>
+    <Username>tompetty</Username>
     <StartDate>4/1/2017</StartDate>
     <Gender>Male</Gender>
     <CurrentWeight>150</CurrentWeight>
@@ -45,7 +45,7 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>Yes</Admin>
   </User>
-  <User ID="4">
+  <User ID="3">
     <FirstName>Bob</FirstName>
     <LastName>Dylan</LastName>
     <BirthDate>4/16/2017</BirthDate>
@@ -60,7 +60,7 @@
     <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="5">
+  <User ID="4">
     <FirstName>Selena</FirstName>
     <LastName>Gomez</LastName>
     <BirthDate>02/03/2009</BirthDate>
@@ -75,7 +75,7 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="6">
+  <User ID="5">
     <FirstName>Bobby</FirstName>
     <LastName>Brown</LastName>
     <BirthDate>01/29/1971</BirthDate>
@@ -90,7 +90,7 @@
     <ImageAfter>Images\Characters\ren.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="8">
+  <User ID="6">
     <FirstName>Richard</FirstName>
     <LastName>Hendriks</LastName>
     <BirthDate>07/04/1983</BirthDate>
@@ -105,7 +105,7 @@
     <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="9">
+  <User ID="7">
     <FirstName>Nelson</FirstName>
     <LastName>Bighetti</LastName>
     <BirthDate>05/12/1993</BirthDate>
@@ -120,7 +120,7 @@
     <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="10">
+  <User ID="8">
     <FirstName>Dinesh</FirstName>
     <LastName>Chugtai</LastName>
     <BirthDate>10/01/1979</BirthDate>
@@ -135,7 +135,7 @@
     <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="11">
+  <User ID="9">
     <FirstName>Bertram</FirstName>
     <LastName>Gilfoyle</LastName>
     <BirthDate>03/04/1979</BirthDate>
@@ -150,7 +150,7 @@
     <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="12">
+  <User ID="10">
     <FirstName>Erlich</FirstName>
     <LastName>Bachman</LastName>
     <BirthDate>11/17/1977</BirthDate>
@@ -165,7 +165,7 @@
     <ImageAfter>Images\Characters\ren.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="13">
+  <User ID="11">
     <FirstName>Donald</FirstName>
     <LastName>Dunn</LastName>
     <BirthDate>09/25/1982</BirthDate>
@@ -180,7 +180,7 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="14">
+  <User ID="12">
     <FirstName>Gavin</FirstName>
     <LastName>Belson</LastName>
     <BirthDate>04/25/1964</BirthDate>
@@ -195,7 +195,7 @@
     <ImageAfter>Images\Characters\ren.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="15">
+  <User ID="13">
     <FirstName>Jian</FirstName>
     <LastName>Yang</LastName>
     <BirthDate>09/07/1992</BirthDate>
@@ -210,7 +210,7 @@
     <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="16">
+  <User ID="14">
     <FirstName>Russ</FirstName>
     <LastName>Hanneman</LastName>
     <BirthDate>10/25/1974</BirthDate>
@@ -225,7 +225,7 @@
     <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="17">
+  <User ID="15">
     <FirstName>Monica</FirstName>
     <LastName>Monica</LastName>
     <BirthDate>02/20/1989</BirthDate>
@@ -240,7 +240,7 @@
     <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="18">
+  <User ID="16">
     <FirstName>Bill</FirstName>
     <LastName>Gates</LastName>
     <BirthDate>10/04/1962</BirthDate>
@@ -253,6 +253,21 @@
     <Workout>Gain Muscle</Workout>
     <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
     <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="17">
+    <FirstName>john</FirstName>
+    <LastName>smith</LastName>
+    <BirthDate>05/01/2017</BirthDate>
+    <Username>johnsmith</Username>
+    <StartDate>05/01/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>200</CurrentWeight>
+    <CurrentHeight>6'</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Lose Weight</Workout>
+    <ImageBefore>Images\Characters\Stimpy.png</ImageBefore>
+    <ImageAfter>Images\Characters\ren.png</ImageAfter>
     <Admin>No</Admin>
   </User>
 </Users>

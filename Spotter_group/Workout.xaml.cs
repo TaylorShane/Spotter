@@ -33,7 +33,11 @@ namespace Spotter_group
 
 
         string stevePath = @"C:\Users\drof\Source\Repos\Spotter_group\Spotter_group\Data\workit.xml";
-
+        string shaneWorkitPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/workit.xml";
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\SampleUsers.xml";
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+        string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
+        string user = "";
 
         public void setWorkoutInformation()
         {
@@ -68,10 +72,10 @@ namespace Spotter_group
 
         private void fun_button_Click(object sender, RoutedEventArgs e)
         {
-            IEnumerable<string> otherstuff = from exercise in XDocument.Load(stevePath).Descendants("muscle")
+            IEnumerable<string> otherstuff = from exercise in XDocument.Load(shaneWorkitPath).Descendants("muscle")
                                                          select exercise.Element("details").Value;
 
-            IEnumerable<string> otherstuff2 = from exercise in XDocument.Load(stevePath).Descendants("muscle")
+            IEnumerable<string> otherstuff2 = from exercise in XDocument.Load(shaneWorkitPath).Descendants("muscle")
                                              select exercise.Element("machine").Value;
 
             Random rand = new Random();
