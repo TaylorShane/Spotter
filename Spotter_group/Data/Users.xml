@@ -31,8 +31,8 @@
     <Admin>Yes</Admin>
   </User>
   <User ID="3">
-    <FirstName>tom</FirstName>
-    <LastName>petty</LastName>
+    <FirstName>Tom</FirstName>
+    <LastName>Petty</LastName>
     <BirthDate>4/1/2017</BirthDate>
     <Username></Username>
     <StartDate>4/1/2017</StartDate>
@@ -90,19 +90,169 @@
     <ImageAfter>Images\Characters\ren.png</ImageAfter>
     <Admin>No</Admin>
   </User>
-  <User ID="7">
-    <FirstName></FirstName>
-    <LastName></LastName>
-    <BirthDate>01/29/1971</BirthDate>
-    <Username></Username>
-    <StartDate>03/21/2017</StartDate>
-    <Gender>Female</Gender>
-    <CurrentWeight></CurrentWeight>
-    <CurrentHeight></CurrentHeight>
-    <Password></Password>
+  <User ID="8">
+    <FirstName>Richard</FirstName>
+    <LastName>Hendriks</LastName>
+    <BirthDate>07/04/1983</BirthDate>
+    <Username>Richard</Username>
+    <StartDate>03/20/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>120</CurrentWeight>
+    <CurrentHeight>5' 11"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Gain Muscle</Workout>
+    <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
+    <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="9">
+    <FirstName>Nelson</FirstName>
+    <LastName>Bighetti</LastName>
+    <BirthDate>05/12/1993</BirthDate>
+    <Username>BigHead</Username>
+    <StartDate>04/03/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>135</CurrentWeight>
+    <CurrentHeight>5' 8"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\WileECoyote.png</ImageBefore>
+    <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="10">
+    <FirstName>Dinesh</FirstName>
+    <LastName>Chugtai</LastName>
+    <BirthDate>10/01/1979</BirthDate>
+    <Username>Dinesh </Username>
+    <StartDate>04/03/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>155</CurrentWeight>
+    <CurrentHeight>5' 9"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\WileECoyote.png</ImageBefore>
+    <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="11">
+    <FirstName>Bertram</FirstName>
+    <LastName>Gilfoyle</LastName>
+    <BirthDate>03/04/1979</BirthDate>
+    <Username>Gilfoyle</Username>
+    <StartDate>05/03/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>160</CurrentWeight>
+    <CurrentHeight>6' 1"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\WileECoyote.png</ImageBefore>
+    <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="12">
+    <FirstName>Erlich</FirstName>
+    <LastName>Bachman</LastName>
+    <BirthDate>11/17/1977</BirthDate>
+    <Username>Bachmanity</Username>
+    <StartDate>03/17/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>195</CurrentWeight>
+    <CurrentHeight>5' 11"</CurrentHeight>
+    <Password>123</Password>
     <Workout>Lose Weight</Workout>
     <ImageBefore>Images\Characters\Stimpy.png</ImageBefore>
     <ImageAfter>Images\Characters\ren.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="13">
+    <FirstName>Donald</FirstName>
+    <LastName>Dunn</LastName>
+    <BirthDate>09/25/1982</BirthDate>
+    <Username>Jared</Username>
+    <StartDate>04/22/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>145</CurrentWeight>
+    <CurrentHeight>6' 3"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Tone Up</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="14">
+    <FirstName>Gavin</FirstName>
+    <LastName>Belson</LastName>
+    <BirthDate>04/25/1964</BirthDate>
+    <Username>Hooli</Username>
+    <StartDate>04/07/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>170</CurrentWeight>
+    <CurrentHeight>5' 10"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Lose Weight</Workout>
+    <ImageBefore>Images\Characters\Stimpy.png</ImageBefore>
+    <ImageAfter>Images\Characters\ren.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="15">
+    <FirstName>Jian</FirstName>
+    <LastName>Yang</LastName>
+    <BirthDate>09/07/1992</BirthDate>
+    <Username>SpecialOcasion</Username>
+    <StartDate>05/03/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>5' 5"</CurrentWeight>
+    <CurrentHeight>135</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Gain Muscle</Workout>
+    <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
+    <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="16">
+    <FirstName>Russ</FirstName>
+    <LastName>Hanneman</LastName>
+    <BirthDate>10/25/1974</BirthDate>
+    <Username>InternetRadio</Username>
+    <StartDate>02/26/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>165</CurrentWeight>
+    <CurrentHeight>5' 9"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Cardio</Workout>
+    <ImageBefore>Images\Characters\WileECoyote.png</ImageBefore>
+    <ImageAfter>Images\Characters\FasterRoadRunner.gif</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="17">
+    <FirstName>Monica</FirstName>
+    <LastName>Monica</LastName>
+    <BirthDate>02/20/1989</BirthDate>
+    <Username>Monica</Username>
+    <StartDate>02/01/2017</StartDate>
+    <Gender>Female</Gender>
+    <CurrentWeight>135</CurrentWeight>
+    <CurrentHeight>5' 8"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Tone Up</Workout>
+    <ImageBefore>Images\Characters\Ursula.png</ImageBefore>
+    <ImageAfter>Images\Characters\littlemermaid.png</ImageAfter>
+    <Admin>No</Admin>
+  </User>
+  <User ID="18">
+    <FirstName>Bill</FirstName>
+    <LastName>Gates</LastName>
+    <BirthDate>10/04/1962</BirthDate>
+    <Username>billgates</Username>
+    <StartDate>02/01/2017</StartDate>
+    <Gender>Male</Gender>
+    <CurrentWeight>145</CurrentWeight>
+    <CurrentHeight>5' 9"</CurrentHeight>
+    <Password>123</Password>
+    <Workout>Gain Muscle</Workout>
+    <ImageBefore>Images\Characters\snarfsnarf.png</ImageBefore>
+    <ImageAfter>Images\Characters\thundercat.png</ImageAfter>
     <Admin>No</Admin>
   </User>
 </Users>

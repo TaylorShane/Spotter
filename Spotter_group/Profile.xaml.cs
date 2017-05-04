@@ -25,9 +25,9 @@ namespace Spotter_group
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
-
-        List<WorkoutProgress> workout = new List<WorkoutProgress>();
         string cUser = "";
+        List<WorkoutProgress> workout = new List<WorkoutProgress>();
+        
         
 
         public Profile()

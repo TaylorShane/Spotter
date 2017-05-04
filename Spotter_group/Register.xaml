@@ -131,8 +131,8 @@
             <RadioButton x:Name="cbCardio" GroupName="workout" HorizontalAlignment="Center" VerticalAlignment="Bottom" Checked="cbCardio_Checked"></RadioButton>
         </StackPanel>
         <DockPanel Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="Images\Characters\Wile_E_Coyote.png" Height="125px" Width="125px"/>
-            <Image Source="Images\Characters\Faster-Road-Runner.gif" Height="125px" Width="125px"/>
+            <Image Source="Images\Characters\WileECoyote.png" Height="125px" Width="125px"/>
+            <Image Source="Images\Characters\FasterRoadRunner.gif" Height="125px" Width="125px"/>
             <TextBlock Foreground="#FFE0E0E0" TextWrapping="Wrap" Margin="40,20,40,0">Cardiiovascular health is an important part or anyone's health.  Choose <Italic><Bold>Cardio</Bold></Italic> to improve yours!</TextBlock>
         </DockPanel>
         <StackPanel Grid.Column="3" Grid.Row="12">

@@ -242,10 +242,10 @@
     <Resource Include="images\Characters\snarfsnarf.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\Characters\Faster-Road-Runner.gif" />
+    <Resource Include="images\Characters\FasterRoadRunner.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\Characters\Wile_E_Coyote.png" />
+    <Resource Include="images\Characters\WileECoyote.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Users.xml">

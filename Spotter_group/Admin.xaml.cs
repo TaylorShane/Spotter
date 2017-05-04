@@ -21,12 +21,30 @@ namespace Spotter_group
     /// </summary>
     public partial class Admin : UserControl
     {
+        string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
+        string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
+        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+        string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
+        string cUser = "";
         public Admin()
         {
             InitializeComponent();
+            try { findUser(); }
+            catch (Exception er) { MessageBox.Show("Please Signin to view your profile!"); }
         }
 
-        string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
+        
+        public void findUser()
+        {
+            IEnumerable<string> CurrentUser = from CurrentUsers in XDocument.Load(shaneCurrentPath).Descendants("User")
+                                              select CurrentUsers.Element("UserName").Value;
+
+            cUser = CurrentUser.FirstOrDefault().ToString();
+            //populatePage();
+
+        }
+
+        
 
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {

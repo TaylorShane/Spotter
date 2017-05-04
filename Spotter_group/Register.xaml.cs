@@ -154,8 +154,8 @@ namespace Spotter_group
         private void cbCardio_Checked(object sender, RoutedEventArgs e)
         {
             workout = lblCardio.Text;
-            imageBefore = @"Images\Characters\Wile_E_Coyote.png";
-            imageAfter = @"Images\Characters\Faster - Road - Runner.gif";
+            imageBefore = @"Images\Characters\WileECoyote.png";
+            imageAfter = @"Images\Characters\FasterRoadRunner.gif";
         }
 
         private void tbStartDate_CalendarClosed(object sender, RoutedEventArgs e)

@@ -29,14 +29,14 @@
      <image>/images/Icons/LEGS.png</image>
   </workout>
   <workout id="lWv1">
-    <day> 5 </day>
+    <day>5</day>
     <muscle>Legs</muscle>
     <name>Single Leg Calf Raise</name>
     <details>1 set, 6 reps, bodyweight </details>
     <image>/images/Icons/LEGS.png</image>
   </workout>
   <workout id="lWv1">
-    <day> 5 </day>
+    <day>5</day>
     <muscle>Arms</muscle>
     <name>Tricept Extensions</name>
     <details>1 set, 10 reps, 20% 1 rep max </details>
