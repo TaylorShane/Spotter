@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <food_items>
+  <alcohol>Alcohol<name Id="Vodka">Vodka</name><calories>125</calories></alcohol>
   <protein>
     <name Id="Chicken">Chicken</name>
     <calories>142</calories>

@@ -24,6 +24,7 @@ namespace Spotter_group
         string jasonPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\Users.xml";
         string currentPath = @"C:\Users\admin\Source\Repos\Spotter_group\Spotter_group\Data\CurrentUser.xml";
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
+        string shaneFoodPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Food.xml";
         string shaneCurrentPath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
         string cUser = "";
         public Admin()
@@ -72,7 +73,7 @@ namespace Spotter_group
             {
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(shaneFoodPath);
 
                     xmlDocument.Element("food_items").AddFirst(//AddFirst()
                         new XElement("protein", foodType,
@@ -80,7 +81,7 @@ namespace Spotter_group
                         new XElement("calories", calories))
                     );
 
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(shaneFoodPath);
                     MessageBox.Show("New Food Saved" + 
                         "\n" + "Type: " + foodType +
                         "\n" + "Name: " + name +
@@ -96,7 +97,7 @@ namespace Spotter_group
             {
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(shaneFoodPath);
 
                     xmlDocument.Element("food_items").AddFirst(//AddFirst()
                         new XElement("veggie", foodType,
@@ -104,7 +105,7 @@ namespace Spotter_group
                         new XElement("calories", calories))
                     );
 
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(shaneFoodPath);
                     MessageBox.Show("New Food Saved" +
                         "\n" + "Type: " + foodType +
                         "\n" + "Name: " + name +
@@ -121,7 +122,7 @@ namespace Spotter_group
             {
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(shaneFoodPath);
 
                     xmlDocument.Element("food_items").AddFirst(//AddFirst()
                         new XElement("fruit", foodType,
@@ -129,7 +130,7 @@ namespace Spotter_group
                         new XElement("calories", calories))
                     );
 
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(shaneFoodPath);
                     MessageBox.Show("New Food Saved" +
                         "\n" + "Type: " + foodType +
                         "\n" + "Name: " + name +
@@ -146,7 +147,7 @@ namespace Spotter_group
             {
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(shaneFoodPath);
 
                     xmlDocument.Element("food_items").AddFirst(//AddFirst()
                         new XElement("alcohol", foodType,
@@ -154,7 +155,7 @@ namespace Spotter_group
                         new XElement("calories", calories))
                     );
 
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(shaneFoodPath);
                     MessageBox.Show("New Food Saved" +
                         "\n" + "Type: " + foodType +
                         "\n" + "Name: " + name +
@@ -171,7 +172,7 @@ namespace Spotter_group
             {
                 try
                 {
-                    XDocument xmlDocument = XDocument.Load(shanePath);
+                    XDocument xmlDocument = XDocument.Load(shaneFoodPath);
 
                     xmlDocument.Element("food_items").AddFirst(//AddFirst()
                         new XElement("Other", foodType,
@@ -179,7 +180,7 @@ namespace Spotter_group
                         new XElement("calories", calories))
                     );
 
-                    xmlDocument.Save(shanePath);
+                    xmlDocument.Save(shaneFoodPath);
                     MessageBox.Show("New Food Saved" +
                         "\n" + "Type: " + foodType +
                         "\n" + "Name: " + name +
