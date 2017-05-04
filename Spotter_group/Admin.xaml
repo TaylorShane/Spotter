@@ -37,7 +37,7 @@
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
             <ComboBox IsReadOnly="False" x:Name="cboBoxFoodType"  Width="200px"
                       Margin="5, 10, 5, 10" Height="25" VerticalAlignment="Top" Foreground="Black"
-                      DropDownClosed="cboBox_Proteins_DropDownClosed">
+                      >
                 <ComboBoxItem>Protein</ComboBoxItem>
                 <ComboBoxItem>Vegetable</ComboBoxItem>
                 <ComboBoxItem>Fruit</ComboBoxItem>

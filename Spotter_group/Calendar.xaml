@@ -63,8 +63,7 @@
             <ListBox Name="lboxWorkoutDayDisplay" Foreground="White" Background="Black" 
                      DisplayMemberPath="day"  Width="50" 
                      ScrollViewer.ScrollChanged="lbx1_ScrollChanged"  Height="225"
-                     ItemsSource="{Binding Source={StaticResource workout}, XPath=workout}"></ListBox>
-
+                     ItemsSource="{Binding Source={StaticResource workout}, XPath=workout}" HorizontalAlignment="Right"></ListBox>
         </StackPanel>
 
         <!-- Column 4 -->

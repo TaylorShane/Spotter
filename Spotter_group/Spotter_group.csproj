@@ -270,7 +270,7 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Data\JunkCode.txt" />
+    <Resource Include="Documentation\JunkCode.txt" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Gifs\arms.gif" />
@@ -289,9 +289,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Graphics\signin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Data\Visible.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

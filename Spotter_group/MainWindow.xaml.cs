@@ -109,20 +109,11 @@ namespace Spotter_group
             string theUserName = CurrentUser.FirstOrDefault().ToString();
 
 
-
-            //MessageBox.Show(theUserName);
-
-
-
             IEnumerable<string> adminStuff = from user2 in XDocument.Load(shanePath).Descendants("User")
                                              where (string)user2.Element("Username") == theUserName
                                              select user2.Element("Admin").Value;
 
-
-
             string adminVal = adminStuff.FirstOrDefault().ToString();
-
-            
 
             if (adminVal == "Yes")
             {
@@ -138,18 +129,37 @@ namespace Spotter_group
             {
                 MessageBox.Show("You are not an Admin");
             }
-
-
-
-
-     
         }
 
         private void MenuItemUpdateUser_Click(object sender, RoutedEventArgs e)
         {
-            UpdateUser updateUser = new UpdateUser();
-            grid2.Children.Clear();
-            grid2.Children.Add(updateUser);
+            IEnumerable<string> CurrentUser = from user1 in XDocument.Load(shaneCurrentPath).Descendants("User")
+                                              select user1.Element("UserName").Value;
+
+            string theUserName = CurrentUser.FirstOrDefault().ToString();
+
+
+            IEnumerable<string> adminStuff = from user2 in XDocument.Load(shanePath).Descendants("User")
+                                             where (string)user2.Element("Username") == theUserName
+                                             select user2.Element("Admin").Value;
+
+            string adminVal = adminStuff.FirstOrDefault().ToString();
+
+            if (adminVal == "Yes")
+            {
+
+                UpdateUser updateUser = new UpdateUser();
+                grid2.Children.Clear();
+                grid2.Children.Add(updateUser);
+                MessageBox.Show("Welcome Admin");
+
+            }
+
+            else
+            {
+                MessageBox.Show("You are not an Admin");
+            }
+            
         }
 
       

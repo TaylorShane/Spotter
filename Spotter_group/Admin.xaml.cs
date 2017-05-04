@@ -46,11 +46,11 @@ namespace Spotter_group
         }
 
         
-
+        /*
         private void cboBox_Proteins_DropDownClosed(object sender, EventArgs e)
         {
 
-            /*
+            
             string refItem = cboBoxFoodType.Text;
             MessageBox.Show(refItem);
             XDocument doc = XDocument.Load(shanePath);
@@ -59,8 +59,9 @@ namespace Spotter_group
                                                  select food_items.Element("calories").Value;
             
             tboxProteinCalories.Text = CaloriesResult.FirstOrDefault().ToString();
-            */
+            
         }
+        */
 
         private void btnAddFood_Click(object sender, RoutedEventArgs e)
         {

@@ -27,13 +27,13 @@ namespace Spotter_group
         {
             InitializeComponent();
             populateStartDate();
-           
+           /*
             for (int i = 0; i < 100; i++)
             {
                 Random r = new Random(i);
                 int a = r.Next();
                 list.Add(a.ToString());
-            }
+            } */
            // this.ListBoxWorkoutsResults.ItemsSource = list;
            // this.lboxSelectedDateWorkoutDisplay.ItemsSource = list;
         }
@@ -44,7 +44,7 @@ namespace Spotter_group
         string shanePath = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/Users.xml";
         string currentUser = @"C:/Users/xbox_000/Source/Repos/Spotter/Spotter_group/Spotter_group/Data/CurrentUser.xml";
         string user = "";
-        List<DaysPassed> mydate = new List<DaysPassed>();
+        //List<DaysPassed> mydate = new List<DaysPassed>();
 
         public DateTime startDate;
         public double day;
@@ -88,11 +88,11 @@ namespace Spotter_group
             txtBlockDateSeleted.Text = calendar.SelectedDate.Value.ToString("MM/dd/yyyy");
             txtDaysPassed.Text = day.ToString();
 
-            mydate.Add(new DaysPassed() { days = dayStringFormat });
+            //mydate.Add(new DaysPassed() { days = dayStringFormat });
             //lboxSelectedDateWorkoutDisplay.ItemsSource = mydate;
         }
         
-        public ObservableCollection<string> list = new ObservableCollection<string>();
+        //public ObservableCollection<string> list = new ObservableCollection<string>();
        
         public Visual GetDescendantByType(Visual element, Type type)
         {
@@ -119,6 +119,8 @@ namespace Spotter_group
             ScrollViewer _listboxScrollViewer3 = GetDescendantByType(lboxWorkoutDayDisplay, typeof(ScrollViewer)) as ScrollViewer;
             _listboxScrollViewer2.ScrollToVerticalOffset(_listboxScrollViewer1.VerticalOffset);
             _listboxScrollViewer3.ScrollToVerticalOffset(_listboxScrollViewer1.VerticalOffset);
+            _listboxScrollViewer1.ScrollToVerticalOffset(_listboxScrollViewer1.VerticalOffset);
+
         }
     }
 }
