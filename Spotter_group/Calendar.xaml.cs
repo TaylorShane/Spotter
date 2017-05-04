@@ -235,14 +235,14 @@ namespace Spotter_group
         {
             //Get current user
             // replace with global user ID
-            IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentPath).Descendants("User")
+            IEnumerable<string> thisUser = from CurrentUser in XDocument.Load(currentUser).Descendants("User")
                                            select CurrentUser.Element("UserName").Value;
 
             user = thisUser.FirstOrDefault().ToString();
 
             //Get current username startdate
 
-            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(jasonPath).Descendants("User")
+            IEnumerable<string> thisUserStartDate = from Users in XDocument.Load(currentUser).Descendants("User")
                                                     where (string)Users.Element("Username") == user
                                                     select Users.Element("StartDate").Value;
 
