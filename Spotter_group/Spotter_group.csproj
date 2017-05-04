@@ -285,10 +285,10 @@
     <Resource Include="Data\CurrentUser.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Documentation\SpotterToDoList.txt" />
+    <Resource Include="images\Graphics\signin.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\Graphics\signin.png" />
+    <Resource Include="Documentation\Github web URL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
