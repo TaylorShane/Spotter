@@ -66,6 +66,11 @@
     <Compile Include="Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\thankyoouu!.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>thankyoouu!.tt</DependentUpon>
+    </Compile>
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
@@ -158,6 +163,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Data\thankyoouu!.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>thankyoouu!.cs</LastGenOutput>
+    </None>
     <None Include="Documentation\CS317_Final_Project_Requirements.pdf" />
     <None Include="Documentation\Proposal.pdf" />
     <None Include="Documentation\SpotterMockUp_LandscapeView.pdf" />
